@@ -46,8 +46,24 @@ img {
     margin-right: 50px;
 }
 
-#about{
-    margin-bottom: 50px;
+#home {
+    margin-bottom: 25px;
+}
+
+#aboutus {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+#testimonials {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+#join {
+    margin-bottom: 25px;
+    height: 40%;
+    margin-top: 25px;
 }
 
 #aboutus h3 {
@@ -57,7 +73,6 @@ img {
     text-align: center;
 }
 
-
 #aboutus h4 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
@@ -66,7 +81,9 @@ img {
 }
 
 #testimonials .container {
-    height: 810px;
+    height: auto;
+    margin-bottom: 25px;
+    margin-top: 30px;
 }
 
 #testimonials img {
@@ -74,6 +91,7 @@ img {
     width: 160px;
     align-items: center;
 }
+
 #testimonials p {
     text-align: justify;
 }
@@ -83,13 +101,17 @@ img {
     padding-right: 50px;
 }
 
-#join .container {
-    height: 405px;
+#join .row {
+    margin-bottom: 25px;
+    height: 20em;
+    margin-top: 25px;
 }
+
+#join .join .questions {}
 
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-  }
+}
