@@ -4,6 +4,7 @@
 
 #nav .links {
     float: right;
+    display: inline-block;
 }
 
 #nav img {
