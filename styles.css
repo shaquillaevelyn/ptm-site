@@ -2,11 +2,6 @@
     background-color: #004165;
 }
 
-#nav .links {
-    float: right;
-    display: inline-block;
-}
-
 #nav img {
     width: 87px;
     height: 72px;
@@ -18,12 +13,34 @@
     font-size: 37px;
 }
 
-#nav a {
+.navbar a {
     color: #ffffff;
+    display: inline;
 }
 
 #scrolldown {
     height: 52px;
+}
+
+#home h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+#home h5 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+#home p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+#home strong {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-weight: bold;
 }
 
 #scrolldown h6 {
@@ -62,9 +79,10 @@ img {
 }
 
 #join {
-    margin-bottom: 25px;
     height: 40%;
     margin-top: 25px;
+    color: white;
+    background-color: #004165;
 }
 
 #aboutus a {
@@ -86,6 +104,13 @@ img {
     font-weight: 400;
     font-size: 20px;
     text-align: center;
+}
+
+#aboutus p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
 }
 
 #testimonials .container {
@@ -116,6 +141,8 @@ img {
 
 #testimonials p {
     text-align: justify;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
 }
 
 #testimonials .col {
@@ -136,6 +163,20 @@ img {
 }
 
 #join {
-    color: white;
-    background-color: #004165;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+#contact img {
+    height: 40px;
+    width: 40px;
+}
+
+#contact {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
 }
