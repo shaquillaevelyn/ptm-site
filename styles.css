@@ -1,0 +1,95 @@
+#nav {
+    background-color: #004165;
+}
+
+#nav .links {
+    float: right;
+}
+
+#nav img {
+    width: 87px;
+    height: 72px;
+}
+
+#nav h2 a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 37px;
+}
+
+#nav a {
+    color: #ffffff;
+}
+
+#scrolldown {
+    height: 52px;
+}
+
+#scrolldown h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.jumbotron {
+    padding-top: 22em;
+    padding-left: 18em;
+    padding-right: 10em;
+    height: 70vh;
+}
+
+img {
+    width: 440px;
+    height: 710px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#about{
+    margin-bottom: 50px;
+}
+
+#aboutus h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+#aboutus h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+#testimonials .container {
+    height: 810px;
+}
+
+#testimonials img {
+    height: 160px;
+    width: 160px;
+    align-items: center;
+}
+#testimonials p {
+    text-align: justify;
+}
+
+#testimonials .col {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#join .container {
+    height: 405px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
