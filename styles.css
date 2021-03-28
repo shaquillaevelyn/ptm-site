@@ -55,6 +55,9 @@
     padding-left: 18em;
     padding-right: 10em;
     height: 70vh;
+    background-image: url(images/2019-LASTUDIO-17.jpg);
+    background-size: cover;
+    opacity: 80%;
 }
 
 img {
