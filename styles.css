@@ -10,7 +10,7 @@
 #nav h2 a {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    font-size: 37px;
+    font-size: 40px;
 }
 
 .navbar a {
@@ -18,11 +18,19 @@
     display: inline;
 }
 
+a.nav-item.nav-link{
+    font-size: 2vh;
+}
+
+div.navbar{
+    margin-left: 40vw;
+}
+
 #scrolldown {
     height: 52px;
 }
 
-div#home.row{
+div.col.align-self-center{
     margin: 0px;
     margin-left: 0px;
     margin-right: 0px;
