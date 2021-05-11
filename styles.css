@@ -22,6 +22,13 @@
     height: 52px;
 }
 
+div#home.row{
+    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
 #home h3 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
@@ -50,36 +57,79 @@
     text-align: center;
 }
 
+#home.col{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .jumbotron {
     padding-top: 22em;
-    padding-left: 18em;
-    padding-right: 10em;
-    height: 70vh;
-    background-image: url(images/2019-LASTUDIO-17.jpg);
+    height: 50vh;
+    background-image: url(images/ptm.jpeg);
     background-size: cover;
-    opacity: 80%;
+    opacity: 100%;
+    position: initial;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
+
+/* .jumbotron .text {
+    background-color: white;
+    color: black;
+    z-index: 1;
+    margin-top: 10vvh;
+    margin-right: 55vw;
+
+
+} */
 
 img {
     width: 440px;
     height: 710px;
     margin-left: 50px;
     margin-right: 50px;
+
 }
+
+
 
 #home {
     margin-bottom: 25px;
 }
+#aboutus #down-triangle {
+    background-color: white;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 14vh 100vw 0 0px;
+    border-color: #004165 transparent transparent ;
+}
+#aboutus #ptm-tagline {
+    background-color: white;
+    color: black;
+    /* width: 100vw;
+    height: 20vh;
+    padding: 5vh; */
+}
 
-#aboutus {
-    margin-bottom: 25px;
-    margin-top: 25px;
+#aboutus #ptm-tagline {
+    background-color: white;
+    color: black;
+   
+}
+
+#aboutus #aboutus-content{
+
+    height: 80vh;
+    position: initial;
 }
 
 #testimonials {
     margin-bottom: 25px;
     margin-top: 25px;
 }
+
 
 #join {
     height: 40%;
@@ -91,14 +141,15 @@ img {
 #aboutus a {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    align-items: center;
+    text-align: center;
 }
 
-#aboutus h3 {
+#aboutus h3  {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: 40px;
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -109,17 +160,63 @@ img {
     text-align: center;
 }
 
+#aboutus #ptm-tagline div.row div.meeting{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+
 #aboutus p {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
 }
+
+ #quote {
+     z-index: 100;
+
+ }
+
+ #quote blockquote {
+     color: white;
+     font-size: 4vh;
+     vertical-align: middle;
+ }
+
+#top-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0px 161px 100vw;
+    border-color: transparent transparent #004165; 
+
+      
+    }
+    
+    #rectangle {
+      background-color: #004165;
+      width: 100vw;
+      height: 20vh;
+      padding: 5vh;
+    }
+    
+    #down-triangle{
+      
+     width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 161px 100vw 0 0px;
+    border-color: #004165 transparent transparent ;
+    }
+
 
 #testimonials .container {
     height: auto;
     margin-bottom: 25px;
-    margin-top: 60px;
+    position: initial; 
 }
 
 #testimonials h3 {
@@ -137,9 +234,11 @@ img {
 }
 
 #testimonials img {
-    height: 160px;
+    height: 200px;
     width: 160px;
     align-items: center;
+    border-radius: 50%;
+
 }
 
 #testimonials p {
@@ -170,6 +269,8 @@ img {
     font-weight: 400;
     font-size: 16px;
     text-align: center;
+    position: initial; 
+
 }
 
 #contact img {
