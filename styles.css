@@ -98,8 +98,8 @@ div.col.align-self-center{
 } */
 
 img {
-    width: 440px;
-    height: 710px;
+    width: 464px;
+    height: 597px;
     margin-left: 50px;
     margin-right: 50px;
 
@@ -126,9 +126,11 @@ img {
     padding: 5vh; */
 }
 
-#aboutus #ptm-tagline {
+#aboutus #ptm-tagline div.meeting{
     background-color: white;
     color: black;
+    font-size: 1px;
+
    
 }
 
@@ -260,9 +262,10 @@ img {
     font-weight: 400;
 }
 
-#testimonials .col {
-    padding-left: 50px;
-    padding-right: 50px;
+#testimonials div.col {
+    width: 500px;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 #join .row {
