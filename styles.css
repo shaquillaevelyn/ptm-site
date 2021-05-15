@@ -31,6 +31,8 @@ div.navbar{
     margin-left: 40vw;
 }
 
+
+
 #scrolldown {
     height: 52px;
 }
@@ -136,7 +138,7 @@ img {
 
 #aboutus #aboutus-content{
 
-    height: 80vh;
+    /* height: 80vh; */
     position: initial;
 }
 
@@ -207,25 +209,25 @@ img {
     border-style: solid;
     border-width: 0 0px 161px 100vw;
     border-color: transparent transparent #004165; 
-
-      
+    position: initial;
     }
     
-    #rectangle {
-      background-color: #004165;
-      width: 100vw;
-      height: 20vh;
-      padding: 5vh;
-    }
+#rectangle {
+background-color: #004165;
+width: 100vw;
+height: 20vh;
+padding: 5vh;
+position: initial;
+}
     
-    #down-triangle{
-      
-     width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 161px 100vw 0 0px;
-    border-color: #004165 transparent transparent ;
-    }
+#down-triangle{
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 161px 100vw 0 0px;
+border-color: #004165 transparent transparent ;
+position: initial;
+}
 
 
 #testimonials .container {
