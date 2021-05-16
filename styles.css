@@ -343,9 +343,7 @@ position: initial;
 }
 
 @media (max-width: 650px) { 
-    body { 
-      background: red;
-      }
+
 
       h2 a.navbar-brand{
           font-size: 32px;
