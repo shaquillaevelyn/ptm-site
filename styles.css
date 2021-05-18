@@ -418,3 +418,44 @@ h1.mb-0{
 }
 
 }
+
+@media (max-width: 650px) { 
+
+
+      h2 a.navbar-brand{
+          font-size: 32px;
+      }
+
+    .jumbotron {
+        display: block;
+    }
+
+h1.mb-0{
+    font-size: 1.5rem;
+}
+
+#nav img {
+    margin: 0;
+}
+
+#nav a.navbar-brand {
+    font-size: 30px;
+}
+
+.blockquote-footer{
+    font-size: 1.25rem;
+}
+
+#aboutus-content img{ 
+    margin-left: -19vw;
+    height: auto;
+    width: auto;
+   /* align-items: center;*/ 
+   /* display: none; */
+  /* overflow: hidden; */
+}
+#contact.col.align-self-center.text-center.my-auto.questions {
+    background-color: #004165;
+}
+
+}
