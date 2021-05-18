@@ -381,7 +381,7 @@ h1.mb-0{
 }
 }
 
-@media (max-width: 400px) { 
+@media (max-width: 650px) { 
 
 
     h2 a.navbar-brand{
@@ -419,7 +419,7 @@ h1.mb-0{
 
 }
 
-@media (max-width: 650px) { 
+@media (max-width: 400px) { 
 
 
       h2 a.navbar-brand{
