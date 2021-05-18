@@ -359,17 +359,25 @@ h1.mb-0{
     font-size: 1.5rem;
 }
 
+#nav img {
+    margin: 0;
+}
+
+#nav a.navbar-brand {
+    font-size: 30px;
+}
+
 .blockquote-footer{
     font-size: 1.25rem;
 }
 
-img{ 
-    margin: 0px;
+#aboutus-content img{ 
+    margin-left: -18vw;
     height: auto;
     width: auto;
-   /* align-items: center; 
-   display: none;
-   overflow: hidden; */
+   /* align-items: center;*/ 
+   /* display: none; */
+  /* overflow: hidden; */
 }
 
 }
