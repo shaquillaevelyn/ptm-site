@@ -1,26 +1,57 @@
+
 import React from 'react';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 import './footer.css';
 
-src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
-async
+// src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+// async
 
 
 export default function Footer() {
-    function PtmMap () {
-        const WPC = { lat: 51.5193, lng: -0.2007};
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 4,
-            center: WPC,
-          });
-        const marker = new google.maps.Marker({
-            position: WPC,
-            map: map,
-          });
-    }
+
+ 
+
+      
+        function FormRow() {
+          return (
+            <React.Fragment>
+              <Grid item xs={2}>
+                <Paper>item</Paper>
+              </Grid>
+              <Grid item xs={2}>
+                <Paper>item</Paper>
+              </Grid>
+              <Grid item xs={2}>
+                <Paper>item</Paper>
+              </Grid>
+              <Grid item xs={2}>
+                <Paper>item</Paper>
+              </Grid>
+              <Grid item xs={2}>
+                <Paper>item</Paper>
+              </Grid>
+              <Grid item xs={2}>
+                <Paper>item</Paper>
+              </Grid>
+            </React.Fragment>
+          );
+        }
+      
+        return (
+            <div className='footer'>
+          <div >
+            <Grid container spacing={1}>
+              <Grid container item xs={12} spacing={1}>
+                <FormRow />
+              </Grid>
+              
+            </Grid>
+          </div>
+          </div>
+        );
 
 
 
-    return (
-        <div className='map'>{PtmMap}</div>
-    )
+    
 }

@@ -17,15 +17,17 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'centre',
   },
   paper: {
-    padding: theme.spacing(6),
+    padding: theme.spacing(8),
 
     color: theme.palette.text.secondary,
-    height: '60vh',
+    height: '63vh',
   
     fontFamily: 'Source Sans Pro',
     fontWeight: 400,
     fontSize: '20px',
     textAlign: 'center',
+    marginLeft: '2vw',
+    marginRight: '2vw',
   },
   image: {
     height: '200px',
