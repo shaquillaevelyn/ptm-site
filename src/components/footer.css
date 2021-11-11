@@ -1,10 +1,3 @@
-/* Set the size of the div element that contains the map */
-#map {
-    height: 800px;
-    /* The height is 400 pixels */
-    width: 800px;
-    /* The width is the width of the web page */
-  }
 
 .footer {
   max-width: 100%;
@@ -12,5 +5,64 @@
   background-color: #004165;
   box-shadow: 0px 1px 5px #888, 0px -10px 5px #A9B2B1;
   margin-top: 2%;
-  /* background-color: #772423; */
+  color: #ffffff; 
+}
+
+.section {
+  margin-left: 1vw;
+  list-style-type: none;
+
+
+}
+
+.section ul {
+    list-style-type: none;
+    float: left;
+    margin-top: 25%;
+
+
+}
+
+.section-mail {
+
+  list-style-type: none;
+  margin-top: 3%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.section-mail a img {
+
+  width: 10vh;
+  height: 10vh;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*=".section-mail"] {
+    width: 100%;
+    position: relative;
+  }
+}
+
+.section ul li {
+}
+
+.section  ul li a{  
+}
+
+.made-by {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.made-by a {
+ color: #F2DF74;
 }

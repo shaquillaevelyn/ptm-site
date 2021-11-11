@@ -1,26 +1,19 @@
-import  Header from './components/header';
-import About from './components/about';
-import Footer from './components/footer';
-import QuoteOne from './components/quote-1';
-import QuoteTwo from  './components/quote-2';
-import './App.css';
-import Testimonials from './components/testimonial';
+import React from 'react'
+import Content from './components/styles/layout'
+import Header from './components/header'
+import Footer from './components/footer'
+import './App.css'
 
 function App() {
-  return (
-    <>
-    <div className="App">
-      <Header />
-
-      <QuoteOne />
-      <About />
-      <QuoteTwo />
-      <Testimonials />
-      <Footer />
-
-    </div>
-    </>
-  );
+    return (
+        <>
+            <div className="App">
+                <Header />
+                <Content />
+                <Footer />
+            </div>
+        </>
+    )
 }
 
-export default App;
+export default App
