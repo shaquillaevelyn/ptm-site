@@ -1,0 +1,7 @@
+.jumbo {
+    display: flex;
+    min-height: 70vh;
+
+    background-repeat: no-repeat;
+    background-size: 100% 85%;
+}

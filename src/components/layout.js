@@ -1,7 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/css'
 
-const Content = ({ children }) => {
+const Content = (props) => {
     return (
         <div
             className={css`
@@ -9,7 +9,7 @@ const Content = ({ children }) => {
                 max-height: 100vh;
             `}
         >
-            {children}
+            {props.children}
         </div>
     )
 }

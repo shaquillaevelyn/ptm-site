@@ -1,13 +1,21 @@
 import React from 'react'
-import Content from '../../components/layout'
-import Jumbotron from '../components/styles/jumbotron'
-import QuoteOne from '../components/styles/quote-1'
-import Header from '../../components/header/header'
+import About from '../landing/about/about'
+import Jumbotron from './jumbo/jumbotron'
+import Menu from './menu/menu'
+import { QuoteOne, QuoteTwo } from './quotes/quote-1'
 
-export default Landing = () => {
+import Testimonials from '../landing/testimony/testimonial'
+function Landing() {
     return (
         <>
-            <Content>Testimonials</Content>
+            <Jumbotron />
+
+            <QuoteOne />
+            <About />
+
+            <QuoteTwo />
+            <Testimonials />
         </>
     )
 }
+export default Landing

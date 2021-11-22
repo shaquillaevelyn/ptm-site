@@ -1,0 +1,18 @@
+.about-body {
+    margin-left: 7%;
+    margin-right: 7%;
+    display: flex;
+}
+.text {
+    font-size: 24px;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    text-align: justify;
+    margin-right: 5vw;
+}
+
+@media only screen and (max-width: 925px) {
+    img {
+        display: none;
+    }
+}

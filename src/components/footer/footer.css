@@ -1,19 +1,35 @@
 .footer {
-    max-width: 100%;
-    max-height: 320px;
+    bottom: 0;
+    width: 100vw;
+    height: auto;
     background-color: #004165;
     box-shadow: 0px 1px 5px #888, 0px -10px 5px #a9b2b1;
     margin-top: 2%;
     color: #ffffff;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    flex-shrink: 0;
+    padding-right: auto;
+    padding-left: auto;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.footer a:checked {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .image {
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -29,62 +45,35 @@
     margin-left: 1vw;
     list-style-type: none;
     justify-content: space-between;
-    width: 19vw;
-    margin: 10px;
-    padding: 20px;
+    flex-direction: row;
+    max-width: 19vw;
+    margin: 10vw;
+    flex-shrink: 5;
+    flex-grow: 4;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 925px) {
+    .footer {
+        bottom: 0;
+        width: 100vw;
+        height: auto;
+        background-color: #004165;
+        box-shadow: 0px 1px 5px #888, 0px -10px 5px #a9b2b1;
+        margin-top: 2%;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+    }
+
     .section {
         /* On small screens, we are no longer using row direction but column */
+        margin: 5%;
+        list-style-type: none;
+        width: 100vw;
+        justify-content: flex-end;
         flex-flow: column wrap;
+        flex-grow: 4;
+        flex-shrink: 3;
+        /* how much space taken flexing */
     }
 }
-
-/* .section ul {
-    list-style-type: none;
-    float: left;
-    margin-top: 25%;
-}
-
-.section-mail {
-    list-style-type: none;
-    margin-top: 3%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.section-mail a img {
-    width: 10vh;
-    height: 10vh;
-} */
-
-/* @media only screen and (max-width: 768px) { */
-/* For mobile phones: */
-/* [class*='.section-mail'] {
-        width: 100%;
-        position: relative;
-    }
-}
-
-.section ul li {
-}
-
-.section ul li a {
-}
-
-.made-by {
-    text-align: center;
-    margin: auto;
-    width: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.made-by a {
-    color: #f2df74;
-} */

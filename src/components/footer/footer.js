@@ -1,11 +1,6 @@
 import React from 'react'
-import {
-    ContactFooter,
-    ExploreFooter,
-    LegalFooter,
-    PTMFooter,
-    SocialFooter,
-} from './footer-links'
+
+import { ContactFooter, FooterComp, PTMFooter } from './footer-links'
 import './footer.css'
 
 export default function Footer() {
@@ -16,16 +11,7 @@ export default function Footer() {
                     <PTMFooter />
                 </div>
 
-                <div className="section">
-                    <ExploreFooter />
-                </div>
-                <div className="section">
-                    <SocialFooter />
-                </div>
-
-                <div className="section">
-                    <LegalFooter />
-                </div>
+                <FooterComp />
 
                 <div className="section">
                     <ContactFooter />
