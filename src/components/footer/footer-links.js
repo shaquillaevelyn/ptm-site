@@ -7,7 +7,7 @@ import { QueryButton } from '../buttons/join-button'
 export function PTMFooter() {
     return (
         <>
-            <div className="centreInDiv">
+            <div className="section centreInDiv">
                 <img alt="tmi" className="image" src={toastmastersColor}></img>
                 <h4>
                     Paddington Toastmasters<br></br>
@@ -78,25 +78,23 @@ export function FooterComp() {
     } else {
         return (
             <>
-                <div>
-                    {FooterArray.map((item) => (
-                        <>
-                            <div className="section">
-                                <div>
-                                    <h4>{item.header}</h4>
-                                </div>
-
-                                <div>
-                                    <li>
-                                        <a href={item.content[0].url}>
-                                            {item.content[0].title}
-                                        </a>
-                                    </li>
-                                </div>
+                {FooterArray.map((item) => (
+                    <>
+                        <div className="section">
+                            <div>
+                                <h4>{item.header}</h4>
                             </div>
-                        </>
-                    ))}
-                </div>
+
+                            <div>
+                                <li>
+                                    <a href={item.content[0].url}>
+                                        {item.content[0].title}
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+                    </>
+                ))}
             </>
         )
     }
@@ -105,7 +103,7 @@ export function FooterComp() {
 export function ContactFooter() {
     return (
         <>
-            <div className="centreInDiv">
+            <div className="section centreInDiv">
                 <img src={question} className="image" alt="question-logo"></img>{' '}
                 <h3>Any questions or queries?</h3>
                 <QueryButton />

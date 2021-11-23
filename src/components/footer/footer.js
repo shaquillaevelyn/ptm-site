@@ -7,15 +7,11 @@ export default function Footer() {
     return (
         <>
             <div className="footer">
-                <div className="section">
-                    <PTMFooter />
-                </div>
+                <PTMFooter />
 
                 <FooterComp />
 
-                <div className="section">
-                    <ContactFooter />
-                </div>
+                <ContactFooter />
             </div>
         </>
     )

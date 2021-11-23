@@ -16,7 +16,7 @@ export function JoinButton() {
 export function QueryButton() {
     return (
         <>
-            <button variant="contained" color="success">
+            <button variant="contained" className="button">
                 <a href="mailto:janetfmmilnes@gmail.com?subject=I%20would%20like%20to%20know%20more%20about%20PTM%20meetings!">
                     Drop us an email
                 </a>
