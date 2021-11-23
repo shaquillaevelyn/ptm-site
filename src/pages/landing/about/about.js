@@ -1,6 +1,7 @@
 import React from 'react'
 import talk from '../../../images/talk.jpg'
 import './about.css'
+import { JoinButton } from '../../../components/buttons/join-button'
 
 export default function About() {
     return (
@@ -33,8 +34,13 @@ export default function About() {
                     <br />
                     The benefits are endless.
                     <br />
+                    <br />
                     We are waiting welcome you!
+                    <br />
+                    <br />
+                    <JoinButton />
                 </div>
+
                 <div>
                     <img src={talk} alt="talk "></img>
                 </div>

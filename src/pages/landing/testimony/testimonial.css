@@ -11,7 +11,7 @@
     margin-right: 7%;
 }
 
-@media only screen and (max-width: 925px) {
+@media only screen and (max-width: 1400px) {
     .member-testimony {
         display: flex;
         flex-direction: row;

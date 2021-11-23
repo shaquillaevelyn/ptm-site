@@ -7,12 +7,16 @@
     box-shadow: 0px 1px 5px #888, 0px 0px 5px #a9b2b1;
     color: #ffffff;
     vertical-align: baseline;
+    justify-content: space-between;
+    position: relative;
 }
 
+.one {
+    display: flex;
+}
 .header-image {
-    width: 120px;
-    height: auto;
-
+    width: auto;
+    height: 120px;
     display: block;
     justify-content: center;
     align-items: center;
@@ -28,13 +32,20 @@
 }
 .header-info {
     width: auto;
-    margin-top: 1%;
-    margin-left: auto;
-    margin-right: 0px;
+
     display: flex;
     text-align: center;
     flex-direction: row;
+    justify-content: center;
+    font-family: Source Sans Pro;
+    font-weight: 600;
+    font-size: 16px;
 }
+/* .header-info p {
+    font-family: Source Sans Pro;
+    font-weight: 600;
+    font-size: 16px;
+} */
 
 .button {
     border-radius: 25px;
@@ -43,6 +54,7 @@
     width: 180px;
     height: 25px;
     margin: 1;
+    float: inline-end;
 }
 
 .button a {
@@ -51,14 +63,6 @@
     font-family: Source Sans Pro;
     font-weight: 600;
     font-size: 18px;
-}
-
-.header-info p {
-    padding-right: 2%;
-    margin-left: -2%;
-    font-family: Source Sans Pro;
-    font-weight: 600;
-    font-size: 16px;
 }
 
 @media only screen and (max-width: 925px) {

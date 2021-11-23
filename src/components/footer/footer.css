@@ -8,28 +8,15 @@
     color: #ffffff;
     display: flex;
     flex-direction: row;
+    padding-top: 2%;
+    padding-bottom: 2%;
     padding-right: auto;
     padding-left: auto;
 }
 
-.footer a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-    color: #ffffff;
-}
-
-.footer a:checked {
-    text-decoration: none;
-    color: #ffffff;
-}
-
 .image {
     width: auto;
-    height: 15vh;
+    height: 150px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -85,8 +72,8 @@
         display: inline-block;
     }
     .image {
-        width: 10%;
-        height: 10%;
+        width: auto;
+        height: 100px;
         margin-left: auto;
         margin-right: auto;
         display: block;

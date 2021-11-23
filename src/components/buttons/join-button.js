@@ -1,14 +1,14 @@
 import React from 'react'
-import { css } from '@emotion/css'
+import './buttons.css'
 
 export function JoinButton() {
     return (
         <>
-            <div className="button">
+            <button className="join-button">
                 <a href="mailto:janetfmmilnes@gmail.com?subject=I%20would%20like%20to%20join%20a%20PTM%20meeting!">
-                    Join our next meeting
+                    Join us at our next meeting!
                 </a>
-            </div>
+            </button>
         </>
     )
 }
@@ -16,7 +16,7 @@ export function JoinButton() {
 export function QueryButton() {
     return (
         <>
-            <button variant="contained" className="button">
+            <button variant="contained" className="query-button">
                 <a href="mailto:janetfmmilnes@gmail.com?subject=I%20would%20like%20to%20know%20more%20about%20PTM%20meetings!">
                     Drop us an email
                 </a>

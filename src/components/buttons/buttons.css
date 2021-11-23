@@ -1,0 +1,45 @@
+.join-button {
+    background-color: rgb(34, 153, 4);
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    height: 50px;
+    width: 200px;
+    border: transparent;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+a:checked {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.query-button {
+    background-color: rgb(173, 55, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    height: 50px;
+    width: 200px;
+    border: transparent;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 600;
+}

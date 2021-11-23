@@ -3,6 +3,7 @@ import toastmastersColor from '../../images/toastmastersColor.png'
 import useWindowSize from '../utils/useWindowSize'
 import question from '../../images/customer-service.png'
 import { QueryButton } from '../buttons/join-button'
+import { JoinButton } from '../buttons/join-button'
 
 export function PTMFooter() {
     return (
@@ -13,6 +14,7 @@ export function PTMFooter() {
                     Paddington Toastmasters<br></br>
                     Club Number: 4495118
                 </h4>
+                <JoinButton />
             </div>
         </>
     )
