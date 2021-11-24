@@ -1,4 +1,6 @@
 .top-triangle {
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    z-index: -1;
     width: 0;
     height: 0;
     border-style: solid;

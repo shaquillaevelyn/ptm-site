@@ -20,6 +20,44 @@ export function PTMFooter() {
     )
 }
 
+function ListRender({ listarray }) {
+    return (
+        <div>
+            {listarray.map((item) => (
+                <li>
+                    <a href={item.url}>{item.title}</a>
+                </li>
+            ))}
+        </div>
+    )
+}
+
+function SectionComponent({ header, content }) {
+    const [show, setShow] = useState(false)
+
+    return (
+        <>
+            <div className="section">
+                <div>
+                    {
+                        <h4
+                            onClick={() => {
+                                setShow(!show)
+                            }}
+                        >
+                            {header}
+                        </h4>
+                    }
+                </div>
+
+                <div hidden={!show}>
+                    <ListRender listarray={content} />
+                </div>
+            </div>
+        </>
+    )
+}
+
 export function FooterComp() {
     const FooterArray = [
         {
@@ -43,7 +81,6 @@ export function FooterComp() {
         },
     ]
 
-    const [show, setShow] = useState(false)
     const { width } = useWindowSize()
 
     if (window.innerWidth < 925) {
@@ -51,29 +88,10 @@ export function FooterComp() {
             <div>
                 {' '}
                 {FooterArray.map((item) => (
-                    <>
-                        <div className="section">
-                            <div>
-                                {setShow && (
-                                    <h4
-                                        onClick={() => {
-                                            setShow && setShow(!show)
-                                        }}
-                                    >
-                                        {item.header}
-                                    </h4>
-                                )}
-                            </div>
-
-                            <div hidden={show}>
-                                <li>
-                                    <a href={item.content[0].url}>
-                                        {item.content[0].title}
-                                    </a>
-                                </li>
-                            </div>
-                        </div>
-                    </>
+                    <SectionComponent
+                        header={item.header}
+                        content={item.content}
+                    />
                 ))}
             </div>
         )
@@ -88,11 +106,7 @@ export function FooterComp() {
                             </div>
 
                             <div>
-                                <li>
-                                    <a href={item.content[0].url}>
-                                        {item.content[0].title}
-                                    </a>
-                                </li>
+                                <SectionComponent content={item.content} />
                             </div>
                         </div>
                     </>

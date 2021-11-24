@@ -8,7 +8,8 @@ import newClub from '../../../images/newClub.jpeg'
 export default function Jumbotron() {
     return (
         <>
-            <div className="jumbo">
+            <div className="jumbo ">
+                <div className="background-video"></div>
                 <div className="jumbo-text">
                     <h2>We are Paddington Toastmaters</h2>
                     <h3>A Club Like No Other</h3>
