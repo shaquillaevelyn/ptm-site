@@ -1,9 +1,17 @@
 import React, { useState } from 'react'
 import toastmastersColor from '../../images/toastmastersColor.png'
-import useWindowSize from '../utils/useWindowSize'
-import question from '../../images/customer-service.png'
 import { QueryButton } from '../buttons/join-button'
 import { JoinButton } from '../buttons/join-button'
+import {
+    ROOT,
+    ABOUT,
+    MEMBERSHIP,
+    PATHWAYS,
+    FAQQ,
+    PRIVACY,
+} from '../../components/utils/routes'
+import useWindowSize from '../utils/useWindowSize'
+import { Link, Router } from 'react-router-dom'
 
 export function PTMFooter() {
     return (
@@ -14,18 +22,17 @@ export function PTMFooter() {
                     Paddington Toastmasters<br></br>
                     Club Number: 4495118
                 </h4>
-                <JoinButton />
             </div>
         </>
     )
 }
 
-function ListRender({ listarray }) {
+function ListRender({ key, listarray }) {
     return (
         <div>
             {listarray.map((item) => (
                 <li>
-                    <a href={item.url}>{item.title}</a>
+                    <Link to={item.url}>{item.title}</Link>
                 </li>
             ))}
         </div>
@@ -38,19 +45,19 @@ function SectionComponent({ header, content }) {
     return (
         <>
             <div className="section">
-                <div>
+                <div className="section">
                     {
-                        <h4
+                        <h5
                             onClick={() => {
                                 setShow(!show)
                             }}
                         >
                             {header}
-                        </h4>
+                        </h5>
                     }
                 </div>
 
-                <div hidden={!show}>
+                <div hidden={show}>
                     <ListRender listarray={content} />
                 </div>
             </div>
@@ -59,33 +66,44 @@ function SectionComponent({ header, content }) {
 }
 
 export function FooterComp() {
+    const { width } = useWindowSize()
     const FooterArray = [
         {
             header: 'Explorer',
             content: [
-                { title: 'About PTM', url: 'www.google.com ' },
-                { title: 'Membership', url: 'www.google.com ' },
+                { title: 'Home', url: ROOT },
+                { title: 'About PTM', url: ABOUT },
+                { title: 'Membership', url: MEMBERSHIP },
+                { title: 'Pathways', url: PATHWAYS },
+                { title: 'FAQ', url: FAQQ },
             ],
         },
         {
             header: 'Legal',
-            content: [{ title: 'Privacy Policy', url: 'www.google.com' }],
+            content: [{ title: 'Privacy Policy', url: PRIVACY }],
         },
         {
             header: 'Social',
             content: [
-                { title: 'Toastmasters International', url: 'www.google.com ' },
-                { title: 'LinkedIn', url: 'www.google.com ' },
-                { title: 'Eventbrite', url: 'www.google.com ' },
+                {
+                    title: 'Toastmasters International',
+                    url: 'www.toastmasters.org/Find-a-Club/04495118-04495118',
+                },
+                {
+                    title: 'LinkedIn',
+                    url: 'www.linkedin.com/company/paddingtontoastmasters',
+                },
+                {
+                    title: 'Eventbrite',
+                    url: 'www.eventbrite.co.uk/e/paddington-toastmaster-club-meeting-tickets-166138072447',
+                },
             ],
         },
     ]
 
-    const { width } = useWindowSize()
-
     if (window.innerWidth < 925) {
         return (
-            <div>
+            <div className="mobile-section">
                 {' '}
                 {FooterArray.map((item) => (
                     <SectionComponent
@@ -102,7 +120,7 @@ export function FooterComp() {
                     <>
                         <div className="section">
                             <div>
-                                <h4>{item.header}</h4>
+                                <h5>{item.header}</h5>
                             </div>
 
                             <div>
@@ -119,9 +137,10 @@ export function FooterComp() {
 export function ContactFooter() {
     return (
         <>
-            <div className="section centreInDiv">
-                <img src={question} className="image" alt="question-logo"></img>{' '}
-                <h3>Any questions or queries?</h3>
+            <div className="section centreInDiv mobile-section">
+                <h3>Come to our next meeting!</h3>
+                <JoinButton />
+                <h4>Any questions or queries?</h4>
                 <QueryButton />
                 <p>A member of our committe will get back to you ASAP</p>
             </div>

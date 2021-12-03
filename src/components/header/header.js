@@ -1,12 +1,31 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import toastmastersColor from '../../images/toastmastersColor.png'
-import Menu from '../menu/menu'
-import toastmasterslogowhite from '../../images/toastmasterslogowhite.png'
-import MailToJoin from '../buttons/join-button'
-import { JoinButton } from '../buttons/join-button'
+import { HamburgerMenu, MenuFunct } from './menu/menu'
 import './header.css'
 
 export default function Header() {
+    const [width, setWindowWidth] = useState(0)
+
+    useEffect(() => {
+        updateDimensions()
+        window.addEventListener('resize', updateDimensions)
+        return () => window.removeEventListener('resize', updateDimensions)
+    }, [])
+
+    const updateDimensions = () => {
+        const width = window.innerWidth
+        setWindowWidth(width)
+    }
+
+    console.log(width)
+
+    const responsiveHeader = {
+        showmenu: width > 950,
+    }
+
+    const responsiveHamburger = {
+        showhamburger: width < 949,
+    }
     return (
         <>
             <div className="header">
@@ -21,20 +40,16 @@ export default function Header() {
                         Toastmasters
                     </span>
                 </div>
+            </div>
 
-                {/* <div className="header-info">
-                    <p>
-                        Meetings 1st and 3rd Tuesday <br />
-                        of the Month
-                        <br />
-                        8.00 for 18.15 start, 19.30 finish
-                        <br />
-                        Westbourne Park Baptist Church, London W2 5DX <br /> and
-                        Zoom
-                    </p>
-                </div> */}
-
-                <Menu />
+            <div className="header-menu" showmenu={responsiveHeader.showmenu}>
+                <MenuFunct />
+            </div>
+            <div
+                className="header-menu"
+                showhamburger={responsiveHamburger.showhamburger}
+            >
+                <HamburgerMenu />
             </div>
         </>
     )

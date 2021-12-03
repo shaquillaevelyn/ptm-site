@@ -10,13 +10,13 @@
     position: relative;
     align-items: self-end;
     justify-content: flex-end;
+    background-color: hotpink;
 }
 .background-video {
     display: flex;
     z-index: 30;
     position: absolute;
 
-    background-color: hotpink;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 .jumbo-text {
@@ -26,6 +26,7 @@
     right: 0;
     position: relative;
     padding: 2vh;
+    font-size: 1.25rem;
 }
 
 .jumbo-text h2 {

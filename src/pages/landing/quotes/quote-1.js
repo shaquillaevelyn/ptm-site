@@ -6,12 +6,12 @@ export function QuoteOne() {
         <>
             <div className="top-triangle"></div>
             <div className="rectangle">
-                <blockquote class="blockquote">
-                    <h1 class="mb-0">
+                <blockquote className="blockquote">
+                    <h1 className="mb-0">
                         “Speech is power: speech is to persuade, to convert, to
                         compel."
                     </h1>
-                    <footer class="blockquote-footer">
+                    <footer className="blockquote-footer">
                         {' '}
                         <cite title="Source Title">Ralph Waldo Emerson </cite>
                     </footer>
@@ -27,12 +27,12 @@ export function QuoteTwo() {
         <>
             <div className="top-triangle"></div>
             <div className="rectangle">
-                <blockquote class="blockquote text-center">
-                    <h1 class="mb-0">
+                <blockquote className="blockquote text-center">
+                    <h1 className="mb-0">
                         “All speaking is public speaking, whether it’s to one
                         person or a thousand."
                     </h1>
-                    <footer class="blockquote-footer">
+                    <footer className="blockquote-footer">
                         {' '}
                         <cite title="Source Title">Roger Love </cite>
                     </footer>

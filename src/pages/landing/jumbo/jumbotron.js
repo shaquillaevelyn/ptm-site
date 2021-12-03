@@ -1,9 +1,7 @@
 import React from 'react'
-import { css } from '@emotion/css'
 import './jumbo.css'
+import club from '../../../images/club.jpg'
 import { JoinButton } from '../../../components/buttons/join-button'
-
-import newClub from '../../../images/newClub.jpeg'
 
 export default function Jumbotron() {
     return (
