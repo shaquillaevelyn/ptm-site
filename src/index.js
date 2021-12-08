@@ -2,12 +2,12 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ReactDOM from 'react-dom'
 import './index.css'
-import { css } from '@emotion/css'
 import Header from './components/header/header'
 import Footer from './components/footer/footer'
 import Landing from './pages/landing/landing'
 import FAQ from './pages/faq/faq'
 import AboutPTM from './pages/about-ptm/about-ptm'
+import ContentLayout from './components/utils/layout'
 import {
     ROOT,
     ABOUT,
@@ -16,16 +16,13 @@ import {
     FAQQ,
     PRIVACY,
 } from '../src/components/utils/routes'
-import App from './App'
 import reportWebVitals from './reportWebVitals'
 import PrivacyPolicy from './pages/privacy/privacy-policy'
-import Content from './components/utils/layout'
 
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
             <Header />
-
             <Routes>
                 <Route exact path={ROOT} element={<Landing />} />
                 <Route path={ABOUT} element={<AboutPTM />} />
@@ -34,7 +31,6 @@ ReactDOM.render(
                 <Route path={FAQQ} element={<FAQ />} />
                 <Route path={PRIVACY} element={<PrivacyPolicy />} />
             </Routes>
-
             <Footer />
         </BrowserRouter>
     </React.StrictMode>,

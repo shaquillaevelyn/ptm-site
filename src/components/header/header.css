@@ -1,5 +1,5 @@
-.header {
-    position: fixed;
+.navbar {
+    position: sticky;
     display: flex;
     height: 95px;
     padding: 1%;
@@ -12,12 +12,13 @@
     z-index: 3;
     right: 0;
     left: 0;
+    top: 0;
 }
-.one {
+.navbar-logo {
     display: inline-flex;
 }
 
-.header-image {
+.logo-image {
     width: auto;
     height: 90px;
     display: block;
@@ -54,7 +55,7 @@
     float: inline-end;
 }
 
-.button a {
+.button li {
     text-decoration: none;
     color: white;
     font-family: Source Sans Pro;
@@ -62,11 +63,11 @@
     font-size: 1.25rem;
 }
 
-.header-menu {
+.navbar-menu {
     margin-top: 50px;
     /* top: 50%; */
 
-    position: fixed;
+    position: absolute;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     right: 0;

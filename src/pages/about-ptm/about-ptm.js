@@ -7,6 +7,11 @@ export default function AboutPTM() {
             className={css`
                 dislay: flex;
                 min-height: 70vh;
+                margin-left: 20vw;
+                margin-right: 20vw;
+                font-family: Source Sans Pro;
+                font-weight: 600;
+                font-size: 1.25rem;
             `}
         >
             <div>

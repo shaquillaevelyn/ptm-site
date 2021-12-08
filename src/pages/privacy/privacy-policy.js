@@ -8,14 +8,17 @@ export function PrivacyPolicy() {
                 className={css`
                     margin-left: 20vw;
                     margin-right: 20vw;
+                    font-family: Source Sans Pro;
+                    font-weight: 600;
+                    font-size: 1.25rem;
                 `}
             >
                 <h2> PRIVACY POLICY – PADDINGTON TOASTMASTERS</h2>
-                <h3>Who we are</h3>
-                <h4>
+                <h2>Who we are</h2>
+                <h3>
                     We are Paddington Toastmasters
                     <br /> (PADDINGTON TOASTMASTERS) Club Number 4495118{' '}
-                </h4>
+                </h3>
                 <p>
                     PADDINGTON TOASTMASTERS (PTM) is a London based community
                     club and part of the world-wide organisation toastmasters
@@ -35,7 +38,7 @@ export function PrivacyPolicy() {
                     member you agree to PTM and/or TMI using the data you
                     provide in the way set out in this document.
                 </p>
-                <h3>The information we collect and we use it</h3>
+                <h2>The information we collect and we use it</h2>
                 <p>
                     The following lists the data that is collected by TMI,
                     and/or EasySpeak (a club management platform for
@@ -63,7 +66,6 @@ export function PrivacyPolicy() {
                     <li>Telephone number</li>
                     <li>Email</li>
                 </div>
-                <h3>The information we collect and we how use it</h3>
                 <p>
                     This data is kept by TMI and Paddington Toastmasters by the
                     Vice President of Education and the Vice President of
@@ -225,6 +227,10 @@ export function PrivacyPolicy() {
                     <a
                         target="_blank"
                         href="https://www.toastmasters.org/footer/privacy-policy#info_know"
+                        className={css`
+                            text-decoration: none;
+                            color: #772432;
+                        `}
                     >
                         Toastmasters International
                     </a>

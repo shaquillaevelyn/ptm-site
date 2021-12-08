@@ -1,41 +1,12 @@
 import React, { useState } from 'react'
-
+import showPlus from '../../images/showPlus.png'
+import hideMinus from '../../images/hideMinus.png'
 import { css } from '@emotion/css'
 
-// function FAQListRender({ listarray }) {
-//     return (
-//         <div>
-//             {listarray.map((item, index) => (
-//                 <p key={index}>{item.answer}</p>
-//             ))}
-//         </div>
-//     )
-// }
-// function FAQComp({ question, answer }) {
-//     const [showAnswer, setShowAnswer] = useState(false)
-//     return (
-//         <>
-//             <div>
-//                 {
-//                     <h3
-//                         onClick={() => {
-//                             setShowAnswer(!showAnswer)
-//                         }}
-//                     >
-//                         {question}
-//                     </h3>
-//                 }
-
-//                 <div hidden={showAnswer}>
-//                     <FAQListRender listarray={answer} />
-//                 </div>
-//                 <hr />
-//             </div>
-//         </>
-//     )
-// }
-
 export default function FAQ() {
+    const [show, setShow] = useState(false)
+    const handler = () => setShow(!show)
+
     const FAQArray = [
         {
             question: 'When do you meet?',
@@ -68,38 +39,90 @@ export default function FAQ() {
             <div
                 className={css`
                     min-height: 70vh;
-                    margin-left: 30vh;
-                    margin-right: 30vh;
+                    margin-left: 20vw;
+                    margin-right: 20vw;
+                    font-family: Source Sans Pro;
+                    font-weight: 400;
+                    font-size: 1.25rem;
                 `}
             >
                 <h1>Frequently Asked Questions</h1>
-                <p>
+                <h3>
                     Do you have a burning question? Check out our most
                     frequently asked questions
-                </p>
+                </h3>
 
-                <h2>
-                    Question not here?
-                    <span>Click here to send it to our committee</span>
-                </h2>
+                <h4>
+                    Question not here? &#160;
+                    <span>
+                        Click{' '}
+                        <span>
+                            <a
+                                href="mailto:janetfmmilnes@gmail.com?subject=I%20have%20a%20question%20about%20PTM%20"
+                                className={css`
+                                    text-decoration: none;
+                                    color: #772432;
+                                `}
+                            >
+                                here
+                            </a>{' '}
+                        </span>{' '}
+                        to send it to our committee
+                    </span>
+                </h4>
 
-                <div>
-                    {/* {FAQArray.map((item) => (
-                        <FAQComp
-                            answer={item.answer}
-                            question={item.question}
-                        />
-                    ))} */}
-
-                    {/* <FAQListRender FAQArray={FAQArray} /> */}
+                <div
+                    className={css`
+                        padding-top: 20px;
+                    `}
+                >
                     {FAQArray.map((item) => (
                         <>
-                            <h3>{item.question}</h3>
-                            <p hidden={true}>{item.answer}</p>
+                            <div
+                                className={css`
+                                    padding-top: 25px;
+                                    padding-right: 5px;
+                                    display: inline-flex;
+                                `}
+                            >
+                                <ShowReveal
+                                    show={show}
+                                    onClick={handler}
+                                    setShow={setShow}
+                                />
+                                <h3>{item.question}</h3>
+                            </div>
+                            {/* 
+                            so. hidden to call handler*/}
+
+                            <p hidden={show}>{item.answer}</p>
                             <hr />
                         </>
                     ))}
                 </div>
+            </div>
+        </>
+    )
+}
+
+export const ShowReveal = () => {
+    const [show, setShow] = useState(false)
+    const handler = () => setShow(!show)
+    return (
+        <>
+            <div
+                onClick={handler}
+                className={css`
+                    padding-top: 25px;
+                    padding-right: 5px;
+                    display: inline-flex;
+                `}
+            >
+                {show === true ? (
+                    <img src={showPlus} height="30px" />
+                ) : (
+                    <img src={hideMinus} height="30px" />
+                )}
             </div>
         </>
     )

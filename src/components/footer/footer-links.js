@@ -10,13 +10,12 @@ import {
     FAQQ,
     PRIVACY,
 } from '../../components/utils/routes'
-import useWindowSize from '../utils/useWindowSize'
 import { Link, Router } from 'react-router-dom'
 
 export function PTMFooter() {
     return (
         <>
-            <div className="section centreInDiv">
+            <div className="section centreInDiv ptm-details one">
                 <img alt="tmi" className="image" src={toastmastersColor}></img>
                 <h4>
                     Paddington Toastmasters<br></br>
@@ -27,11 +26,11 @@ export function PTMFooter() {
     )
 }
 
-function ListRender({ key, listarray }) {
+function ListRender({ index, listarray }) {
     return (
         <div>
             {listarray.map((item) => (
-                <li>
+                <li key={index}>
                     <Link to={item.url}>{item.title}</Link>
                 </li>
             ))}
@@ -44,8 +43,8 @@ function SectionComponent({ header, content }) {
 
     return (
         <>
-            <div className="section">
-                <div className="section">
+            <div className="section menu-section two">
+                <div>
                     {
                         <h5
                             onClick={() => {
@@ -66,7 +65,6 @@ function SectionComponent({ header, content }) {
 }
 
 export function FooterComp() {
-    const { width } = useWindowSize()
     const FooterArray = [
         {
             header: 'Explorer',
@@ -137,10 +135,10 @@ export function FooterComp() {
 export function ContactFooter() {
     return (
         <>
-            <div className="section centreInDiv mobile-section">
-                <h3>Come to our next meeting!</h3>
+            <div className="section centreInDiv ptm-details three">
+                <h5>Come to our next meeting!</h5>
                 <JoinButton />
-                <h4>Any questions or queries?</h4>
+                <h5>Any questions or queries?</h5>
                 <QueryButton />
                 <p>A member of our committe will get back to you ASAP</p>
             </div>
