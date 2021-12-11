@@ -1,5 +1,5 @@
 .footer {
-    bottom: 0;
+    position: absolute;
     width: 100vw;
     height: auto;
     background-color: #004165;
@@ -12,7 +12,7 @@
     padding-bottom: 8%;
     padding-right: auto;
     padding-left: auto;
-    position: relative;
+
 }
 
 .image {
@@ -45,7 +45,7 @@
 
 @media only screen and (max-width: 925px) {
     .footer {
-        bottom: 0;
+        position: absolute;
         width: 100vw;
         height: auto;
         background-color: #004165;
@@ -69,7 +69,7 @@
     }
     .mobile-centreInDiv {
     }
-    p {
+    .footer p {
         display: inline-block;
     }
     .image {
@@ -129,7 +129,7 @@
         font-size: 14px;
     }
 
-    .one {
+    /* .one {
         order: 2;
     }
 
@@ -139,5 +139,5 @@
 
     .three {
         order: 1;
-    }
+    } */
 }

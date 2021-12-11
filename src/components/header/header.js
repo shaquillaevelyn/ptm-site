@@ -4,11 +4,16 @@ import toastmastersColor from '../../images/toastmastersColor.png'
 import { Link } from 'react-router-dom'
 import { Turn as Hamburger } from 'hamburger-react'
 import './header.css'
+import MenuModal from './menu/menu'
+import { useModal } from './menu/useModal-hook'
 
-export default function Header() {
+
+export default function Header({}) {
+
+    const [hidden, setHidden]= useState(false)
+    const onClick = () => setHidden(!hidden)
+
     const [mobileMenu, setMobileMenu] = useState(false)
-
-    // mobile view sets setMobileMenu to ture or false depending on screen size
     const mobileView = () => {
         if (window.innerWidth <= 950) {
             setMobileMenu(true)
@@ -33,11 +38,12 @@ export default function Header() {
         <>
             <div className="navbar">
                 <div className="navbar-logo">
+                <Link to={URL.ROOT}>
                     <img
                         className="logo-image"
                         alt="white tmi logo"
                         src={toastmastersColor}
-                    ></img>
+                    ></img></Link>
                     <span className="typography">
                         Paddington <br />
                         Toastmasters
@@ -46,7 +52,12 @@ export default function Header() {
 
                 <div className="navbar-menu">
                     {mobileMenu ? (
-                        <Hamburger />
+                        <>
+
+                        <Hamburger toggled={hidden} toggle={setHidden}/>
+                        <MenuModal hidden={!hidden} onClick={onClick}/>
+            
+                        </>
                     ) : (
                         <nav className="menu header-menu">
                             {menuArray.map((item) => (

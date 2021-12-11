@@ -1,23 +1,17 @@
 import React from 'react'
 import { css } from '@emotion/css'
-import styled from '@emotion/styled'
 
-const Content = () => {
+
+const Content = ({children}) => {
     return (
         <div
             className={css`
-                display: flex;
+            height: 100%;
             `}
         >
-            test
+{children}
         </div>
     )
 }
-
-const ContentLayout = styled.a`
-    top: 120px;
-    position: relative;
-    display: flex;
-`
 
 export default Content

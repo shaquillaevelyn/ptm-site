@@ -7,7 +7,7 @@ import Footer from './components/footer/footer'
 import Landing from './pages/landing/landing'
 import FAQ from './pages/faq/faq'
 import AboutPTM from './pages/about-ptm/about-ptm'
-import ContentLayout from './components/utils/layout'
+
 import {
     ROOT,
     ABOUT,

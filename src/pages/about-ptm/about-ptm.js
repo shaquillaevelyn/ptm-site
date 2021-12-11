@@ -1,25 +1,18 @@
 import React from 'react'
-import { css } from '@emotion/css'
+import './about-ptm.css'
+
 
 export default function AboutPTM() {
     return (
         <div
-            className={css`
-                dislay: flex;
-                min-height: 70vh;
-                margin-left: 20vw;
-                margin-right: 20vw;
-                font-family: Source Sans Pro;
-                font-weight: 600;
-                font-size: 1.25rem;
-            `}
+            className="about-ptm-body"
         >
             <div>
                 <div> image or summat</div>
                 <h1>Paddinton Toastmasters- A Club Like No Other</h1>
                 <p>
                     {' '}
-                    Established in , Paddinton Toastmasters has always been a
+                    Established in  , Paddinton Toastmasters has always been a
                     home for public speaking excellence, personal development
                     and loads of fun. Based on the ground floor of the
                     Westbourne Park Baptist Church, we transform what is usually
@@ -27,7 +20,7 @@ export default function AboutPTM() {
                     meetings. Since the easing of lockdown, we have successfully
                     been able to manage and run hybrid meetings to cater to the
                     various needs of our guests in person and online.
-                    <p />
+                    <p/>
                     <p>
                         Our members come from a number of walks of life, from
                         small business owners, to software developers, to

@@ -1,0 +1,9 @@
+.about-ptm-body{
+    display: flex;
+    min-height: 80vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-family: Source Sans Pro;
+    font-weight: 600;
+    font-size: 1.25rem;
+}

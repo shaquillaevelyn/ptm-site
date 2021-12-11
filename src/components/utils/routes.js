@@ -4,3 +4,4 @@ export const MEMBERSHIP = '/membership'
 export const PATHWAYS = '/pathways'
 export const FAQQ = '/faq'
 export const PRIVACY = '/privacy-policy'
+

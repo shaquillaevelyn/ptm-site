@@ -1,6 +1,5 @@
 import React from 'react'
 import './jumbo.css'
-import club from '../../../images/club.jpg'
 import { JoinButton } from '../../../components/buttons/join-button'
 
 export default function Jumbotron() {

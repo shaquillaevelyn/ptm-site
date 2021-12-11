@@ -3,6 +3,7 @@ import talk from '../../../images/talk.jpg'
 import './about.css'
 import { JoinButton } from '../../../components/buttons/join-button'
 
+
 export default function About() {
     return (
         <>

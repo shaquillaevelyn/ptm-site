@@ -1,16 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import toastmastersColor from '../../images/toastmastersColor.png'
 import { QueryButton } from '../buttons/join-button'
 import { JoinButton } from '../buttons/join-button'
 import {
     ROOT,
     ABOUT,
-    MEMBERSHIP,
-    PATHWAYS,
     FAQQ,
     PRIVACY,
 } from '../../components/utils/routes'
-import { Link, Router } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export function PTMFooter() {
     return (
@@ -26,6 +24,20 @@ export function PTMFooter() {
     )
 }
 
+function ExternalLinks() {
+
+    useEffect(() => {
+      window.location.href = "https://google.com/contact";  }, []);
+  
+    return (
+      <div>
+        <h2>Contact</h2>
+      </div>
+    );
+  }
+  
+  export default ExternalLinks;
+
 function ListRender({ index, listarray }) {
     return (
         <div>
@@ -39,24 +51,18 @@ function ListRender({ index, listarray }) {
 }
 
 function SectionComponent({ header, content }) {
-    const [show, setShow] = useState(false)
+
 
     return (
         <>
             <div className="section menu-section two">
                 <div>
-                    {
-                        <h5
-                            onClick={() => {
-                                setShow(!show)
-                            }}
-                        >
+                        <h5>
                             {header}
                         </h5>
-                    }
                 </div>
 
-                <div hidden={show}>
+                <div>
                     <ListRender listarray={content} />
                 </div>
             </div>
@@ -71,8 +77,6 @@ export function FooterComp() {
             content: [
                 { title: 'Home', url: ROOT },
                 { title: 'About PTM', url: ABOUT },
-                { title: 'Membership', url: MEMBERSHIP },
-                { title: 'Pathways', url: PATHWAYS },
                 { title: 'FAQ', url: FAQQ },
             ],
         },
@@ -99,19 +103,19 @@ export function FooterComp() {
         },
     ]
 
-    if (window.innerWidth < 925) {
-        return (
-            <div className="mobile-section">
-                {' '}
-                {FooterArray.map((item) => (
-                    <SectionComponent
-                        header={item.header}
-                        content={item.content}
-                    />
-                ))}
-            </div>
-        )
-    } else {
+    // if (window.innerWidth < 925) {
+    //     return (
+    //         <div className="mobile-section">
+    //             {' '}
+    //             {FooterArray.map((item) => (
+    //                 <SectionComponent
+    //                     header={item.header}
+    //                     content={item.content}
+    //                 />
+    //             ))}
+    //         </div>
+    //     )
+    // } else {
         return (
             <>
                 {FooterArray.map((item) => (
@@ -130,7 +134,7 @@ export function FooterComp() {
             </>
         )
     }
-}
+
 
 export function ContactFooter() {
     return (
