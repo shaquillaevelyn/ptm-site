@@ -2,12 +2,7 @@ import React, { useEffect } from 'react'
 import toastmastersColor from '../../images/toastmastersColor.png'
 import { QueryButton } from '../buttons/join-button'
 import { JoinButton } from '../buttons/join-button'
-import {
-    ROOT,
-    ABOUT,
-    FAQQ,
-    PRIVACY,
-} from '../../components/utils/routes'
+import { ROOT, ABOUT, FAQQ, PRIVACY } from '../../components/utils/routes'
 import { Link } from 'react-router-dom'
 
 export function PTMFooter() {
@@ -24,20 +19,6 @@ export function PTMFooter() {
     )
 }
 
-function ExternalLinks() {
-
-    useEffect(() => {
-      window.location.href = "https://google.com/contact";  }, []);
-  
-    return (
-      <div>
-        <h2>Contact</h2>
-      </div>
-    );
-  }
-  
-  export default ExternalLinks;
-
 function ListRender({ index, listarray }) {
     return (
         <div>
@@ -51,15 +32,11 @@ function ListRender({ index, listarray }) {
 }
 
 function SectionComponent({ header, content }) {
-
-
     return (
         <>
             <div className="section menu-section two">
                 <div>
-                        <h5>
-                            {header}
-                        </h5>
+                    <h5>{header}</h5>
                 </div>
 
                 <div>
@@ -84,57 +61,61 @@ export function FooterComp() {
             header: 'Legal',
             content: [{ title: 'Privacy Policy', url: PRIVACY }],
         },
-        {
-            header: 'Social',
-            content: [
-                {
-                    title: 'Toastmasters International',
-                    url: 'www.toastmasters.org/Find-a-Club/04495118-04495118',
-                },
-                {
-                    title: 'LinkedIn',
-                    url: 'www.linkedin.com/company/paddingtontoastmasters',
-                },
-                {
-                    title: 'Eventbrite',
-                    url: 'www.eventbrite.co.uk/e/paddington-toastmaster-club-meeting-tickets-166138072447',
-                },
-            ],
-        },
     ]
 
-    // if (window.innerWidth < 925) {
-    //     return (
-    //         <div className="mobile-section">
-    //             {' '}
-    //             {FooterArray.map((item) => (
-    //                 <SectionComponent
-    //                     header={item.header}
-    //                     content={item.content}
-    //                 />
-    //             ))}
-    //         </div>
-    //     )
-    // } else {
-        return (
-            <>
-                {FooterArray.map((item) => (
-                    <>
-                        <div className="section">
-                            <div>
-                                <h5>{item.header}</h5>
-                            </div>
-
-                            <div>
-                                <SectionComponent content={item.content} />
-                            </div>
+    return (
+        <>
+            {FooterArray.map((item) => (
+                <>
+                    <div className="section">
+                        <div>
+                            <h5>{item.header}</h5>
                         </div>
-                    </>
-                ))}
-            </>
-        )
-    }
 
+                        <div>
+                            <SectionComponent content={item.content} />
+                        </div>
+                    </div>
+                </>
+            ))}
+        </>
+    )
+}
+export function ExternalLinks() {
+    return (
+        <div className="section">
+            <h5>Social</h5>
+
+            <li>
+                <Link
+                    target="_blank"
+                    to={{
+                        pathname:
+                            'www.toastmasters.org/Find-a-Club/04495118-04495118',
+                    }}
+                >
+                    Toastmasters International
+                </Link>
+            </li>
+            <li>
+                <a
+                    target="_blank"
+                    href="www.linkedin.com/company/paddingtontoastmasters"
+                >
+                    LinkedIn
+                </a>
+            </li>
+            <li>
+                <a
+                    target="_blank"
+                    href="www.eventbrite.co.uk/e/paddington-toastmaster-club-meeting-tickets-166138072447"
+                >
+                    Eventbrite
+                </a>
+            </li>
+        </div>
+    )
+}
 
 export function ContactFooter() {
     return (

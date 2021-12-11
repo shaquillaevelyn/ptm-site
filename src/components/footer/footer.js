@@ -1,6 +1,11 @@
 import React from 'react'
 
-import { ContactFooter, FooterComp, PTMFooter } from './footer-links'
+import {
+    ContactFooter,
+    ExternalLinks,
+    FooterComp,
+    PTMFooter,
+} from './footer-links'
 import './footer.css'
 
 export default function Footer() {
@@ -10,6 +15,7 @@ export default function Footer() {
                 <PTMFooter />
 
                 <FooterComp />
+                <ExternalLinks />
                 <ContactFooter />
             </div>
         </>
