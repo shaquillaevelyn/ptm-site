@@ -1,4 +1,4 @@
-.about-ptm-body{
+.about-ptm-body {
     display: flex;
     min-height: 80vh;
     margin-left: 10vw;
@@ -6,4 +6,78 @@
     font-family: Source Sans Pro;
     font-weight: 600;
     font-size: 1.25rem;
+    text-align: justify;
 }
+
+.photo-banner {
+    display: inline-flexbox;
+    height: 233px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.photo-banner img {
+    height: 233px;
+    width: 350px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .photo-banner {
+        display: none;
+    }
+}
+
+/*keyframe animations*/
+/* .first {
+    -webkit-animation: bannermove 30s linear infinite;
+    -moz-animation: bannermove 30s linear infinite;
+    -ms-animation: bannermove 30s linear infinite;
+    -o-animation: bannermove 30s linear infinite;
+    animation: bannermove 5s linear infinite;
+}
+
+@keyframes bannermove {
+    0% {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    100% {
+        margin-left: -400px;
+    }
+} */
+
+/* @-moz-keyframes bannermove {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -2125px;
+    }
+}
+
+@-webkit-keyframes "bannermove" {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -2125px;
+    }
+}
+
+@-ms-keyframes "bannermove" {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -2125px;
+    }
+}
+
+@-o-keyframes "bannermove" {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -2125px;
+    }
+} */

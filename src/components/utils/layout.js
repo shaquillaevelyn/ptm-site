@@ -1,15 +1,15 @@
 import React from 'react'
 import { css } from '@emotion/css'
 
-
-const Content = ({children}) => {
+const Content = ({ children }) => {
     return (
         <div
             className={css`
-            height: 100%;
+                height: 100%;
+                width: 100vw;
             `}
         >
-{children}
+            {children}
         </div>
     )
 }

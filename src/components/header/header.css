@@ -64,9 +64,8 @@
 }
 
 .navbar-menu {
-    margin-top: 50px;
-    /* top: 50%; */
-
+    /* margin-top: px; */
+    top: 50%;
     position: absolute;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);

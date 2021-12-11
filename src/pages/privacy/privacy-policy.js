@@ -1,18 +1,11 @@
 import React from 'react'
 import { css } from '@emotion/css'
+import './privacy-policy.css'
 
 export function PrivacyPolicy() {
     return (
         <>
-            <div
-                className={css`
-                    margin-left: 20vw;
-                    margin-right: 20vw;
-                    font-family: Source Sans Pro;
-                    font-weight: 600;
-                    font-size: 1.25rem;
-                `}
-            >
+            <div className="privacy-policy-body">
                 <h2> PRIVACY POLICY – PADDINGTON TOASTMASTERS</h2>
                 <h2>Who we are</h2>
                 <h3>
@@ -56,11 +49,7 @@ export function PrivacyPolicy() {
                     registering with Toastmasters international Application
                     form, Paddington Toastmasters requests the following:
                 </p>
-                <div
-                    className={css`
-                        margin-left: 50px;
-                    `}
-                >
+                <div className="privacy-policy-list">
                     <li>Name</li>
                     <li>Address</li>
                     <li>Telephone number</li>
@@ -73,11 +62,7 @@ export function PrivacyPolicy() {
                     contact members Contact data collected and held by
                     Paddington Toastmasters
                 </p>
-                <div
-                    className={css`
-                        margin-left: 50px;
-                    `}
-                >
+                <div className="privacy-policy-list">
                     <li>name</li>
                     <li>phone number</li>
                     <li>telephone number</li>
@@ -87,11 +72,7 @@ export function PrivacyPolicy() {
                     This data is kept by VP Education and Treasurer for the
                     purposes of
                 </p>
-                <div
-                    className={css`
-                        margin-left: 50px;
-                    `}
-                >
+                <div className="privacy-policy-list">
                     <li>
                         regular communication with members (e.g agenda of
                         upcoming meeting
@@ -111,11 +92,7 @@ export function PrivacyPolicy() {
                     This data is kept by VP Education on private
                     password-protected computer for the purposes of
                 </p>
-                <div
-                    className={css`
-                        margin-left: 50px;
-                    `}
-                >
+                <div className="privacy-policy-list">
                     <li>
                         following members’ progress and allocate roles at club
                         meetings
@@ -126,11 +103,7 @@ export function PrivacyPolicy() {
                     As a visiting guest to our club, be it virtually or in
                     person, Paddington Toastmasters requests the following
                 </p>
-                <div
-                    className={css`
-                        margin-left: 50px;
-                    `}
-                >
+                <div className="privacy-policy-list">
                     <li>Name</li>
                     <li>Email address</li>
                     <li>Phone number (optional)</li>
@@ -158,11 +131,7 @@ export function PrivacyPolicy() {
                     On submitting an email to Paddington Toastmasters via
                     paddingtontoastmasters.co.uk the following data is collected
                 </p>
-                <div
-                    className={css`
-                        margin-left: 50px;
-                    `}
-                >
+                <div className="privacy-policy-list">
                     <li>Name</li>
                     <li>Email</li>
                 </div>
@@ -171,11 +140,7 @@ export function PrivacyPolicy() {
                     Vice President of Education and the Vice President of
                     Membership for the purposes of{' '}
                 </p>
-                <div
-                    className={css`
-                        margin-left: 50px;
-                    `}
-                >
+                <div className="privacy-policy-list">
                     <li>Responding to queries</li>
                     <li>
                         Informing respondent of next Paddington Toastmasters
@@ -195,11 +160,7 @@ export function PrivacyPolicy() {
                     guest or Paddington Toastmasters member have the following
                     rights:
                 </p>
-                <div
-                    className={css`
-                        margin-left: 50px;
-                    `}
-                >
+                <div className="privacy-policy-list">
                     <li>
                         the right to be provided with copies of personal
                         information that Paddington Toastmasters hold about you
@@ -223,18 +184,14 @@ export function PrivacyPolicy() {
                 </p>
                 <h2>Further information</h2>
                 <p>
-                    Please visit
+                    Please visit&nbsp;
                     <a
                         target="_blank"
                         href="https://www.toastmasters.org/footer/privacy-policy#info_know"
-                        className={css`
-                            text-decoration: none;
-                            color: #772432;
-                        `}
                     >
                         Toastmasters International
                     </a>
-                    for privacy policy information as it pertains to
+                    &nbsp;for privacy policy information as it pertains to
                     Toastmasters International
                 </p>
             </div>

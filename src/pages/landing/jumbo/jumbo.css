@@ -10,7 +10,6 @@
     position: relative;
     align-items: self-end;
     justify-content: flex-end;
-    background-color: hotpink;
 }
 .background-video {
     display: flex;
