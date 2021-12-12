@@ -1,6 +1,6 @@
 {
-    "homepage": "http://shaquillaevelyn.github.io/ptm-sit",
-    "name": "ptm-full-site",
+    "homepage": "http://shaquillaevelyn.github.io/ptm-site",
+    "name": "paddingtontoasmasters.com",
     "version": "1.0.0",
     "private": true,
     "dependencies": {
