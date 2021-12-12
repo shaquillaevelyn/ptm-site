@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import toastmastersColor from '../../images/toastmastersColor.png'
 import { QueryButton } from '../buttons/join-button'
 import { JoinButton } from '../buttons/join-button'

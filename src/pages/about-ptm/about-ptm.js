@@ -11,14 +11,21 @@ export default function AboutPTM() {
     return (
         <div className="about-ptm-body">
             <div>
-                <h1>Paddinton Toastmasters- A Club Like No Other</h1>
+                <h1>Paddinton Toastmasters</h1>
+                <h2>A Club Like No Other</h2>
                 <div className="photo-banner">
-                    <img className="first" src={image1}></img>
-                    <img src={image2}></img>
-                    <img src={image3}></img>
-                    <img src={image4}></img>
-                    <img src={image5}></img>
-                    <img src={image6}></img>
+                    <img
+                        src={image5}
+                        alt="toastmasters member hlding up green card"
+                    ></img>
+                    <img
+                        src={image3}
+                        alt="toastmasters member hlding up green card"
+                    ></img>
+                    <img
+                        src={image6}
+                        alt="toastmasters members interacting with meeting attendees on zoom"
+                    ></img>
                 </div>
                 <p>
                     {' '}
@@ -50,12 +57,12 @@ export default function AboutPTM() {
                         program, Pathways that on becoming a member, access is
                         granted.
                     </p>
+                    <br />
                     <h2>Come check us out! </h2>
                     <p>
                         Paddington Toastmasters meet every 1st and 3rd Tuesday
                         of the Month 18.00 for 18.15 start, 19.30 finish{' '}
                     </p>
-                    <br />
                     <br />
                     We do hope to welcome you to a meeting in the near future
                     and show you in person why Paddington Toastmasters really is

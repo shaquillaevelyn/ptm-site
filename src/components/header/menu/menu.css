@@ -2,10 +2,10 @@
     position: fixed;
     top: 50%;
     left: 50%;
-
     width: inherit;
     outline: 0;
     background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
 }
 
 .modal-background {
@@ -15,6 +15,7 @@
     z-index: 00;
     background: #772432;
     float: right;
+    z-index: 100;
 }
 
 .modal-body {

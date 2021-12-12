@@ -1,6 +1,6 @@
 .jumbo {
     display: flex;
-    min-height: 80vh;
+    max-height: 80vh;
     background-repeat: no-repeat;
     background-size: 100% 85%;
     display: flex;
@@ -10,40 +10,90 @@
     position: relative;
     align-items: self-end;
     justify-content: flex-end;
+    top: 0;
+    left: 0;
 }
 .background-video {
+    overflow: hidden;
+    object-fit: fill;
+    max-height: 80vh;
     display: flex;
-    z-index: 30;
-    position: absolute;
 
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    top: 95px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
 }
-.jumbo-text {
-    text-align: right;
-    background-color: white;
-    bottom: 0;
-    right: 0;
+
+video {
     position: relative;
-    padding: 2vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: fill;
+    max-height: 80vh;
+    display: flex;
+    z-index: 2;
+    vertical-align: middle;
+}
+
+.overlay-desc {
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbo-text {
+    text-align: center;
+    background-color: white;
+    opacity: 0.9;
+    display: block;
+    position: relative;
+    padding: 1vh;
     font-size: 1.25rem;
+    z-index: 2;
 }
 
 .jumbo-text h2 {
-    text-align: right;
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 36px;
+    margin: 10px;
 }
 
 .jumbo-text h3 {
-    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+.jumbo-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 @media only screen and (max-width: 950px) {
     .jumbo-text {
         text-align: center;
-        background-color: greenyellow;
-        bottom: 0;
-        right: 0;
+        background-color: white;
         position: relative;
         padding: 2vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .overlay-desc {
+        background: rgba(0, 0, 0, 0);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .jumbo-text h2 {

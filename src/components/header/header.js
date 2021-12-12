@@ -5,12 +5,9 @@ import { Link } from 'react-router-dom'
 import { Turn as Hamburger } from 'hamburger-react'
 import './header.css'
 import MenuModal from './menu/menu'
-import { useModal } from './menu/useModal-hook'
 
-
-export default function Header({}) {
-
-    const [hidden, setHidden]= useState(false)
+export default function Header() {
+    const [hidden, setHidden] = useState(false)
     const onClick = () => setHidden(!hidden)
 
     const [mobileMenu, setMobileMenu] = useState(false)
@@ -38,12 +35,13 @@ export default function Header({}) {
         <>
             <div className="navbar">
                 <div className="navbar-logo">
-                <Link to={URL.ROOT}>
-                    <img
-                        className="logo-image"
-                        alt="white tmi logo"
-                        src={toastmastersColor}
-                    ></img></Link>
+                    <Link to={URL.ROOT}>
+                        <img
+                            className="logo-image"
+                            alt="white tmi logo"
+                            src={toastmastersColor}
+                        ></img>
+                    </Link>
                     <span className="typography">
                         Paddington <br />
                         Toastmasters
@@ -53,10 +51,8 @@ export default function Header({}) {
                 <div className="navbar-menu">
                     {mobileMenu ? (
                         <>
-
-                        <Hamburger toggled={hidden} toggle={setHidden}/>
-                        <MenuModal hidden={!hidden} onClick={onClick}/>
-            
+                            <Hamburger toggled={hidden} toggle={setHidden} />
+                            <MenuModal hidden={!hidden} onClick={onClick} />
                         </>
                     ) : (
                         <nav className="menu header-menu">

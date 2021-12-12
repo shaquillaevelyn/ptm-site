@@ -1,5 +1,4 @@
 import React from 'react'
-import { css } from '@emotion/css'
 import './privacy-policy.css'
 
 export function PrivacyPolicy() {

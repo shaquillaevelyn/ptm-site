@@ -5,20 +5,41 @@
     margin-right: 10vw;
     font-family: Source Sans Pro;
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     text-align: justify;
+}
+
+.about-ptm-body h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 50px;
+}
+
+.about-ptm-body h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
 }
 
 .photo-banner {
     display: inline-flexbox;
     height: 233px;
-    width: 100%;
-    overflow: scroll;
+
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
 }
 
 .photo-banner img {
     height: 233px;
     width: 350px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 30px;
 }
 
 @media only screen and (max-width: 1400px) {
