@@ -21,7 +21,7 @@ import PrivacyPolicy from './pages/privacy/privacy-policy'
 
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter basename={ROOT}>
+        <BrowserRouter basename='/'>
             <Header />
             <Routes>
                 <Route exact path={ROOT} element={<Landing />} />
