@@ -39,9 +39,18 @@
     flex-grow: 4;
 }
 
+.useful-links{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+    min-width: 60%;
+}
+
 .button {
     color: rgb(19, 19, 19);
 }
+
+
 
 @media only screen and (max-width: 925px) {
     .footer {
@@ -53,9 +62,11 @@
         margin-top: 2%;
         color: #ffffff;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
+
     }
+
 
     .mobile-section {
         /* On small screens, we are no longer using row direction but column */
@@ -67,8 +78,7 @@
         justify-content: space-evenly;
         /* how much space taken flexing */
     }
-    .mobile-centreInDiv {
-    }
+
     .footer p {
         display: inline-block;
     }
@@ -83,13 +93,9 @@
         display: inline-block;
         justify-content: space-around;
         max-width: 100px;
-
         vertical-align: top;
         justify-content: space-evenly;
-    }
-    .menu-section {
-        padding-left: auto;
-        padding-top: 20px;
+        
     }
 
     .ptm-details {
@@ -128,16 +134,4 @@
     .query-button a {
         font-size: 14px;
     }
-
-    /* .one {
-        order: 2;
-    }
-
-    .two {
-        order: 3;
-    }
-
-    .three {
-        order: 1;
-    } */
 }

@@ -13,9 +13,10 @@ export default function Footer() {
         <>
             <div className="footer">
                 <PTMFooter />
-
+                <div className="useful-links">
                 <FooterComp />
                 <ExternalLinks />
+                </div>
                 <ContactFooter />
             </div>
         </>

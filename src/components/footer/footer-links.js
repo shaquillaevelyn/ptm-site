@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 export function PTMFooter() {
     return (
         <>
-            <div className="section centreInDiv ptm-details one">
+            <div className="section centreInDiv ptm-details">
                 <img alt="tmi" className="image" src={toastmastersColor}></img>
                 <h4>
                     Paddington Toastmasters<br></br>
@@ -34,7 +34,7 @@ function ListRender({ index, listarray }) {
 function SectionComponent({ header, content }) {
     return (
         <>
-            <div className="section menu-section two">
+            <div className="section menu-section">
                 <div>
                     <h5>{header}</h5>
                 </div>
