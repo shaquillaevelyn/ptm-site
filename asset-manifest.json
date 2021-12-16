@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.7c6c8c22.chunk.css",
-    "main.js": "/static/js/main.dcccb55f.chunk.js",
-    "main.js.map": "/static/js/main.dcccb55f.chunk.js.map",
+    "main.css": "/static/css/main.e7ee6a83.chunk.css",
+    "main.js": "/static/js/main.cccee278.chunk.js",
+    "main.js.map": "/static/js/main.cccee278.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.56ce103e.js",
     "runtime-main.js.map": "/static/js/runtime-main.56ce103e.js.map",
     "static/js/2.9065c586.chunk.js": "/static/js/2.9065c586.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.54483732.chunk.js": "/static/js/3.54483732.chunk.js",
     "static/js/3.54483732.chunk.js.map": "/static/js/3.54483732.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.7c6c8c22.chunk.css.map": "/static/css/main.7c6c8c22.chunk.css.map",
+    "static/css/main.e7ee6a83.chunk.css.map": "/static/css/main.e7ee6a83.chunk.css.map",
     "static/js/2.9065c586.chunk.js.LICENSE.txt": "/static/js/2.9065c586.chunk.js.LICENSE.txt",
     "static/media/caro-1.683cdb71.JPG": "/static/media/caro-1.683cdb71.JPG",
     "static/media/caro-2.b580500f.JPG": "/static/media/caro-2.b580500f.JPG",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.56ce103e.js",
     "static/js/2.9065c586.chunk.js",
-    "static/css/main.7c6c8c22.chunk.css",
-    "static/js/main.dcccb55f.chunk.js"
+    "static/css/main.e7ee6a83.chunk.css",
+    "static/js/main.cccee278.chunk.js"
   ]
 }
