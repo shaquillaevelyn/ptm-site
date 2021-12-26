@@ -10,6 +10,12 @@ export default function Header() {
     const [hidden, setHidden] = useState(false)
     const onClick = () => setHidden(!hidden)
 
+    const PageUp = () => {
+        useEffect(() => {
+            window.scrollTo(0, 0)
+        }, [])
+    }
+
     const [mobileMenu, setMobileMenu] = useState(false)
     const mobileView = () => {
         if (window.innerWidth <= 950) {
@@ -19,7 +25,7 @@ export default function Header() {
         }
     }
 
-    // use effect
+    // use effect to active the component resize
     useEffect(() => {
         mobileView()
         window.addEventListener('resize', mobileView)
@@ -58,7 +64,9 @@ export default function Header() {
                         <nav className="menu header-menu">
                             {menuArray.map((item) => (
                                 <li>
-                                    <Link to={item.url}>{item.title}</Link>
+                                    <Link onClick={PageUp} to={item.url}>
+                                        {item.title}
+                                    </Link>
                                 </li>
                             ))}
                         </nav>

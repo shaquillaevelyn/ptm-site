@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import toastmastersColor from '../../images/toastmastersColor.png'
 import { QueryButton } from '../buttons/join-button'
 import { JoinButton } from '../buttons/join-button'
@@ -20,11 +20,18 @@ export function PTMFooter() {
 }
 
 function ListRender({ index, listarray }) {
+    const PageUp = () => {
+        useEffect(() => {
+            window.scrollTo(0, 0)
+        }, [])
+    }
     return (
         <div>
             {listarray.map((item) => (
                 <li key={index}>
-                    <Link to={item.url}>{item.title}</Link>
+                    <Link onClick={PageUp} to={item.url}>
+                        {item.title}
+                    </Link>
                 </li>
             ))}
         </div>
