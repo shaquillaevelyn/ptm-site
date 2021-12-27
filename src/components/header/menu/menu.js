@@ -12,8 +12,8 @@ export default function MenuModal({ hidden, onClick }) {
     ]
 
     return ReactDOM.createPortal(
-        <div className="modal-wrapper">
-            <div className="modal-background" hidden={hidden}>
+        <div className="modal-wrapper" hidden={hidden}>
+            <div className="modal-background">
                 <div className="modal-body">
                     <div className="modal-menu-content">
                         {menuArray.map((item) => (
