@@ -3,6 +3,7 @@ import {
     BrowserRouter,
     Route,
     Routes,
+    HashRouter,
     Navigate,
     useLocation,
 } from 'react-router-dom'
@@ -34,7 +35,7 @@ import PrivacyPolicy from './pages/privacy/privacy-policy'
 
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter basename={`/${process.env.PUBLIC_URL}`}>
+        <HashRouter basename={`/${process.env.PUBLIC_URL}`}>
             <Header />
             <Routes>
                 <Route exact path={ROOT} element={<Landing />} />
@@ -55,7 +56,7 @@ ReactDOM.render(
             </Routes>
 
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
     </React.StrictMode>,
     document.getElementById('root')
 )
