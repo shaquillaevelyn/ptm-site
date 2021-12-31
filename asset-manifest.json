@@ -1,23 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.819a23ce.chunk.css",
-    "main.js": "/static/js/main.ee534bd2.chunk.js",
-    "main.js.map": "/static/js/main.ee534bd2.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.77c91aab.js",
-    "runtime-main.js.map": "/static/js/runtime-main.77c91aab.js.map",
-    "static/js/2.043deff5.chunk.js": "/static/js/2.043deff5.chunk.js",
-    "static/js/2.043deff5.chunk.js.map": "/static/js/2.043deff5.chunk.js.map",
-    "static/js/3.30bd8ec6.chunk.js": "/static/js/3.30bd8ec6.chunk.js",
-    "static/js/3.30bd8ec6.chunk.js.map": "/static/js/3.30bd8ec6.chunk.js.map",
+    "main.css": "/static/css/main.960eba53.chunk.css",
+    "main.js": "/static/js/main.4a3b982b.chunk.js",
+    "main.js.map": "/static/js/main.4a3b982b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.946f20c3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.946f20c3.js.map",
+    "static/js/2.fd1039bd.chunk.js": "/static/js/2.fd1039bd.chunk.js",
+    "static/js/2.fd1039bd.chunk.js.map": "/static/js/2.fd1039bd.chunk.js.map",
+    "static/js/3.65c4d199.chunk.js": "/static/js/3.65c4d199.chunk.js",
+    "static/js/3.65c4d199.chunk.js.map": "/static/js/3.65c4d199.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.819a23ce.chunk.css.map": "/static/css/main.819a23ce.chunk.css.map",
-    "static/js/2.043deff5.chunk.js.LICENSE.txt": "/static/js/2.043deff5.chunk.js.LICENSE.txt",
-    "static/media/caro-1.683cdb71.JPG": "/static/media/caro-1.683cdb71.JPG",
-    "static/media/caro-2.b580500f.JPG": "/static/media/caro-2.b580500f.JPG",
-    "static/media/caro-3.15b1507e.JPG": "/static/media/caro-3.15b1507e.JPG",
-    "static/media/caro-4.2f0a8908.png": "/static/media/caro-4.2f0a8908.png",
-    "static/media/caro-5.6f64ccb6.png": "/static/media/caro-5.6f64ccb6.png",
-    "static/media/caro-6.388d6ade.png": "/static/media/caro-6.388d6ade.png",
+    "static/css/main.960eba53.chunk.css.map": "/static/css/main.960eba53.chunk.css.map",
+    "static/js/2.fd1039bd.chunk.js.LICENSE.txt": "/static/js/2.fd1039bd.chunk.js.LICENSE.txt",
     "static/media/fedor.6f68849b.jpg": "/static/media/fedor.6f68849b.jpg",
     "static/media/pippa.fe680f44.jpg": "/static/media/pippa.fe680f44.jpg",
     "static/media/ptm-video.65d80453.mp4": "/static/media/ptm-video.65d80453.mp4",
@@ -26,9 +20,9 @@
     "static/media/toastmastersColor.ec057b94.png": "/static/media/toastmastersColor.ec057b94.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.77c91aab.js",
-    "static/js/2.043deff5.chunk.js",
-    "static/css/main.819a23ce.chunk.css",
-    "static/js/main.ee534bd2.chunk.js"
+    "static/js/runtime-main.946f20c3.js",
+    "static/js/2.fd1039bd.chunk.js",
+    "static/css/main.960eba53.chunk.css",
+    "static/js/main.4a3b982b.chunk.js"
   ]
 }
