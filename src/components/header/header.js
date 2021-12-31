@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import * as URL from '../utils/routes'
 import toastmastersColor from '../../images/toastmastersColor.png'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, Navigate } from 'react-router-dom'
 import { Turn as Hamburger } from 'hamburger-react'
 import './header.css'
 import MenuModal from './menu/menu'
@@ -33,7 +33,7 @@ export default function Header() {
 
     const menuArray = [
         { title: 'Home', url: URL.ROOT },
-        { title: 'About PTM', url: URL.ABOUT },
+        { title: 'About PTM', url: URL.ABOUT_WHO },
         { title: 'FAQ', url: URL.FAQQ },
     ]
 
@@ -64,7 +64,11 @@ export default function Header() {
                         <nav className="menu header-menu">
                             {menuArray.map((item) => (
                                 <li>
-                                    <Link onClick={PageUp} to={item.url}>
+                                    <Link
+                                        LocationRedirect
+                                        onClick={PageUp}
+                                        to={item.url}
+                                    >
                                         {item.title}
                                     </Link>
                                 </li>

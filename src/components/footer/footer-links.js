@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import toastmastersColor from '../../images/toastmastersColor.png'
 import { QueryButton } from '../buttons/join-button'
 import { JoinButton } from '../buttons/join-button'
-import { ROOT, ABOUT, FAQQ, PRIVACY } from '../../components/utils/routes'
+import { ROOT, ABOUT_WHO, FAQQ, PRIVACY } from '../../components/utils/routes'
 import { Link } from 'react-router-dom'
 
 export function PTMFooter() {
@@ -60,7 +60,7 @@ export function FooterComp() {
             header: 'Explorer',
             content: [
                 { title: 'Home', url: ROOT },
-                { title: 'About PTM', url: ABOUT },
+                { title: 'About PTM', url: ABOUT_WHO },
                 { title: 'FAQ', url: FAQQ },
             ],
         },
@@ -118,6 +118,14 @@ export function ExternalLinks() {
                     href="www.eventbrite.co.uk/e/paddington-toastmaster-club-meeting-tickets-166138072447"
                 >
                     Eventbrite
+                </a>
+            </li>
+            <li>
+                <a
+                    target="_blank"
+                    href="https://toastmasterclub.org/portal.php?page=3017"
+                >
+                    EasySpeak
                 </a>
             </li>
         </div>

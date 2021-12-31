@@ -1,28 +1,35 @@
-.about-ptm-body {
+.about-ptm-nav {
     display: flex;
-    min-height: 80vh;
+    height: auto;
     margin-left: 10vw;
     margin-right: 10vw;
     font-family: Source Sans Pro;
     font-weight: 600;
     font-size: 1.5rem;
     text-align: justify;
+    position: relative;
 }
 
-.about-ptm-body h1 {
+.about-ptm-nav h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-align: center;
     font-size: 50px;
 }
 
-.about-ptm-body h2 {
+.about-ptm-nav h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 30px;
     text-align: center;
 }
 
+.about-ptm-body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    min-height: 60vh;
+    text-align: justify;
+}
 .photo-banner {
     display: block;
     height: 233px;
