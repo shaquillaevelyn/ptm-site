@@ -7,12 +7,15 @@ import Footer from './components/footer/footer'
 import Landing from './pages/landing/landing'
 import FAQ from './pages/faq/faq'
 import AboutPTM from './pages/about-ptm/about-ptm'
+import AboutPTMWho from './pages/about-ptm/about-ptm-who'
 
 import {
     ROOT,
     ABOUT,
-    MEMBERSHIP,
-    PATHWAYS,
+    ABOUT_WHO,
+    ABOUT_COVID,
+    ABOUT_COMMITTEE,
+    ABOUT_PATHWAYS,
     FAQQ,
     PRIVACY,
 } from '../src/components/utils/routes'
@@ -25,9 +28,12 @@ ReactDOM.render(
             <Header />
             <Routes>
                 <Route exact path={ROOT} element={<Landing />} />
-                <Route path={ABOUT} element={<AboutPTM />} />
-                <Route path={MEMBERSHIP} element={<Landing />} />
-                <Route path={PATHWAYS} element={<Landing />} />
+                <Route path={ABOUT} element={<AboutPTM />}>
+                    <Route path={ABOUT_WHO} element={<AboutPTMWho />} />
+                    <Route path={ABOUT_COVID} element={<p>covid</p>} />
+                    <Route path={ABOUT_COMMITTEE} element={<p>committee</p>} />
+                    <Route path={ABOUT_PATHWAYS} element={<p>pathways</p>} />
+                </Route>
                 <Route path={FAQQ} element={<FAQ />} />
                 <Route path={PRIVACY} element={<PrivacyPolicy />} />
             </Routes>
