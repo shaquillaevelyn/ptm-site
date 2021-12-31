@@ -1,5 +1,11 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import {
+    BrowserRouter,
+    Route,
+    Routes,
+    Navigate,
+    useLocation,
+} from 'react-router-dom'
 import ReactDOM from 'react-dom'
 import './index.css'
 import Header from './components/header/header'
@@ -47,6 +53,7 @@ ReactDOM.render(
                 <Route path={FAQQ} element={<FAQ />} />
                 <Route path={PRIVACY} element={<PrivacyPolicy />} />
             </Routes>
+
             <Footer />
         </BrowserRouter>
     </React.StrictMode>,

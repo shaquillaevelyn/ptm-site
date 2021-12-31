@@ -7,7 +7,7 @@ import './menu.css'
 export default function MenuModal({ hidden, onClick }) {
     const menuArray = [
         { title: 'Home', url: URL.ROOT },
-        { title: 'About PTM', url: URL.ABOUT },
+        { title: 'About PTM', url: URL.ABOUT_WHO },
         { title: 'FAQ', url: URL.FAQQ },
     ]
 
