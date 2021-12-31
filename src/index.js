@@ -21,7 +21,7 @@ import PrivacyPolicy from './pages/privacy/privacy-policy'
 
 ReactDOM.render(
     <React.StrictMode>
-        <hashHistory basename="/">
+        <BrowserRouter basename="/">
             <Header />
             <Routes>
                 <Route exact path={ROOT} element={<Landing />} />
@@ -32,7 +32,7 @@ ReactDOM.render(
                 <Route path={PRIVACY} element={<PrivacyPolicy />} />
             </Routes>
             <Footer />
-        </hashHistory>
+        </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')
 )
