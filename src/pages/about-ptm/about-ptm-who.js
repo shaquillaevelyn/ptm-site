@@ -3,20 +3,6 @@ import React from 'react'
 export default function AboutPTMWho() {
     return (
         <>
-            {/* <div className="photo-banner">
-                <img
-                    src={image5}
-                    alt="toastmasters member hlding up green card"
-                ></img>
-                <img
-                    src={image3}
-                    alt="toastmasters member hlding up green card"
-                ></img>
-                <img
-                    src={image6}
-                    alt="toastmasters members interacting with meeting attendees on zoom"
-                ></img>
-            </div> */}
             <p>
                 {' '}
                 Established in 2017 , Paddinton Toastmasters has always been a

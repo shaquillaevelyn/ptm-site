@@ -8,6 +8,9 @@ import Landing from './pages/landing/landing'
 import FAQ from './pages/faq/faq'
 import AboutPTM from './pages/about-ptm/about-ptm'
 import AboutPTMWho from './pages/about-ptm/about-ptm-who'
+import AboutPTMCovid from './pages/about-ptm/about-ptm-covid'
+import AboutPTMCommittee from './pages/about-ptm/about-ptm-commitee'
+import AboutPTMPathways from './pages/about-ptm/about-ptm-pathways'
 
 import {
     ROOT,
@@ -19,6 +22,7 @@ import {
     FAQQ,
     PRIVACY,
 } from '../src/components/utils/routes'
+
 import reportWebVitals from './reportWebVitals'
 import PrivacyPolicy from './pages/privacy/privacy-policy'
 
@@ -30,9 +34,15 @@ ReactDOM.render(
                 <Route exact path={ROOT} element={<Landing />} />
                 <Route path={ABOUT} element={<AboutPTM />}>
                     <Route path={ABOUT_WHO} element={<AboutPTMWho />} />
-                    <Route path={ABOUT_COVID} element={<p>covid</p>} />
-                    <Route path={ABOUT_COMMITTEE} element={<p>committee</p>} />
-                    <Route path={ABOUT_PATHWAYS} element={<p>pathways</p>} />
+                    <Route path={ABOUT_COVID} element={<AboutPTMCovid />} />
+                    <Route
+                        path={ABOUT_COMMITTEE}
+                        element={<AboutPTMCommittee />}
+                    />
+                    <Route
+                        path={ABOUT_PATHWAYS}
+                        element={<AboutPTMPathways />}
+                    />
                 </Route>
                 <Route path={FAQQ} element={<FAQ />} />
                 <Route path={PRIVACY} element={<PrivacyPolicy />} />

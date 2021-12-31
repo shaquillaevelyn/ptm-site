@@ -120,6 +120,14 @@ export function ExternalLinks() {
                     Eventbrite
                 </a>
             </li>
+            <li>
+                <a
+                    target="_blank"
+                    href="https://toastmasterclub.org/portal.php?page=3017"
+                >
+                    EasySpeak
+                </a>
+            </li>
         </div>
     )
 }

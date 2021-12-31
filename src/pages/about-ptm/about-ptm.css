@@ -7,6 +7,7 @@
     font-weight: 600;
     font-size: 1.5rem;
     text-align: justify;
+    position: relative;
 }
 
 .about-ptm-nav h1 {
@@ -26,6 +27,8 @@
 .about-ptm-body {
     margin-left: 10vw;
     margin-right: 10vw;
+    min-height: 60vh;
+    text-align: justify;
 }
 .photo-banner {
     display: block;
