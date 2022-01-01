@@ -1,6 +1,5 @@
 import React from 'react'
 import './about-ptm.css'
-import greentick from '../../images/check.png'
 
 export default function AboutPTMCovid() {
     return (
