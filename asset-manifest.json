@@ -1,28 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.960eba53.chunk.css",
-    "main.js": "/static/js/main.c694db94.chunk.js",
-    "main.js.map": "/static/js/main.c694db94.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.946f20c3.js",
-    "runtime-main.js.map": "/static/js/runtime-main.946f20c3.js.map",
-    "static/js/2.0ed2fd5a.chunk.js": "/static/js/2.0ed2fd5a.chunk.js",
-    "static/js/2.0ed2fd5a.chunk.js.map": "/static/js/2.0ed2fd5a.chunk.js.map",
-    "static/js/3.65c4d199.chunk.js": "/static/js/3.65c4d199.chunk.js",
-    "static/js/3.65c4d199.chunk.js.map": "/static/js/3.65c4d199.chunk.js.map",
+    "main.css": "/static/css/main.7851b0c3.chunk.css",
+    "main.js": "/static/js/main.dc650c49.chunk.js",
+    "main.js.map": "/static/js/main.dc650c49.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.21633a80.js",
+    "runtime-main.js.map": "/static/js/runtime-main.21633a80.js.map",
+    "static/js/2.156b7d59.chunk.js": "/static/js/2.156b7d59.chunk.js",
+    "static/js/2.156b7d59.chunk.js.map": "/static/js/2.156b7d59.chunk.js.map",
+    "static/js/3.5338dba9.chunk.js": "/static/js/3.5338dba9.chunk.js",
+    "static/js/3.5338dba9.chunk.js.map": "/static/js/3.5338dba9.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.960eba53.chunk.css.map": "/static/css/main.960eba53.chunk.css.map",
-    "static/js/2.0ed2fd5a.chunk.js.LICENSE.txt": "/static/js/2.0ed2fd5a.chunk.js.LICENSE.txt",
+    "static/css/main.7851b0c3.chunk.css.map": "/static/css/main.7851b0c3.chunk.css.map",
+    "static/js/2.156b7d59.chunk.js.LICENSE.txt": "/static/js/2.156b7d59.chunk.js.LICENSE.txt",
     "static/media/fedor.6f68849b.jpg": "/static/media/fedor.6f68849b.jpg",
     "static/media/pippa.fe680f44.jpg": "/static/media/pippa.fe680f44.jpg",
     "static/media/ptm-video.65d80453.mp4": "/static/media/ptm-video.65d80453.mp4",
+    "static/media/ptmcollage.5bc58705.png": "/static/media/ptmcollage.5bc58705.png",
     "static/media/shaq-test.ceef810f.jpg": "/static/media/shaq-test.ceef810f.jpg",
     "static/media/talk.a7083f4b.jpg": "/static/media/talk.a7083f4b.jpg",
     "static/media/toastmastersColor.ec057b94.png": "/static/media/toastmastersColor.ec057b94.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.946f20c3.js",
-    "static/js/2.0ed2fd5a.chunk.js",
-    "static/css/main.960eba53.chunk.css",
-    "static/js/main.c694db94.chunk.js"
+    "static/js/runtime-main.21633a80.js",
+    "static/js/2.156b7d59.chunk.js",
+    "static/css/main.7851b0c3.chunk.css",
+    "static/js/main.dc650c49.chunk.js"
   ]
 }
