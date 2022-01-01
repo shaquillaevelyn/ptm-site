@@ -5,6 +5,5 @@ export const ABOUT_COVID = `${ABOUT}/covid`
 export const ABOUT_COMMITTEE = `${ABOUT}/committee`
 export const ABOUT_PATHWAYS = `${ABOUT}/pathways`
 export const MEMBERSHIP = '/membership'
-export const PATHWAYS = '/pathways'
 export const FAQQ = '/faq'
 export const PRIVACY = '/privacy-policy'

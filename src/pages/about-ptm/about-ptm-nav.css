@@ -12,10 +12,30 @@
     left: 0;
     top: 0;
     justify-content: space-evenly;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    .about-ptm-nav nav {
+        width: 400px;
+        /* margin-left: 10px;
+        margin-right: 10px; */
+        justify-content: space-around;
+        text-align: center;
+    }
 }
 
 .about-ptm-nav nav {
-    margin: 0px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.about-ptm-nav a {
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .about-ptm-nav a {

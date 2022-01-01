@@ -185,6 +185,7 @@ export function PrivacyPolicy() {
                 <p>
                     Please visit&nbsp;
                     <a
+                        rel="noreferrer"
                         target="_blank"
                         href="https://www.toastmasters.org/footer/privacy-policy#info_know"
                     >

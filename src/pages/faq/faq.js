@@ -4,9 +4,6 @@ import hideMinus from '../../images/hideMinus.png'
 import './faq.css'
 
 export default function FAQ() {
-    const [show, setShow] = useState(false)
-    const handler = () => setShow(!show)
-
     const FAQArray = [
         {
             question: 'When do you meet?',

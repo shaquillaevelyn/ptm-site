@@ -1,11 +1,6 @@
 import React from 'react'
-import { Route, Routes, Outlet } from 'react-router-dom'
-import * as ROUTE from '../../components/utils/routes'
+import { Outlet } from 'react-router-dom'
 import AboutPTMNav from './about-ptm-nav'
-import AboutPTMWho from './about-ptm-who'
-import AboutPTMCovid from './about-ptm-covid'
-import AboutPTMCommittee from './about-ptm-commitee'
-import AboutPTMPathways from './about-ptm-pathways'
 import './about-ptm.css'
 
 export default function AboutPTM() {

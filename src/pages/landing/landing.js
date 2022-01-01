@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import About from '../landing/about/about'
 import Jumbotron from './jumbo/jumbotron'
 import OnLoadModal from '../../components/on-load-modal/on-load-modal'

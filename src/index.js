@@ -1,12 +1,5 @@
 import React from 'react'
-import {
-    BrowserRouter,
-    Route,
-    Routes,
-    HashRouter,
-    Navigate,
-    useLocation,
-} from 'react-router-dom'
+import { Route, Routes, HashRouter } from 'react-router-dom'
 import ReactDOM from 'react-dom'
 import './index.css'
 import Header from './components/header/header'

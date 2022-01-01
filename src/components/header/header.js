@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import * as URL from '../utils/routes'
 import toastmastersColor from '../../images/toastmastersColor.png'
-import { Link, useLocation, Navigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Turn as Hamburger } from 'hamburger-react'
 import './header.css'
 import MenuModal from './menu/menu'
@@ -10,11 +10,18 @@ export default function Header() {
     const [hidden, setHidden] = useState(false)
     const onClick = () => setHidden(!hidden)
 
-    const PageUp = () => {
-        useEffect(() => {
-            window.scrollTo(0, 0)
-        }, [])
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        })
     }
+
+    // const pageUp = () => {
+    //     useEffect(() => {
+    //         window.scrollTo(0, 0)
+    //     }, [])
+    // }
 
     const [mobileMenu, setMobileMenu] = useState(false)
     const mobileView = () => {
@@ -64,11 +71,7 @@ export default function Header() {
                         <nav className="menu header-menu">
                             {menuArray.map((item) => (
                                 <li>
-                                    <Link
-                                        LocationRedirect
-                                        onClick={PageUp}
-                                        to={item.url}
-                                    >
+                                    <Link onclick={scrollToTop} to={item.url}>
                                         {item.title}
                                     </Link>
                                 </li>

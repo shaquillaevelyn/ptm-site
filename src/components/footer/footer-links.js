@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import toastmastersColor from '../../images/toastmastersColor.png'
 import { QueryButton } from '../buttons/join-button'
 import { JoinButton } from '../buttons/join-button'
@@ -20,16 +20,18 @@ export function PTMFooter() {
 }
 
 function ListRender({ index, listarray }) {
-    const PageUp = () => {
-        useEffect(() => {
-            window.scrollTo(0, 0)
-        }, [])
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth',
+        })
     }
     return (
         <div>
             {listarray.map((item) => (
                 <li key={index}>
-                    <Link onClick={PageUp} to={item.url}>
+                    <Link onClick={scrollToTop} to={item.url}>
                         {item.title}
                     </Link>
                 </li>
@@ -94,34 +96,35 @@ export function ExternalLinks() {
             <h5>Social</h5>
 
             <li>
-                <Link
+                <a
+                    rel="noreferrer"
                     target="_blank"
-                    to={{
-                        pathname:
-                            'www.toastmasters.org/Find-a-Club/04495118-04495118',
-                    }}
+                    href="https://www.toastmasters.org/Find-a-Club/04495118-04495118"
                 >
                     Toastmasters International
-                </Link>
+                </a>
             </li>
             <li>
                 <a
+                    rel="noreferrer"
                     target="_blank"
-                    href="www.linkedin.com/company/paddingtontoastmasters"
+                    href="https://www.linkedin.com/company/paddingtontoastmasters"
                 >
                     LinkedIn
                 </a>
             </li>
             <li>
                 <a
+                    rel="noreferrer"
                     target="_blank"
-                    href="www.eventbrite.co.uk/e/paddington-toastmaster-club-meeting-tickets-166138072447"
+                    href="https://www.eventbrite.co.uk/e/paddington-toastmaster-club-meeting-tickets-166138072447"
                 >
                     Eventbrite
                 </a>
             </li>
             <li>
                 <a
+                    rel="noreferrer"
                     target="_blank"
                     href="https://toastmasterclub.org/portal.php?page=3017"
                 >
