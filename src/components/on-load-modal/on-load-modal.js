@@ -21,13 +21,13 @@ export default function OnLoadModal() {
                             <h3>Covid-19 Notice</h3>
 
                             <p>
-                                Our first meeting of 2022, January 4th, will
+                                Our second meeting of 2022, January 18th, will
                                 take place online in light of developments
                                 regarding the Omnicron variant <br />
                                 <br />
                                 Paddington Toastmasters expect that we will
                                 resume our fully Hybrid meeting format person
-                                meetings for our second meeting of January.
+                                meetings for our first meeting on February.
                                 <br />
                                 <br /> Stay Safe, <br /> Paddington Toastmasters
                             </p>

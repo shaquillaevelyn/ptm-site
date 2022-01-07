@@ -15,17 +15,17 @@ export default function FAQ() {
         },
         {
             question: "I'm a guest! What can I expect as a guest?",
-            answer: 'Firstly, welcome! We love new guests and are looking forward to showing you how we do things as a club! As a guest, you are more than welcome to enjoy the prepared speeches and the feedback our club members will do. Then, if you wish to, you can partake in our impromptu speaking session, Table Topics. You are free to join out meetings more than once as a guest. We then hope that you will make a decision on whether to join our club as a member.',
+            answer: 'Firstly, welcome! We love to welcome new guests and are looking forward to showing you how we do things as a club! As a guest, you are more than welcome to enjoy the prepared speeches and the feedback our club members will share. Then, if you wish to, you can partake in our impromptu speaking session, Table Topics. You are free to join our meetings more than once as a guest. We then hope that you will make a decision on whether to join our club as a member.',
         },
         {
             question:
                 "I'm shy, nervous and not yet comfortable public speaking! Do I have to speak in the meeting?",
-            answer: 'Absolutely no pressure to speak or particpate during while at a meeting! We just want you to feel comfortable. Feel free to come and enjoy the prepared speeches. And if you do not wish to particpate in tanble topics, please let the Toastmaster of the evening know. ',
+            answer: 'Absolutely no pressure to speak or particpate during while at a meeting! We just want you to feel comfortable. Feel free to come and enjoy the prepared speeches. And if you do not wish to particpate in table topics, please let the Toastmaster of the evening know. ',
         },
 
         {
             question: 'How much is membership?',
-            answer: ' Club Membership comprises of two payments. Club Membership for 6 months (period from October - March or April - September): £66 and a One off Administrative fee to Toastmasters International: £20. For members joining outside of the period start dates, a pro rata fee is calculated. Membership fee covers costs including venue, equipment costs, website costs and zoom pro subscription',
+            answer: 'Club Membership comprises of two payments. Club Membership for 6 months (period from October - March or April - September): £66 and a One off Administrative fee to Toastmasters International: £20. For members joining outside of the period start dates, a pro rata fee is calculated. Membership fee covers costs including venue, equipment costs, website costs and zoom pro subscription',
         },
         {
             question: 'What do I receive as a member?',
