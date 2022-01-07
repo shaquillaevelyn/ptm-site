@@ -1,10 +1,10 @@
 import React from 'react'
-import './about-ptm.css'
+import './about-who.css'
 
 export default function AboutPTMCovid() {
     return (
         <>
-            <main className="about-body-font">
+            <main className="about-ptm-who-text">
                 <p>
                     {' '}
                     When the Covid-19 pandemic hit, our club was able to adapt

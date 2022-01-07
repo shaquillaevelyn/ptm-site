@@ -11,7 +11,9 @@
 }
 
 .about-ptm-who-text {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-family: Source Sans Pro;
     font-weight: 500;
+    margin-left: 15%;
+    margin-right: 15%;
 }
