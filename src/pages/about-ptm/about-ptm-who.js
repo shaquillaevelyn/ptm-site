@@ -3,6 +3,7 @@ import './about-who.css'
 import collage from '../../images/ptmcollage.png'
 
 export default function AboutPTMWho() {
+    // eslint-disable-next-line
     const [mobileMenu, setMobileMenu] = useState(false)
     const mobileView = () => {
         if (window.innerWidth <= 950) {
@@ -20,7 +21,11 @@ export default function AboutPTMWho() {
         <>
             <main className="about-ptm-who-body">
                 {mobileView ? (
-                    <img className="about-ptm-who-img" src={collage} />
+                    <img
+                        className="about-ptm-who-img"
+                        alt="Collage of Paddington Toastmasters Elements"
+                        src={collage}
+                    />
                 ) : (
                     <div />
                 )}
