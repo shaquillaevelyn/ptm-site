@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { Turn as Hamburger } from 'hamburger-react'
 import './header.css'
 import MenuModal from './menu/menu'
+import Anchor from './anchor/anchor'
 
 export default function Header() {
     const [hidden, setHidden] = useState(false)
@@ -17,11 +18,6 @@ export default function Header() {
         })
     }
 
-    // const pageUp = () => {
-    //     useEffect(() => {
-    //         window.scrollTo(0, 0)
-    //     }, [])
-    // }
 
     const [mobileMenu, setMobileMenu] = useState(false)
     const mobileView = () => {
@@ -46,20 +42,9 @@ export default function Header() {
 
     return (
         <>
-            <div className="navbar">
-                <div className="navbar-logo">
-                    <Link to={URL.ROOT}>
-                        <img
-                            className="logo-image"
-                            alt="white tmi logo"
-                            src={toastmastersColor}
-                        ></img>
-                    </Link>
-                    <span className="typography">
-                        Paddington <br />
-                        Toastmasters
-                    </span>
-                </div>
+
+            <header className="navbar">
+              <Anchor />
 
                 <div className="navbar-menu">
                     {mobileMenu ? (
@@ -79,7 +64,7 @@ export default function Header() {
                         </nav>
                     )}
                 </div>
-            </div>
+            </header>
         </>
     )
 }

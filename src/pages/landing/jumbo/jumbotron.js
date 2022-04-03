@@ -7,6 +7,9 @@ export default function Jumbotron() {
     return (
         <>
             <div className="jumbo ">
+                {/* <div className='jumbo-animation'>
+
+                </div> */}
                 <div className="background-video">
                     <video autoPlay loop muted id="video">
                         <source src={backgroundvid} type="video/mp4" />
