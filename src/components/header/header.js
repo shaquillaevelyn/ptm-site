@@ -11,13 +11,6 @@ export default function Header() {
     const [hidden, setHidden] = useState(false)
     const onClick = () => setHidden(!hidden)
 
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-        })
-    }
-
 
     const [mobileMenu, setMobileMenu] = useState(false)
     const mobileView = () => {
@@ -56,7 +49,7 @@ export default function Header() {
                         <nav className="menu header-menu">
                             {menuArray.map((item) => (
                                 <li>
-                                    <Link onclick={scrollToTop} to={item.url}>
+                                    <Link to={item.url}>
                                         {item.title}
                                     </Link>
                                 </li>

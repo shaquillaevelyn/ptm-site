@@ -1,3 +1,4 @@
+import { doc } from 'prettier';
 import React, {useEffect, useState} from 'react';
 import './pageup.css'
 
@@ -9,32 +10,29 @@ export default function PageUp () {
         return 
     }, [])
 
-    // useEffect(() =>{
-    //     window.addEventListener('scroll', scrollStopListener)
-    //     return 
+    // useEffect(() => {
+    //     window.onload()
     // }, [])
 
 
+
     const scrollListener = (e) => {
-        console.log(document.documentElement.scrollTop)
-        document.documentElement.scrollTop > 650 ? setShow(false) : setShow(true)
-
+        (document.documentElement.scrollTop > 600)  ? setShow(false) : setShow(true)
     }
-
-    // const scrollStopListener = (e) => {
-    //     if (document.documentElement.scrollTop < 650){
-    //         btn.className.add('btn-stop') 
-    // }}
 
 
     const pageUp = () => {
-            window.scrollTo(0, 0)
+            window.scrollTo(
+                {
+                    top: 0,
+                    behavior: 'smooth',
+                })
 
     }
 
 
     return(
-        <button id="button" className= {`pageUp  ${setShow ? 'btn-hide' : 'btn-show'}` } onClick={pageUp} hidden={show}>
+        <button id="button" className= {`pageUp   ${setShow ? 'btn-hide' : 'btn-show'}` } onClick={pageUp} hidden={show}>
             Page Up
         </button>
 
