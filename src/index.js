@@ -5,6 +5,7 @@ import './index.css'
 import Header from './components/header/header'
 import Footer from './components/footer/footer'
 import Landing from './pages/landing/landing'
+
 import FAQ from './pages/faq/faq'
 import AboutPTM from './pages/about-ptm/about-ptm'
 import AboutPTMWho from './pages/about-ptm/about-ptm-who'

@@ -1,0 +1,23 @@
+
+.navbar-logo {
+    display: inline-flex;
+}
+
+.logo-image {
+    width: auto;
+    height: 90px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.typography {
+    font-family: Source Sans Pro;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-left: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}

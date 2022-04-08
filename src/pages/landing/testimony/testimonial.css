@@ -2,6 +2,8 @@
     font-family: Source Sans Pro;
     font-weight: 500;
     font-size: 1.25rem;
+
+    
 }
 
 .member-testimony {
@@ -9,6 +11,7 @@
     flex-direction: row;
     margin-left: 7%;
     margin-right: 7%;
+    
 }
 
 @media only screen and (max-width: 1400px) {
@@ -25,6 +28,10 @@
     margin: 3%;
     flex-basis: 100%;
     text-align: justify;
+    border-bottom-color: #772432;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    
 }
 
 .testimony img {

@@ -1,0 +1,56 @@
+.pageUp{
+    top: 80vh;
+    left: 95vw;
+    height: 100px;
+    width: 50px;
+    position: fixed;
+    z-index: 20;
+    background-color: white;
+    border-style: solid;
+    border-width: 4px;
+    border-color: black;
+
+}
+
+.hidden {
+    visibility:hidden;
+    }
+
+.btn-show{
+
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+.btn-hide{
+    animation-duration: 1s;
+    animation-name: slideout;
+
+}
+
+.btn-stop{
+  
+
+}
+
+
+@keyframes slidein { 
+    from{
+        margin-left: 100%;
+    }
+
+    to{
+        margin-right: 0%;
+    }
+}
+
+
+@keyframes slideout { 
+    from{
+        margin-left: 0%;
+    }
+
+    to{
+        margin-right: 100%;
+    }
+}
