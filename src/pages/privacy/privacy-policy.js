@@ -49,10 +49,12 @@ export function PrivacyPolicy() {
                     form, Paddington Toastmasters requests the following:
                 </p>
                 <div className="privacy-policy-list">
+                    <ul>
                     <li>Name</li>
                     <li>Address</li>
                     <li>Telephone number</li>
                     <li>Email</li>
+                    </ul>
                 </div>
                 <p>
                     This data is kept by TMI and Paddington Toastmasters by the
@@ -62,40 +64,46 @@ export function PrivacyPolicy() {
                     Paddington Toastmasters
                 </p>
                 <div className="privacy-policy-list">
-                    <li>name</li>
-                    <li>phone number</li>
-                    <li>telephone number</li>
-                    <li>email</li>
+                    <ul>
+                    <li>Name</li>
+                    <li>Address</li>
+                    <li>Telephone number</li>
+                    <li>Email</li>
+                    </ul>
                 </div>
                 <p>
                     This data is kept by VP Education and Treasurer for the
                     purposes of
                 </p>
                 <div className="privacy-policy-list">
+                <ul>
                     <li>
-                        regular communication with members (e.g agenda of
+                        Regular communication with members (e.g agenda of
                         upcoming meeting
                     </li>
                     <li>
-                        reminder for payment of membership fees) via email
+                        Reminder for payment of membership fees) via email
                         and/or the Paddington Toastmasters WhatsApp Group
                         Additional data kept by Paddington
                     </li>{' '}
                     <li>
-                        data pertaining to members’ education program (pathways)
+                        Data pertaining to members’ education program (pathways)
                         • progress
                     </li>{' '}
-                    <li> roles taken at club meetings</li>
+                    <li> Roles taken at club meetings</li>
+                    </ul>
                 </div>
                 <p>
                     This data is kept by VP Education on private
                     password-protected computer for the purposes of
                 </p>
                 <div className="privacy-policy-list">
+                <ul>
                     <li>
-                        following members’ progress and allocate roles at club
+                        Following members’ progress and allocate roles at club
                         meetings
                     </li>
+                    </ul>
                 </div>
                 <h4>As a Guest</h4>
                 <p>
@@ -103,6 +111,7 @@ export function PrivacyPolicy() {
                     person, Paddington Toastmasters requests the following
                 </p>
                 <div className="privacy-policy-list">
+                <ul>
                     <li>Name</li>
                     <li>Email address</li>
                     <li>Phone number (optional)</li>
@@ -116,6 +125,7 @@ export function PrivacyPolicy() {
                         membership and statistical information regarding out
                         visitors
                     </li>
+                    </ul>
                 </div>
                 <p>
                     {' '}
@@ -131,8 +141,10 @@ export function PrivacyPolicy() {
                     paddingtontoastmasters.co.uk the following data is collected
                 </p>
                 <div className="privacy-policy-list">
+                <ul>
                     <li>Name</li>
                     <li>Email</li>
+                    </ul>
                 </div>
                 <p>
                     This data is kept by TMI and Paddington Toastmasters by our
@@ -140,11 +152,13 @@ export function PrivacyPolicy() {
                     Membership for the purposes of{' '}
                 </p>
                 <div className="privacy-policy-list">
+                <ul>
                     <li>Responding to queries</li>
                     <li>
                         Informing respondent of next Paddington Toastmasters
                         meetings with an agenda, date and time
                     </li>
+                    </ul>
                 </div>
                 <h4>Third-party use of information</h4>
                 <p>
@@ -160,22 +174,24 @@ export function PrivacyPolicy() {
                     rights:
                 </p>
                 <div className="privacy-policy-list">
+                <ul>
                     <li>
-                        the right to be provided with copies of personal
+                        The right to be provided with copies of personal
                         information that Paddington Toastmasters hold about you
                         at any time, subject to a fee specified by law;
                     </li>{' '}
                     <li>
                         {' '}
-                        the right to ask Paddington Toastmasters update and
+                        The right to ask Paddington Toastmasters update and
                         correct any out-of-date or incorrect personal
                         information held about you free of charge;
                     </li>{' '}
                     <li>
                         {' '}
-                        the right to opt out of any communications that
+                        The right to opt out of any communications that
                         Paddington Toastmasters may send you.{' '}
                     </li>
+                    </ul>
                 </div>
                 <p>
                     If you wish to exercise any of the above rights, please

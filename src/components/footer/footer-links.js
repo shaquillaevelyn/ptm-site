@@ -10,10 +10,10 @@ export function PTMFooter() {
         <>
             <div className="section centreInDiv ptm-details">
                 <img alt="tmi" className="image" src={toastmastersColor}></img>
-                <h4>
+                <p>
                     Paddington Toastmasters<br></br>
                     Club Number: 4495118
-                </h4>
+                </p>
             </div>
         </>
     )
@@ -44,9 +44,9 @@ function SectionComponent({ header, content }) {
     return (
         <>
             <div className="section menu-section">
-                <div>
+              
                     <h5>{header}</h5>
-                </div>
+              
 
                 <div>
                     <ListRender listarray={content} />
@@ -77,9 +77,9 @@ export function FooterComp() {
             {FooterArray.map((item) => (
                 <>
                     <div className="section">
-                        <div>
+              
                             <h5>{item.header}</h5>
-                        </div>
+        
 
                         <div>
                             <SectionComponent content={item.content} />
@@ -92,9 +92,9 @@ export function FooterComp() {
 }
 export function ExternalLinks() {
     return (
-        <div className="section">
+        <div className="section externalLinks">
             <h5>Social</h5>
-
+<ul>
             <li>
                 <a
                     rel="noreferrer"
@@ -123,6 +123,7 @@ export function ExternalLinks() {
                 </a>
             </li>
             <li>
+          
                 <a
                     rel="noreferrer"
                     target="_blank"
@@ -131,6 +132,7 @@ export function ExternalLinks() {
                     EasySpeak
                 </a>
             </li>
+            </ul>
         </div>
     )
 }

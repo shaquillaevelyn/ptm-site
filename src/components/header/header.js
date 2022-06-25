@@ -69,6 +69,7 @@ export default function Header() {
                         </>
                     ) : (
                         <nav className="menu header-menu">
+                            <ul>
                             {menuArray.map((item) => (
                                 <li>
                                     <Link onclick={scrollToTop} to={item.url}>
@@ -76,6 +77,7 @@ export default function Header() {
                                     </Link>
                                 </li>
                             ))}
+                              </ul>
                         </nav>
                     )}
                 </div>

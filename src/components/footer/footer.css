@@ -31,13 +31,20 @@
     text-align: center;
 }
 .section {
-    list-style-type: none;
     justify-content: space-between;
     flex-direction: row;
     max-width: 15vw;
     flex-shrink: 5;
     flex-grow: 4;
 }
+
+
+.externalLinks ul, li{
+    list-style-type: none;
+    padding-left: 0px;
+    padding-inline-start: 0px;
+}
+
 
 .useful-links{
     display: flex;
@@ -95,8 +102,9 @@
         max-width: 100px;
         vertical-align: top;
         justify-content: space-evenly;
-        
+  
     }
+
 
     .ptm-details {
         margin-left: auto;
