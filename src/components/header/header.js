@@ -5,23 +5,12 @@ import { Link } from 'react-router-dom'
 import { Turn as Hamburger } from 'hamburger-react'
 import './header.css'
 import MenuModal from './menu/menu'
+import Anchor from './anchor/anchor'
 
 export default function Header() {
     const [hidden, setHidden] = useState(false)
     const onClick = () => setHidden(!hidden)
 
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-        })
-    }
-
-    // const pageUp = () => {
-    //     useEffect(() => {
-    //         window.scrollTo(0, 0)
-    //     }, [])
-    // }
 
     const [mobileMenu, setMobileMenu] = useState(false)
     const mobileView = () => {
@@ -46,20 +35,9 @@ export default function Header() {
 
     return (
         <>
-            <div className="navbar">
-                <div className="navbar-logo">
-                    <Link to={URL.ROOT}>
-                        <img
-                            className="logo-image"
-                            alt="white tmi logo"
-                            src={toastmastersColor}
-                        ></img>
-                    </Link>
-                    <span className="typography">
-                        Paddington <br />
-                        Toastmasters
-                    </span>
-                </div>
+
+            <header className="navbar">
+              <Anchor />
 
                 <div className="navbar-menu">
                     {mobileMenu ? (
@@ -72,7 +50,7 @@ export default function Header() {
                             <ul>
                             {menuArray.map((item) => (
                                 <li>
-                                    <Link onclick={scrollToTop} to={item.url}>
+                                    <Link to={item.url}>
                                         {item.title}
                                     </Link>
                                 </li>
@@ -81,7 +59,7 @@ export default function Header() {
                         </nav>
                     )}
                 </div>
-            </div>
+            </header>
         </>
     )
 }
