@@ -6,8 +6,8 @@ import './faq.css'
 export default function FAQ() {
     const FAQArray = [
         {
-            question: 'When do you meet?',
-            answer: 'We meet on the 1st and 3rd Tuesday of the Month. Doors / zoom open at 18:00 for a 18:15 start.',
+            question: 'When and where do you meet?',
+            answer: 'We meet on the 1st and 3rd Tuesday of the Month. At the Westbourne Park Baptist Church, Porchester Rd, London W2 5DX. Doors / zoom open at 18:00 for a 18:15 start.',
         },
         {
             question: 'What is a hybrid meeting?',
@@ -29,11 +29,11 @@ export default function FAQ() {
 
         {
             question: 'How much is membership?',
-            answer: 'Club Membership comprises of two payments. Club Membership for 6 months (period from October - March or April - September): £69 and a One off Administrative fee to Toastmasters International: £20. For members joining outside of the period start dates, a pro rata fee is calculated. Membership fee covers costs including venue, equipment costs, website costs and zoom pro subscription',
+            answer: 'Club Membership for first time Toastmasters comprises of two payments. Club Membership for 6 months (period from October - March or April - September): £69 and a One time Administrative fee to Toastmasters International: £20. For exisiting toastmasters, the £69 fee applies. For members joining outside of the period start dates, a pro rata fee is calculated. Membership fee covers costs including venue, equipment costs, website costs and zoom pro subscription',
         },
         {
             question: 'What do I receive as a member?',
-            answer: 'As a member, you gain access to Pathways, the Toastmasters educational program to help you manage your progress. The availity to contribute fully to a meeting including delivering prepared speeches and functionary roles to support the running of the meeting. The ability to compete in contests amongst your club and other clubs. Also, the opportuntiy to become a member of the leadership committee, allowing you to shape the steer the direction of the club as well as develop your leadership potential - skills which can be applicable to all areas of your life. ',
+            answer: 'As a member, you gain access to Pathways, the Toastmasters educational program to help you manage your speech progress. The ability to contribute fully to a meeting including delivering prepared speeches, evaluations and functionary roles to support the running of the meeting. The ability to compete in contests in your club and against other clubs. Also, the opportuntiy to become a member of the leadership committee, allowing you to shape the steer the direction of the club as well as develop your leadership potential - skills which can be applicable to all areas of life. ',
         },
         {
             question: 'Can Toastmasters help my career/professional life?',
