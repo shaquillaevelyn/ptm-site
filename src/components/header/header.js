@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import * as URL from '../utils/routes'
-import toastmastersColor from '../../images/toastmastersColor.png'
 import { Link } from 'react-router-dom'
 import { Turn as Hamburger } from 'hamburger-react'
 import './header.css'

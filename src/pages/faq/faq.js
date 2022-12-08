@@ -10,6 +10,10 @@ export default function FAQ() {
             answer: 'We meet on the 1st and 3rd Tuesday of the Month. Doors / zoom open at 18:00 for a 18:15 start.',
         },
         {
+            question: 'What is a hybrid meeting?',
+            answer: 'Our hybrid meeting is a unique set up where you can join us in Person or Online via Zoom. We recommend that you join in on the fun in person to get the rich experience of a Paddington Toastmasters Meeting- however you can get to be in on the fun while being online. Join a meeting and come see for yourself!',
+        },
+        {
             question: 'What can I expect at a meeting?',
             answer: 'Our meetings comprise of two halves. The first, Prepared Speeches where members present to us a verbal creation of thier making for the purposes of improving thier public speaking skill. All prepared speeches in meetings are evaluated by another member. The second half is Table Topics where impromptu speaking skill is put to the test.  Not all meetings look the same but we can assure you that at every meeting, you will have a lot of fun! ',
         },
@@ -25,7 +29,7 @@ export default function FAQ() {
 
         {
             question: 'How much is membership?',
-            answer: 'Club Membership comprises of two payments. Club Membership for 6 months (period from October - March or April - September): £66 and a One off Administrative fee to Toastmasters International: £20. For members joining outside of the period start dates, a pro rata fee is calculated. Membership fee covers costs including venue, equipment costs, website costs and zoom pro subscription',
+            answer: 'Club Membership comprises of two payments. Club Membership for 6 months (period from October - March or April - September): £69 and a One off Administrative fee to Toastmasters International: £20. For members joining outside of the period start dates, a pro rata fee is calculated. Membership fee covers costs including venue, equipment costs, website costs and zoom pro subscription',
         },
         {
             question: 'What do I receive as a member?',

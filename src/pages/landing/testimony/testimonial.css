@@ -27,11 +27,7 @@
 .testimony {
     margin: 3%;
     flex-basis: 100%;
-    text-align: justify;
-    border-bottom-color: #772432;
-    border-bottom-style: solid;
-    border-bottom-width: 4px;
-    
+    text-align: justify; 
 }
 
 .testimony img {

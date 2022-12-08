@@ -1,4 +1,3 @@
-import { doc } from 'prettier';
 import React, {useEffect, useState} from 'react';
 import './pageup.css'
 
@@ -10,14 +9,10 @@ export default function PageUp () {
         return 
     }, [])
 
-    // useEffect(() => {
-    //     window.onload()
-    // }, [])
-
-
-
-    const scrollListener = (e) => {
-        (document.documentElement.scrollTop > 600)  ? setShow(false) : setShow(true)
+    const screen = window.innerHeight
+    const footerHeight = 600
+    const scrollListener = () => {
+        (window.scrollY > 600)  ? setShow(false) : setShow(true)
     }
 
 

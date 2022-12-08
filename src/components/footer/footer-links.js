@@ -4,12 +4,13 @@ import { QueryButton } from '../buttons/join-button'
 import { JoinButton } from '../buttons/join-button'
 import { ROOT, ABOUT_WHO, FAQQ, PRIVACY } from '../../components/utils/routes'
 import { Link } from 'react-router-dom'
+import './footer.css'
 
 export function PTMFooter() {
     return (
         <>
-            <div className="section centreInDiv ptm-details">
-                <img alt="tmi" className="image" src={toastmastersColor}></img>
+            <div className="footerSection centreInDiv footerPTMDetails">
+                <img alt="tmi" className="footerImage" src={toastmastersColor}></img>
                 <p>
                     Paddington Toastmasters<br></br>
                     Club Number: 4495118
@@ -29,13 +30,17 @@ function ListRender({ index, listarray }) {
     }
     return (
         <div>
+              <ul>
             {listarray.map((item) => (
+              
                 <li key={index}>
                     <Link onClick={scrollToTop} to={item.url}>
                         {item.title}
                     </Link>
                 </li>
+           
             ))}
+                 </ul>
         </div>
     )
 }
@@ -43,15 +48,7 @@ function ListRender({ index, listarray }) {
 function SectionComponent({ header, content }) {
     return (
         <>
-            <div className="section menu-section">
-              
-                    <h5>{header}</h5>
-              
-
-                <div>
-                    <ListRender listarray={content} />
-                </div>
-            </div>
+         <ListRender listarray={content} />
         </>
     )
 }
@@ -76,14 +73,14 @@ export function FooterComp() {
         <>
             {FooterArray.map((item) => (
                 <>
-                    <div className="section">
+                    <div className="footerSection">
               
-                            <h5>{item.header}</h5>
+                            <h3>{item.header}</h3>
         
 
-                        <div>
+
                             <SectionComponent content={item.content} />
-                        </div>
+
                     </div>
                 </>
             ))}
@@ -92,8 +89,8 @@ export function FooterComp() {
 }
 export function ExternalLinks() {
     return (
-        <div className="section externalLinks">
-            <h5>Social</h5>
+        <div  id="footerSection" className="footerSection externalLinks">
+            <h3>Social</h3>
 <ul>
             <li>
                 <a
@@ -122,16 +119,6 @@ export function ExternalLinks() {
                     Eventbrite
                 </a>
             </li>
-            <li>
-          
-                <a
-                    rel="noreferrer"
-                    target="_blank"
-                    href="https://toastmasterclub.org/portal.php?page=3017"
-                >
-                    EasySpeak
-                </a>
-            </li>
             </ul>
         </div>
     )
@@ -140,10 +127,10 @@ export function ExternalLinks() {
 export function ContactFooter() {
     return (
         <>
-            <div className="section centreInDiv ptm-details three">
-                <h5>Come to our next meeting!</h5>
+            <div className="footerSection centreInDiv footerPTMDetails">
+                <h3>Come to our next meeting!</h3>
                 <JoinButton />
-                <h5>Any questions or queries?</h5>
+                <h3>Any questions or queries?</h3>
                 <QueryButton />
                 <p>A member of our committe will get back to you ASAP</p>
             </div>

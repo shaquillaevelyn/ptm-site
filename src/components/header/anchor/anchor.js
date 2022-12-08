@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import * as URL from '../../utils/routes'
 import toastmastersColor from '../../../images/toastmastersColor.png'
 import { Link } from 'react-router-dom'
@@ -18,7 +18,7 @@ export default function Anchor() {
         ></img>
     </Link>
     <span className="typography">
-        Paddington <br />
+        Paddington
         Toastmasters
     </span>
 </div>

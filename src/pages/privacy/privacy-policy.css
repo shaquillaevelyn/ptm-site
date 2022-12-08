@@ -7,11 +7,6 @@
     text-align: justify;
 }
 
-
-.privacy-policy-list ul, li {
-    margin-left: 25px;
-    list-style-type: disc;
-}
 .privacy-policy-body a {
     text-decoration: none;
     color: #772432;

@@ -13,11 +13,11 @@
 }
 
 .typography {
-    font-family: Source Sans Pro;
+    font-family: 'Montserrat', sans-serif;    
     font-weight: 600;
-    font-size: 1.25rem;
-    margin-left: 1%;
+    font-size: 1.75rem;
+    margin: 1%;
     margin-top: auto;
     margin-bottom: auto;
-    text-align: center;
+
 }
