@@ -33,7 +33,7 @@ export default function FAQ() {
         },
         {
             question: 'What do I receive as a member?',
-            answer: 'As a member, you gain access to Pathways, the Toastmasters educational program to help you manage your speech progress. The ability to contribute fully to a meeting including delivering prepared speeches, evaluations and functionary roles to support the running of the meeting. The ability to compete in contests in your club and against other clubs. Also, the opportuntiy to become a member of the leadership committee, allowing you to shape the steer the direction of the club as well as develop your leadership potential - skills which can be applicable to all areas of your life. ',
+            answer: 'As a member, you gain access to Pathways, the Toastmasters educational program to help you manage your speech progress. The ability to contribute fully to a meeting including delivering prepared speeches, evaluations and functionary roles to support the running of the meeting. The ability to compete in contests in your club and against other clubs. Also, the opportuntiy to become a member of the leadership committee, allowing you to shape the steer the direction of the club as well as develop your leadership potential - skills which can be applicable to all areas of life. ',
         },
         {
             question: 'Can Toastmasters help my career/professional life?',
