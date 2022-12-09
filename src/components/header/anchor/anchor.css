@@ -4,8 +4,15 @@
 }
 
 .logo-image {
-    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     height: 90px;
+}
+.ptm-logo-text {
+    width: auto;
+    height: 100px;
     display: block;
     justify-content: center;
     align-items: center;
@@ -20,4 +27,10 @@
     margin-top: auto;
     margin-bottom: auto;
 
+}
+
+@media only screen and (max-width: 1000px) {
+    .hidden {
+        display: none;
+    }
 }

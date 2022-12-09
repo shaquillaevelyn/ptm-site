@@ -1,5 +1,6 @@
 import React from 'react'
 import toastmastersColor from '../../images/toastmastersColor.png'
+import ptmLogo from  '../../images/ptm-logo-white-small-transparent.svg'
 import { QueryButton } from '../buttons/join-button'
 import { JoinButton } from '../buttons/join-button'
 import { ROOT, ABOUT_WHO, FAQQ, PRIVACY } from '../../components/utils/routes'
@@ -9,12 +10,14 @@ import './footer.css'
 export function PTMFooter() {
     return (
         <>
-            <div className="footerSection centreInDiv footerPTMDetails">
+            <div className="centreInDiv footerPTMDetails">
                 <img alt="tmi" className="footerImage" src={toastmastersColor}></img>
+                <img alt="paddington toastmasters - a club like no other" className="footerImage tagline" src={ptmLogo}></img>
                 <p>
                     Paddington Toastmasters<br></br>
                     Club Number: 4495118
                 </p>
+
             </div>
         </>
     )
@@ -53,7 +56,7 @@ function SectionComponent({ header, content }) {
     )
 }
 
-export function FooterComp() {
+export function FooterLinks() {
     const FooterArray = [
         {
             header: 'Explorer',
@@ -73,12 +76,8 @@ export function FooterComp() {
         <>
             {FooterArray.map((item) => (
                 <>
-                    <div className="footerSection">
-              
+                    <div>
                             <h3>{item.header}</h3>
-        
-
-
                             <SectionComponent content={item.content} />
 
                     </div>
@@ -89,7 +88,7 @@ export function FooterComp() {
 }
 export function ExternalLinks() {
     return (
-        <div  id="footerSection" className="footerSection externalLinks">
+        <div>
             <h3>Social</h3>
 <ul>
             <li>
@@ -127,13 +126,12 @@ export function ExternalLinks() {
 export function ContactFooter() {
     return (
         <>
-            <div className="footerSection centreInDiv footerPTMDetails">
+
                 <h3>Come to our next meeting!</h3>
                 <JoinButton />
                 <h3>Any questions or queries?</h3>
                 <QueryButton />
                 <p>A member of our committe will get back to you ASAP</p>
-            </div>
         </>
     )
 }
