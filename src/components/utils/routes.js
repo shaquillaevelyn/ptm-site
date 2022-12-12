@@ -1,9 +1,0 @@
-export const ROOT = '/'
-export const ABOUT = '/aboutPTM'
-export const ABOUT_WHO = `${ABOUT}/who`
-export const ABOUT_COVID = `${ABOUT}/covid`
-export const ABOUT_COMMITTEE = `${ABOUT}/committee`
-export const ABOUT_PATHWAYS = `${ABOUT}/pathways`
-export const MEMBERSHIP = '/membership'
-export const FAQQ = '/faq'
-export const PRIVACY = '/privacy-policy'
