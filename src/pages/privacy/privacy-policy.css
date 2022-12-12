@@ -1,0 +1,18 @@
+.privacy-policy-body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-family: Source Sans Pro;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: justify;
+}
+
+.privacy-policy-body a {
+    text-decoration: none;
+    color: #772432;
+}
+
+.privacy-policy-body a:hover {
+    text-decoration: none;
+    color: #772432;
+}
