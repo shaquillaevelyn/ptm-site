@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './about-who.css'
-import collage from '../../images/ptmcollage.png'
+import collage from '../../images/club-collage-1.png'
 
 export default function AboutPTMWho() {
     // eslint-disable-next-line

@@ -5,9 +5,11 @@
 }
 
 .about-ptm-who-img {
+    object-fit: fill;
     overflow: hidden;
     width: 100%;
     height: auto;
+
 }
 
 .about-ptm-who-text {

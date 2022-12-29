@@ -44,10 +44,7 @@ export default function FAQ() {
         <>
             <div className="faq-body">
                 <h1>Frequently Asked Questions</h1>
-                <h3>
-                    Do you have a burning question? Check out our most
-                    frequently asked questions
-                </h3>
+                <h3>Check out the most common questions about Paddington Toastmasters below </h3>
 
                 <h4>
                     Question not here? &#160;
