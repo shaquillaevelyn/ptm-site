@@ -3,7 +3,7 @@ import React from 'react'
 export default function AboutPTMPathways() {
     return (
         <>
-            <p> So</p>
+            <p> Coming soon!</p>
         </>
     )
 }
