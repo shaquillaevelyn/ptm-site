@@ -1,4 +1,4 @@
-.join-button {
+.join-button-small {
     background-color: #288316;
     color: rgb(255, 255, 255);
     border-radius: 12px;
@@ -9,6 +9,21 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.join-button-big {
+    background-color: #288316;
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    height: 100px;
+    width: 340px;
+    border: transparent;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
     margin: 4px 2px;
     cursor: pointer;
     font-weight: 600;

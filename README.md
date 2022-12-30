@@ -17,5 +17,5 @@ To deploy version to gh pages
 
 ```
 git checkout main
-npm run deploy
+ run deploy
 ```

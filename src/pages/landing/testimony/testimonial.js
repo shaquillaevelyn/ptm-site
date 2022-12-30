@@ -8,8 +8,8 @@ export default function Testimonials() {
     return (
         <div className="testimony-text">
             <div style={{ textAlign: 'center' }}>
-                <h1> Testimonials</h1>
-                <h2> Hear from out members about the power of Toastmasters</h2>
+                <h1>Testimonials</h1>
+                <h2>See some of the words from members and guests about Paddington Toastmasters </h2>
             </div>
             <div className="member-testimony">
                 <div className="testimony">

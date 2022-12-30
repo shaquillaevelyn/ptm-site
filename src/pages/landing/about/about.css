@@ -26,6 +26,16 @@
     max-width: 600px;
 }
 
+.join-us{
+    font-family: Source Sans Pro;
+    text-align: center;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 @media only screen and (max-width: 1400px) {
   .about-body  img {
         display: none;

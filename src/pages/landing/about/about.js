@@ -1,7 +1,7 @@
 import React from 'react'
 import talk from '../../../images/new-landing-page.png'
 import './about.css'
-import { JoinButton } from '../../../components/buttons/join-button'
+import { JoinButtonBig } from '../../../components/buttons/join-button'
 
 
 export default function About() {
@@ -26,7 +26,7 @@ export default function About() {
                     most importantly, have a laugh while doing so.&#10; On
                     becoming a member, we offer mentorship and support as you
                     make your way through the Toastmasters International
-                    Educational Program, Pathways
+                    Educational Program, Pathways.
                     <br />
                     <h4>Reap the Benefits </h4>
                     Help us to help you to Build Leadership Skills,Maximise your
@@ -39,7 +39,9 @@ export default function About() {
                     We are waiting welcome you!
                     <br />
                     <br />
-                    <JoinButton />
+                    <div className='join-us'>
+                    <JoinButtonBig />
+                    </div>
                 </div>
 
                 <div>
