@@ -1,7 +1,7 @@
 import React from 'react'
 import './jumbo.css'
 import backgroundvid from '../../../video/ptm-video.mp4'
-import { JoinButton } from '../../../components/buttons/join-button'
+import { JoinButtonSmall } from '../../../components/buttons/join-button'
 
 export default function Jumbotron() {
     return (
@@ -27,7 +27,7 @@ export default function Jumbotron() {
                             Westbourne Park Baptist Church, Porchester Rd,
                             London W2 5DX <br /> And on Zoom!{' '}
                         </p>
-                        <JoinButton />
+                        <JoinButtonSmall />
                     </div>
                 </div>
             </div>

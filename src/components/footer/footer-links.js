@@ -1,8 +1,7 @@
 import React from 'react'
 import toastmastersColor from '../../images/toastmastersColor.png'
 import ptmLogo from  '../../images/ptm-logo-white-small-transparent.svg'
-import { QueryButton } from '../buttons/join-button'
-import { JoinButton } from '../buttons/join-button'
+import { JoinButtonSmall, QueryButton } from '../buttons/join-button'
 import { ROOT, ABOUT_WHO, FAQQ, PRIVACY } from '../../components/utils/routes'
 import { Link } from 'react-router-dom'
 import './footer.css'
@@ -128,7 +127,7 @@ export function ContactFooter() {
         <>
 
                 <h3>Come to our next meeting!</h3>
-                <JoinButton />
+                <JoinButtonSmall />
                 <h3>Any questions or queries?</h3>
                 <QueryButton />
                 <p>A member of our committe will get back to you ASAP</p>
