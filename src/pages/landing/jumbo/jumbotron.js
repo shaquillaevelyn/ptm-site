@@ -17,7 +17,7 @@ export default function Jumbotron() {
                 </div>
                 <div className="overlay-desc">
                     <div className="jumbo-text">
-                        <h2>We are Paddington Toastmaters</h2>
+                        <h2>We are Paddington Toastmasters</h2>
                         <h3>A Club Like No Other</h3>
                         <p>
                             {' '}
