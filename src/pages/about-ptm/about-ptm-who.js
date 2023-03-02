@@ -32,14 +32,14 @@ export default function AboutPTMWho() {
 
                 <p className="about-ptm-who-text">
                     {' '}
-                    Established in 2017 , Paddinton Toastmasters has always been
+                    Established in 2015 , Paddinton Toastmasters has always been
                     a home for public speaking excellence, personal development
                     and loads of fun. Based on the ground floor of the
                     Westbourne Park Baptist Church, we transform what is usually
                     a quiet space, into a homely yet energetic space to hold out
                     meetings. Since the easing of lockdown, we have successfully
                     been able to manage and run hybrid meetings to cater to the
-                    various needs of our guests in person and online.
+                    various needs of our guests and members in person and online.
                     <p />
                     <br />
                     <p>
@@ -53,12 +53,11 @@ export default function AboutPTMWho() {
                     <p>
                         Our meetings comprise of two halves, the first the home
                         of prepared speeches and the second, an opportunity for
-                        members and guests to improve thier impromtu speaking
+                        members and guests to improve their impromtu speaking
                         ability. As per the Toastmasters way, all speeches are
                         given feedback so our members continually improve. And
                         this is all captured in the Toastmasters Educational
-                        program, Pathways that on becoming a member, access is
-                        granted.
+                        program, Pathways, to which you gain access on becoming a member.
                     </p>
                     <br />
                     <h2>Come check us out! </h2>
