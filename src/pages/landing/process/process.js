@@ -43,7 +43,7 @@ export default function Process() {
             </h4>
             <img alt='team icon' src={three} className='process-section'/>
             <p>
-                We all have a role to play in our meetings- as our guest, your job is to simply enjoy! <br/><br/> We will introduce to you the Toastmasters who will support in making sure that thee club meetings runs smoothly and to time ⏱
+                We all have a role to play in our meetings - as our guest, your job is to simply enjoy! <br/><br/> We will introduce to you the Toastmasters who will support in making sure that the club meetings runs smoothly and to time ⏱
             </p>
         </div>
 

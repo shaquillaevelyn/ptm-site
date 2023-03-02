@@ -23,7 +23,7 @@ export default function Testimonials() {
                         skills I know will be 100% applicable in our new normal!
                         Toastmasters has also allowed me to build in my
                         leadership potential. There is ample opprtuntiy to
-                        develop yourself, develop others though mentorship and
+                        develop yourself, develop others through mentorship and
                         develop your club to be the best that it could possibly
                         be, through being a part of the club committee.
                         Patiently, I wait for the pandemic to come to an end so
