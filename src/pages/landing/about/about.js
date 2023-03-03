@@ -1,5 +1,5 @@
 import React from 'react'
-import talk from '../../../images/new-landing-page.png'
+import talk from '../../../images/landing-image.png'
 import './about.css'
 import { JoinButtonBig } from '../../../components/buttons/join-button'
 

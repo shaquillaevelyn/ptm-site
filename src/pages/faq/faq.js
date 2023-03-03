@@ -15,7 +15,7 @@ export default function FAQ() {
         },
         {
             question: 'What can I expect at a meeting?',
-            answer: 'Our meetings comprise of two halves. The first, Prepared Speeches where members present to us a verbal creation of thier making for the purposes of improving thier public speaking skill. All prepared speeches in meetings are evaluated by another member. The second half is Table Topics where impromptu speaking skill is put to the test.  Not all meetings look the same but we can assure you that at every meeting, you will have a lot of fun! ',
+            answer: 'Our meetings comprise of two halves. The first, Prepared Speeches where members present to us a verbal creation of their making for the purposes of improving thier public speaking skill. All prepared speeches in meetings are evaluated by another member. The second half is Table Topics where impromptu speaking skill is put to the test.  Not all meetings look the same but we can assure you that at every meeting, you will have a lot of fun! ',
         },
         {
             question: "I'm a guest! What can I expect as a guest?",
@@ -25,11 +25,6 @@ export default function FAQ() {
             question:
                 "I'm shy, nervous and not yet comfortable public speaking! Do I have to speak in the meeting?",
             answer: 'Absolutely no pressure to speak or particpate during while at a meeting! We just want you to feel comfortable. Feel free to come and enjoy the prepared speeches. And if you do not wish to particpate in table topics, please let the Toastmaster of the evening know. ',
-        },
-
-        {
-            question: 'How much is membership?',
-            answer: 'Club Membership for first time Toastmasters comprises of two payments. Club Membership for 6 months (period from October - March or April - September): £69 and a One time Administrative fee to Toastmasters International: £20. For exisiting toastmasters, the £69 fee applies. For members joining outside of the period start dates, a pro rata fee is calculated. Membership fee covers costs including venue, equipment costs, website costs and zoom pro subscription',
         },
         {
             question: 'What do I receive as a member?',
