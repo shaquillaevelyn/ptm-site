@@ -26,30 +26,33 @@ import {
 
 import reportWebVitals from './reportWebVitals'
 import PrivacyPolicy from './pages/privacy/privacy-policy'
+import PageUp from './components/utils/gototop'
 
 ReactDOM.render(
     <React.StrictMode>
-        <HashRouter basename={`/${process.env.PUBLIC_URL}`}>
-            <Header />
-            <Routes>
-                <Route exact path={ROOT} element={<Landing />} />
-                <Route path={ABOUT} element={<AboutPTM />}>
-                    <Route path={ABOUT_WHO} element={<AboutPTMWho />} />
-                    <Route path={ABOUT_COVID} element={<AboutPTMCovid />} />
-                    <Route
-                        path={ABOUT_COMMITTEE}
-                        element={<AboutPTMCommittee />}
-                    />
-                    <Route
-                        path={ABOUT_PATHWAYS}
-                        element={<AboutPTMPathways />}
-                    />
-                </Route>
-                <Route path={FAQQ} element={<FAQ />} />
-                <Route path={PRIVACY} element={<PrivacyPolicy />} />
-            </Routes>
 
-            <Footer />
+        <HashRouter basename={`/${process.env.PUBLIC_URL}`}>
+        <PageUp />
+        <Header />
+       
+        <Routes>
+            <Route exact path={ROOT} element={<Landing />} />
+            <Route path={ABOUT} element={<AboutPTM />}>
+                <Route path={ABOUT_WHO} element={<AboutPTMWho />} />
+                <Route path={ABOUT_COVID} element={<AboutPTMCovid />} />
+                <Route
+                    path={ABOUT_COMMITTEE}
+                    element={<AboutPTMCommittee />}
+                />
+                <Route
+                    path={ABOUT_PATHWAYS}
+                    element={<AboutPTMPathways />}
+                />
+            </Route>
+            <Route path={FAQQ} element={<FAQ />} />
+            <Route path={PRIVACY} element={<PrivacyPolicy />} />
+        </Routes>
+        <Footer />
         </HashRouter>
     </React.StrictMode>,
     document.getElementById('root')
