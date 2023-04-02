@@ -12,8 +12,9 @@ import {
 export default function Footer() {
     return (
         <>
+
             <div className="footer">
-            <div className="footerSection">
+                <div className="footerSection">
                 <PTMFooter />
                 </div>
                 <div className="usefulLinks footerSection">
@@ -22,8 +23,9 @@ export default function Footer() {
                 </div>
                 <div className="usefulLinks footerSection centre">
                 <ContactFooter />
-                </div>
+                    </div>
             </div>
-        </>
+
+            </>
     )
 }

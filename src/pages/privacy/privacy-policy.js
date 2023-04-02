@@ -2,6 +2,8 @@ import React from 'react'
 import './privacy-policy.css'
 
 export function PrivacyPolicy() {
+
+
     return (
         <>
             <div className="privacy-policy-body">
