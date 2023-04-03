@@ -5,13 +5,38 @@ import shaq from '../../../images/shaq-test.jpg'
 import pippa from '../../../images/pippa.jpg'
 
 export default function Testimonials() {
-    return (
+    return (<>
+
+           <section>
         <div className="testimony-text">
-            <div style={{ textAlign: 'center' }}>
                 <h1>Testimonials</h1>
-                <h2>See some of the words from members and guests about Paddington Toastmasters </h2>
+                <h2>See some of the words from members and guests...</h2>
             </div>
-            <div className="member-testimony">
+            <div className="testimonial-layout">
+                <h1 className='test a'>test 1</h1>
+                <h1 className='test b'>test 2</h1>
+                <h1 className='test c'>test 3</h1>      
+                <h1 className='test d'>test 4</h1>
+                <h1 className='test e'>test 5</h1>
+
+            </div>
+
+           </section>
+
+            <h5>
+                Learn more from our member case studies
+            </h5>
+
+            <section className='case-study'>
+
+
+            <h6>Fedor - Toastmaster of 13 years</h6>
+            <h6>Shaquilla - Toastmaster of 4 years</h6>
+            <h6>Shaquilla - Toastmaster of 6 months</h6>
+                
+</section>
+
+            {/* <div className="member-testimony">
                 <div className="testimony">
                     <img src={shaq} alt="shaquilla"></img>
                     <p>
@@ -73,7 +98,8 @@ export default function Testimonials() {
                     </p>
                     <cite title="Source Title">--Pippa </cite>
                 </div>
-            </div>
-        </div>
+            </div> */}
+
+        </>
     )
 }
