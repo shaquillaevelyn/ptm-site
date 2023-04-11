@@ -1,7 +1,7 @@
 import React from 'react'
 import './testimonial.css'
-import fedor from '../../../images/fedor.jpg'
-import shaq from '../../../images/shaq-test.jpg'
+import anonMan from '../../../images/anon-man.jpg'
+import anonWoman from '../../../images/anon-woman.png'
 import pippa from '../../../images/pippa.jpg'
 
 export default function Testimonials() {
@@ -29,10 +29,27 @@ export default function Testimonials() {
 
             <section className='case-study'>
 
+            <div>
+                <h6>Fedor - Toastmaster of 13 years</h6>
+                          <a> Read more about Fedor</a>
+                <img src={anonMan} alt='filler man'></img> 
+        
+            </div>
 
-            <h6>Fedor - Toastmaster of 13 years</h6>
-            <h6>Shaquilla - Toastmaster of 4 years</h6>
-            <h6>Shaquilla - Toastmaster of 6 months</h6>
+            <div>
+                <h6>Shaquilla - Toastmaster of 4 years</h6>
+                                              <a> Read more about Shaquilla</a>  
+                <img src={anonWoman} alt='filler man'></img>
+
+            </div>
+
+            <div>
+                <h6>Shaquilla - Toastmaster of 6 months</h6>
+                                <a> Read more about Shaquilla</a>  
+                <img src={anonMan} alt='filler man'></img>
+
+            </div>
+
                 
 </section>
 
