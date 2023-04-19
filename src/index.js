@@ -26,13 +26,13 @@ import {
 
 import reportWebVitals from './reportWebVitals'
 import PrivacyPolicy from './pages/privacy/privacy-policy'
-import PageUp from './components/utils/gototop'
+// import PageUp from './components/utils/gototop'
 
 ReactDOM.render(
     <React.StrictMode>
 
         <HashRouter basename={`/${process.env.PUBLIC_URL}`}>
-        <PageUp />
+        {/* <PageUp /> */}
         <Header />
        
         <Routes>

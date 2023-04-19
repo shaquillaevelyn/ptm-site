@@ -17,8 +17,9 @@ export default function Jumbotron() {
                 </div>
                 <div className="overlay-desc">
                     <div className="jumbo-text">
-                        <h2>We are Paddington Toastmasters</h2>
-                        <h3>A Club Like No Other</h3>
+                        <h1 className='header-text-lg'>We are Paddington Toastmasters<br/>
+                            <span className='accent-text'>A Club Like No Other</span>
+                            </h1>
                         <p>
                             {' '}
                             Meetings every 1st and 3rd Tuesday of the Month

@@ -1,44 +1,54 @@
 import React from 'react'
 import './quotations.css'
 
+
+function quoteRender({index, quoteObject }) {
+    return (
+<>
+        {quoteObject.map((item) => (
+                                <div className="rectangle">
+            <blockquote className="blockquote">
+                <p className="">
+                    {item.quote}
+                    “Speech is power: speech is to persuade, to convert, to
+                    compel."
+                </p>
+            <figcaption>
+                    {' '}
+                    <cite title="Source Title">Ralph Waldo Emerson {item.author} </cite>
+                </figcaption>
+            </blockquote>
+            </div>
+        ))}
+            </>
+
+    )
+}
 export function QuoteOne() {
     return (
         <>
-            <div className="top-triangle"></div>
-            <div className="rectangle">
-                <blockquote className="blockquote">
-                    <h1 className="mb-0">
-                        “Speech is power: speech is to persuade, to convert, to
-                        compel."
-                    </h1>
-                    <footer className="blockquote-footer">
-                        {' '}
-                        <cite title="Source Title">Ralph Waldo Emerson </cite>
-                    </footer>
-                </blockquote>
-            </div>
-            <div className="down-triangle"></div>
+
+
         </>
     )
+
 }
 
 export function QuoteTwo() {
     return (
         <>
-            <div className="top-triangle"></div>
+
             <div className="rectangle">
                 <blockquote className="blockquote text-center">
-                    <h1 className="mb-0">
+                    <p className="mb-0">
                         “All speaking is public speaking, whether it’s to one
                         person or a thousand."
-                    </h1>
-                    <footer className="blockquote-footer">
-                        {' '}
+                    </p><figcaption>
                         <cite title="Source Title">Roger Love </cite>
-                    </footer>
+                    </figcaption>
                 </blockquote>
             </div>
-            <div className="down-triangle"></div>
+
         </>
     )
 }
@@ -46,19 +56,19 @@ export function QuoteTwo() {
 export function QuoteThree() {
     return (
         <>
-            <div className="top-triangle"></div>
+
             <div className="rectangle">
                 <blockquote className="blockquote text-center">
-                    <h1 className="mb-0">
+                    <p >
                         “If you’re not comfortable with public speaking – and nobody starts out comfortable; <br/> you have to learn how to be comfortable – practice. "
-                    </h1>
-                    <footer className="blockquote-footer">
+                    </p>
+                    <figcaption className="blockquote-footer">
                         {' '}
                         <cite title="Source Title">Hilary Clinton </cite>
-                    </footer>
+                    </figcaption>
                 </blockquote>
             </div>
-            <div className="down-triangle"></div>
+
         </>
     )
 }
