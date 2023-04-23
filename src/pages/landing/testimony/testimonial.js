@@ -6,15 +6,15 @@ import pippa from '../../../images/pippa.jpg'
 
 export default function Testimonials() {
     return (
-        <div className="testimony-text">
-            <div style={{ textAlign: 'center' }}>
-                <h1>Testimonials</h1>
-                <h2>See some of the words from members and guests about Paddington Toastmasters </h2>
-            </div>
-            <div className="member-testimony">
+        <section className="margin-section-lg">
+
+                <h2 className='header-text-md text-centre'>Testimonials</h2>
+                <p className='header-text-sm text-centre'>See some of the words from members and guests about Paddington Toastmasters </p>
+
+            <div className="body-text-lg flex-row member-testimony">
                 <div className="testimony">
                     <img src={shaq} alt="shaquilla"></img>
-                    <p>
+                    <p  className='body-text-lg'>
                         Joining Toastmasters 2 years ago has had such a postive
                         effect on me. I am a far more eloquent, competent and
                         creative speaker; and during the Covid-19 pandemic and
@@ -34,7 +34,7 @@ export default function Testimonials() {
                 </div>
                 <div className="testimony">
                     <img src={fedor} alt="fedor"></img>
-                    <p>
+                    <p  className='body-text-lg'>
                         I have benefitted so much from being a member of
                         Toastmasters. Firstly, the skills I acquired gave me the
                         confidence to accept a job that required frequent public
@@ -53,7 +53,7 @@ export default function Testimonials() {
                 </div>
                 <div className="testimony">
                     <img src={pippa} alt="pippa"></img>
-                    <p>
+                    <p  className='body-text-lg'>
                         {' '}
                         I am what you might call a “legacy” in that my mum was a
                         Toastmaster for many years. I am following in her
@@ -74,6 +74,6 @@ export default function Testimonials() {
                     <cite title="Source Title">--Pippa </cite>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

@@ -1,16 +1,4 @@
-h2 {
-    font-family: Source Sans Pro;
-    text-align: center;
-    font-size: 36px;
-}
 
-.process {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    font-family: Source Sans Pro;
-}
 
 .process-section {
     width: 25rem;
@@ -18,19 +6,6 @@ h2 {
     text-justify: auto;
 }
 
-.process-section h4 {
-    text-align: center;
-    font-size: 24px;
-    margin: 5px;
-    height: 62px;
-}
-
-.process-section p {
-    align-items: center;
-    text-align: justify;
-    font-size: 20px;
-    text-justify: inter-word;
-}
 .process-section  img {
 
     margin-left: auto;
@@ -44,9 +19,7 @@ h2 {
 }
 
 .join-us{
-    font-family: Source Sans Pro;
     text-align: center;
-    font-size: 36px;
     display: flex;
     flex-direction: column;
     align-items: center;

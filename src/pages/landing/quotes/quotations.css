@@ -12,8 +12,8 @@
 
 .rectangle {
     background-color: #004165;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 200px;
 
     position: initial;
     text-align: center;

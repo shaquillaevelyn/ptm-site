@@ -7,7 +7,7 @@ import { JoinButtonBig } from '../../../components/buttons/join-button'
 export default function About() {
     return (
         <>
-            <div className="about-body">
+            <section className=" margin-section-lg about-body">
                 <div className="text">
                     <h2 className="header-text-lg">
                         Welcome to Paddington Toastmasters !
@@ -35,7 +35,8 @@ export default function About() {
                     becoming a member, we offer mentorship and support as you
                     make your way through the Toastmasters International
                         Educational Program, Pathways.
-                        </p>
+                    </p>
+                    <p className='body-text-lg'>Learn more about <span><a className='inline-link' href={"www.bbc.co.uk"}>Pathways</a></span></p>
                     <br />
                     <p className='body-text-lg body-text-lg-bold'>Reap the Benefits </p>
                     <p className='body-text-lg'>
@@ -58,7 +59,7 @@ export default function About() {
                 <div>
                     <img src={talk} alt="talk "></img>
                 </div>
-            </div>
+            </section>
         </>
     )
 }
