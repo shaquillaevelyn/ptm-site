@@ -28,7 +28,7 @@ export default function Header() {
 
     const menuArray = [
         { title: 'Home', url: URL.ROOT },
-        { title: 'About PTM', url: URL.ABOUT_WHO },
+        // { title: 'About PTM', url: URL.ABOUT_WHO },
         { title: 'FAQ', url: URL.FAQQ },
     ]
 

@@ -1,9 +1,8 @@
 .jumbo {
     display: flex;
-    max-height: 80vh;
+    max-height: 100vh;
     background-repeat: no-repeat;
     background-size: 100% 85%;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -18,7 +17,6 @@
     object-fit: fill;
     max-height: 80vh;
     display: flex;
-
     top: 95px;
     left: 0;
     width: 100%;
@@ -38,6 +36,7 @@ video {
 }
 
 .overlay-desc {
+    z-index: 2;
     background: rgba(0, 0, 0, 0);
     position: absolute;
     right: 0;
@@ -54,35 +53,30 @@ video {
     display: block;
     position: relative;
     padding: 1vh;
-    font-size: 1.25rem;
-    z-index: 2;
+    z-index: 2; 
 }
 
 .jumbo-text h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
     text-align: center;
-    font-size: 36px;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .jumbo-text h3 {
-    font-family: 'Mistrully', sans-serif;
-    font-weight: 500;
+
     text-align: center;
     margin: 0;
-       font-size: 30px;
-    letter-spacing: 2px;
+    
 }
 
-.jumbo-text p {
+/* .jumbo-text p {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
-    font-size: 20px;
-}
+    font-size: 20px; 
+} */
 
 @media only screen and (max-width: 950px) {
     .jumbo-text {
+         z-index: 2;
         text-align: center;
         background-color: white;
         position: relative;
@@ -91,6 +85,38 @@ video {
         margin-right: auto;
     }
     .overlay-desc {
+         z-index: 2;
+        background: rgba(0, 0, 0, 0);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .jumbo-text h2 {
+        text-align: center;
+    }
+
+    .jumbo-text h3 {
+        text-align: center;
+    }
+}
+
+@media (min-width:500px) and (max-width: 950px) {
+    .jumbo-text {
+         z-index: 2;
+        text-align: center;
+        background-color: white;
+        position: relative;
+        padding: 2vh;
+        margin-left: auto;
+        margin-right: auto;
+                display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .overlay-desc {
+         z-index: 2;
         background: rgba(0, 0, 0, 0);
         position: relative;
         display: flex;
