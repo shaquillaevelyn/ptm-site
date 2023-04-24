@@ -1,7 +1,7 @@
 {
     "homepage": "https://shaquillaevelyn.github.io",
     "name": "paddingtontoastmasters.co.uk",
-    "version": "1.0.3",
+    "version": "1.1.0",
     "private": false,
     "dependencies": {
         "@emotion/css": "^11.5.0",
