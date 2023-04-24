@@ -20,14 +20,17 @@ html{
     --font-weight-xlg: 700;
 
     --margin-large: 5% 10% 5% 10%;
-    --margin-small: 0% 15% 0% 15%;
+    --margin-small: 5% 0% 5% 0%;
     --margin-sm: 5vh 0% 5vh 0%;
+
+    --padding-small: 4% 4% 4% 4%;
+
 
     --tm-blue: #004165;
     --tm-red: #772432; 
     --tm-grey:  #A9B2B1;
     --tm-yellow: #F2DF74;
-
+    --tm-blue-grad: linear-gradient(90deg, rgba(3,41,62,1) 4%, #004165 50%);
     --tm-join-green: #298e5a;
     --tm-enq-orange: rgb(255, 132, 0);
     /* --tm-blue-grad:
@@ -61,6 +64,14 @@ body {
     font-weight: var(--font-weight-lg);
 
 }
+
+.header-text-mdlg{
+    font-size: var(--font-size-xl);
+    font-family: Montserrat;
+    font-weight: var(--font-weight-lg);
+
+}
+
 .header-text-sm{
     font-size: var(--font-size-lg);
     font-family: Montserrat;
@@ -71,13 +82,13 @@ body {
 .accent-text{
         font-family: 'Mistrully', sans-serif;
         font-weight: var(--font-weight-md);
-        font-size: var(--font-size-xxl);
+        font-size: var(--font-size-lg);
         letter-spacing: 2px;
 
 }
 
 .body-text-xlg{
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xxxl);
     font-weight: var(--font-weight-lg);
     font-family: Source Sans Pro;
 }
@@ -88,13 +99,10 @@ body {
     font-family: Source Sans Pro;
 }
 
-/* .body-text-lg-bold{
-     &-default {
-        @extend .btn;
-   font-weight: var(--font-weight-xlg); 
-     }
+.body-text-lg-bold{
+    font-weight: var(--font-weight-lg);
 }
- */
+
 
 .body-text-sm{
     font-size: var(--font-size-base);
@@ -141,9 +149,15 @@ body {
     margin: var(--margin-large);
 }
 
-.margin-section-lg{
+.margin-section-sm{
+    margin: var(--margin-small);
+}
+
+.margin-top-sm{
     margin: var(--margin-sm);
 }
+
+
 /*  Divide by 2  */
 
 .section-two{
@@ -165,6 +179,18 @@ body {
 .flex-row{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+
+}
+
+.flex-gap{
+    gap: 50px;
+    
 }
 
 /* Positioning */
@@ -185,24 +211,30 @@ body {
 /* buttons */
 
 .join-button-small{
-    background-color: var(--tm-join-green);;
+    background-color: var(--tm-join-green);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-lg);
+    padding: var(--padding-small);
     color: rgb(255, 255, 255);
     border-radius: 12px;
-    height: 50px;
-    width: 170px;
+    height: auto;
+    width: 200px;
     border: transparent;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+
     margin: 4px 2px;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: var(--font-weight-lg);
 
 }
 
 .join-button-big{
     background-color: var(--tm-join-green);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-lg);
+
     color: rgb(255, 255, 255);
     border-radius: 12px;
     height: 100px;
@@ -211,29 +243,29 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 28px;
+
     margin: 4px 2px;
     cursor: pointer;
-    font-weight: 600;
-
-
-    
+  
 }
 
 .query-button{
     background-color: var(--tm-enq-orange);
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-lg);
+
     color: rgb(255, 255, 255);
     border-radius: 12px;
-    height: 50px;
-    width: 170px;
+    height: 55px;
+    width: 200px;
+
     border: transparent;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+
     margin: 4px 2px;
     cursor: pointer;
-    font-weight: 600;
 
 }
 
@@ -253,3 +285,6 @@ a:checked {
     text-decoration: none;
     color: #ffffff;
 }
+
+
+/* Media */

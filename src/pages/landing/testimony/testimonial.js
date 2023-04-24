@@ -11,7 +11,7 @@ export default function Testimonials() {
                 <h2 className='header-text-md text-centre'>Testimonials</h2>
                 <p className='header-text-sm text-centre'>See some of the words from members and guests about Paddington Toastmasters </p>
 
-            <div className="body-text-lg flex-row member-testimony">
+            <div className="body-text-lg flex-row member-testimony flex-gap">
                 <div className="testimony">
                     <img src={shaq} alt="shaquilla"></img>
                     <p  className='body-text-lg'>

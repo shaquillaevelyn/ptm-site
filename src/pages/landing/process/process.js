@@ -13,15 +13,15 @@ export default function Process() {
 
     return (
         <>
-        <section className='margin-section-lg'>
+        <section className='margin-section-sm'>
         <h2 className='header-text-md text-centre'>
             How a Meeting Works
         </h2>
 
-<container className='flex-row'>
+<container className='flex-row flex-wrap'>
 <div className='process-section'>
             <p className='header-text-sm text-centre'>
-                Start with Prepared Speech
+                Start with Prepared Speeches
             </p>
  <img  alt='speech icon' src={one} className='process-section'/>
             <p className='body-text-lg'>
@@ -30,7 +30,7 @@ export default function Process() {
         </div>
         <div className='process-section'>
             <p className='header-text-sm text-centre'>
-                Speeches are Evaluated
+                All Speeches are Evaluated
             </p>
             <img alt='notes icon' src={two} className='process-section'/>
             <p className='body-text-lg'>
@@ -49,7 +49,7 @@ export default function Process() {
 
         <div className='process-section'>
             <p className='header-text-sm text-centre'>
-                Finish with Table Topics
+                End meeting with Table Topics
             </p>
 <img alt='fun icon' src={four} className='process-section'/>
      

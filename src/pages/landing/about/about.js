@@ -15,10 +15,12 @@ export default function About() {
                     <p className='body-text-lg body-text-lg-bold'>
                         Public Speaking is NOT to be Feared
                     </p>
+                             <br/>
                     <p className='body-text-lg body-text-lg-bold'>
                         It can be enjoyed and Paddington Toastmasters are here
                         to help!
                     </p>
+                    <br/>
                     <p className='body-text-lg'>
                     We are a lively and supportive club, ready to support
                     you as you build your confidence, public speaking and
@@ -26,7 +28,7 @@ export default function About() {
                     or a seasoned public speaker, you are welcome to join us at
                     our meetings where we can improve together.
                     </p>
-
+         <br/>
                     <p className='body-text-lg body-text-lg-bold'>Progress with us</p>
                     <p className='body-text-lg'>
                     We pride ourselves on creating a relaxed and informal
