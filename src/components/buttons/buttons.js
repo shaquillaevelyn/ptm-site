@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+
 export function JoinButtonSmall() {
   return (
     <>
@@ -38,11 +40,21 @@ export function QueryButton() {
   );
 }
 
-export function SkipToContent() {
+export function SkipToContent(props) {
+  const footerLocation = useRef(null);
+
+  const moveToFooter = () => {
+    window.scrollTo({
+      top: props.footerLocation.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <div className="skip-to-content">
-        Skip to <a href="#body">content</a> or <a href="#footer">footer</a>
+        Skip to <a href="#body">content</a> or{" "}
+        <a onClick={moveToFooter}>footer</a>
       </div>
     </>
   );

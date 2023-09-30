@@ -5,6 +5,7 @@ import "./index.css";
 import Header from "./components/navigation/header";
 import Footer from "./components/footer/footer";
 import Landing from "./pages/landing/landing";
+// import ScrollTop from "./components/utils/scrollTo";
 
 import FAQ from "./pages/faq/faq";
 
@@ -17,7 +18,7 @@ ReactDOM.render(
   <React.StrictMode>
     <HashRouter basename={`/${process.env.PUBLIC_URL}`}>
       <Header />
-
+      {/* <ScrollTop /> */}
       <Routes>
         <Route exact path={ROOT} element={<Landing />} />
         <Route path={FAQQ} element={<FAQ />} />

@@ -1,20 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./jumbo.css";
 import backgroundvid from "../../../video/ptm-video.mp4";
-import { JoinButtonSmall } from "../../../components/buttons/join-button";
+import { JoinButtonSmall } from "../../../components/buttons/buttons";
 
 export default function Jumbotron() {
   return (
     <>
-      <div id="main" className="jumbo">
+      <div className="jumbo">
         <div className="background-video">
-          <video autoPlay loop muted id="video">
+          <video autoPlay controls loop muted id="video">
             <source src={backgroundvid} type="video/mp4" />
           </video>
         </div>
-        <div className="overlay-desc">
+        {/* <div className="overlay-desc">
           <div className="jumbo-text">
-            <h1 className="header-text-mdlg">
+            <h1 id="" className="header-text-mdlg">
               We are Paddington Toastmasters
               <br />
               <span className="accent-text">A Club Like No Other</span>
@@ -29,7 +29,7 @@ export default function Jumbotron() {
             </p>
             <JoinButtonSmall />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

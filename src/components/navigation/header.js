@@ -5,7 +5,7 @@ import { Turn as Hamburger } from "hamburger-react";
 import "./header.css";
 import MenuModal from "./menu/menu";
 import Anchor from "./anchor/anchor";
-import { SkipToContent } from "../buttons/join-button";
+import { SkipToContent } from "../buttons/buttons";
 
 export default function Header() {
   const [hidden, setHidden] = useState(false);

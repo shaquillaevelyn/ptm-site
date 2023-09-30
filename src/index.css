@@ -18,9 +18,10 @@ html {
   --font-weight-lg: 600;
   --font-weight-xlg: 700;
 
-  --margin-large: 5% 10% 5% 10%;
+  --margin-large: 5% 15% 5% 15%;
   --margin-small: 5% 0% 5% 0%;
   --margin-sm: 5vh 0% 5vh 0%;
+  --margin-side: 1% auto 1% auto;
 
   --padding-small: 4% 4% 4% 4%;
 
@@ -45,6 +46,8 @@ body {
   margin: 0;
   width: 100%;
   overflow: scroll;
+  background: #fefeff;
+  /* background: #f8f8fc; */
 }
 
 /* Text  */
@@ -141,6 +144,10 @@ body {
 
 .margin-top-sm {
   margin: var(--margin-sm);
+}
+
+.margin-side {
+  margin: --var(--margin-side);
 }
 
 /*  Divide by 2  */

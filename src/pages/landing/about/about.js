@@ -1,15 +1,16 @@
 import React from "react";
 import talk from "../../../images/landing-image.png";
 import "./about.css";
-import { JoinButtonBig } from "../../../components/buttons/join-button";
+import { JoinButtonBig } from "../../../components/buttons/buttons";
 
 export default function About() {
   return (
     <>
-      <section className=" margin-section-lg about-body">
+      <section id="about" className=" margin-section-lg about-body">
         <div className="text">
           <h2 className="header-text-lg">
-            Welcome to Paddington Toastmasters !
+            Welcome to Paddington Toastmasters ! <br /> - your first step on
+            your journey to public speaking excellence ✨
           </h2>
           <p className="body-text-lg body-text-lg-bold">
             Public Speaking is NOT to be Feared

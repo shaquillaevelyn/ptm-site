@@ -1,4 +1,5 @@
 import "./footer.css";
+import { useEffect, useRef } from "react";
 
 import {
   ContactFooter,
@@ -7,10 +8,12 @@ import {
   PTMFooter,
 } from "./footer-links";
 
-export default function Footer() {
+export default function Footer(props) {
+  const footerLocation = useRef(null);
+
   return (
     <>
-      <footer id="footer" className="footer">
+      <footer id="footer" className="footer" ref={props.footerLocation}>
         <div className="footerSection">
           <PTMFooter />
         </div>
