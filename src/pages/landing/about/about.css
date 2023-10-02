@@ -11,7 +11,7 @@
 }
 
 
-.about-body img {
+.about-body video {
     max-width: 600px;
 }
 
@@ -28,8 +28,13 @@
 .inline-link{
     color: blue;
 }
-@media only screen and (max-width: 1400px) {
-  .about-body  img {
+#video-about{
+    height: auto;
+    min-width: 600px;
+    border-radius: 25px;
+}
+@media only screen and (max-width: 1024px) {
+  .about-body  video {
         display: none;
     }
 }

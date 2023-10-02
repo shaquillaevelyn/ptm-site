@@ -22,8 +22,10 @@ html{
     --margin-large: 5% 10% 5% 10%;
     --margin-small: 5% 0% 5% 0%;
     --margin-sm: 5vh 0% 5vh 0%;
+    --margin-med: 2% 5% 5% 5%;
 
-    --padding-small: 4% 4% 4% 4%;
+    --padding-med: 4% 4% 4% 4%;
+    --padding-small: 3% 3% 3% 3%;
 
 
     --tm-blue: #004165;
@@ -157,6 +159,10 @@ body {
     margin: var(--margin-sm);
 }
 
+.margin-section-md{
+    margin: var(--margin-med);
+}
+
 
 /*  Divide by 2  */
 
@@ -199,13 +205,21 @@ body {
     text-align: center;
 }
 
-.vertical-center {
+.vertical-center{
         margin: 0;
         position: absolute;
         top: 50%;
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
     
+}
+
+/* border */
+.border:hover{
+    border-radius: 25px;
+    border-color: var(--tm-red);
+    /* border-style: solid; */
+    box-shadow: 5px 5px 5px 1px rgba(17, 17, 107, 0.2);
 }
 
 /* buttons */
@@ -227,8 +241,8 @@ body {
     margin: 4px 2px;
     cursor: pointer;
     font-weight: var(--font-weight-lg);
-
 }
+
 
 .join-button-big{
     background-color: var(--tm-join-green);

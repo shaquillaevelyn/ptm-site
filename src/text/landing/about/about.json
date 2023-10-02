@@ -1,0 +1,25 @@
+{
+    "about":[
+        {
+            "header": "Start with Prepared Speeches",
+            "text": "Members come along with a prepared speech ready to entertain, inform or even wow the audience.  \n  Each speech counting towards their progress in Pathways, Toastmasters unique educational program designed to support Toastmasters on thier individual journeys",
+            "image": "../../../images/1.png"
+        },
+              {
+            "header": "All Speeches are Evaluated",
+            "text": "Constructive feedback is a huge part of what we do. \n 000A All speakers get direct feedback on how to improve speech and evaluators get to practise active listening skills",
+            "image": "../../../images/2.png"
+        },
+              {
+            "header": "Members in Functionary Roles",
+            "text": " We all have a role to play in our meetings - as our guest, your job is to simply enjoy! \n We will introduce to you the Toastmasters who will support in making sure that the club meetings runs smoothly and to time ⏱",
+            "image": "../../../images/3.png"
+        },
+              {
+            "header": "Meeting with Table Topics",
+            "text": "Guests and members are free to join in with our most popular segment, Table Topics! \n Get a random question and you have two minutes to speak about anything that comes to mind! A fun way to practise impromtpu speaking for moments where we may suddenly have the spotlight.",
+            "image": "../../../images/4.png"
+        }
+    ]
+
+}
