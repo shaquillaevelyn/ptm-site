@@ -1,5 +1,4 @@
 import React from 'react'
-import talk from '../../../images/landing-image.png'
 import video from '../../../video/brave.mp4'
 import './about.css'
 import { JoinButtonBig } from '../../../components/buttons/join-button'
@@ -8,8 +7,9 @@ import { JoinButtonBig } from '../../../components/buttons/join-button'
 export default function About() {
     return (
         <>
+
             <section className=" margin-section-lg about-body">
-                <div className="text">
+                <article className="text">
                     <h2 className="header-text-lg">
                         Welcome to Paddington Toastmasters -
                     <br/>
@@ -57,15 +57,17 @@ export default function About() {
                         <br />
                         </p>
                
-                </div>
+                </article>
 
                 <div>
-                        <video id="video-about" autoPlay loop muted>
-                            <source src={video} type="video/mp4" />
+                <video id="video-about" autoPlay loop muted >
+                    
+                        <source src={video} type="video/mp4" />
                     </video>
                 </div>
 
             </section>
+
                                  <div className='join-us'>
                     <JoinButtonBig />
                     </div>
