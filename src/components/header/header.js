@@ -28,7 +28,6 @@ export default function Header() {
 
     const menuArray = [
         { title: 'Home', url: URL.ROOT },
-        // { title: 'About PTM', url: URL.ABOUT_WHO },
         { title: 'FAQ', url: URL.FAQQ },
     ]
 
@@ -41,7 +40,7 @@ export default function Header() {
                 <div className="navbar-menu">
                     {mobileMenu ? (
                         <>
-                            <Hamburger toggled={hidden} toggle={setHidden} />
+                            <Hamburger toggled={hidden} toggle={setHidden} label="Show menu"  aria/>
                             <MenuModal hidden={!hidden} onClick={onClick} />
                         </>
                     ) : (

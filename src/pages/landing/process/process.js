@@ -1,6 +1,6 @@
 import React from 'react'
 import './process.css'
-import { about } from '../../../text/landing/about/about.json'
+import { about } from '../../../text/process.json'
 import { JoinButtonBig } from '../../../components/buttons/join-button'
 
 
@@ -10,7 +10,8 @@ export default function Process() {
 
     return (
         <>
-        <section className='margin-section-sm'>
+            <section className='margin-section-sm'>
+                <article>
         <h2 className='header-text-md text-centre'>
             How a Meeting Works
                 </h2>
@@ -22,19 +23,21 @@ export default function Process() {
             <p className='header-text-sm text-centre'>
                 {item.header}
             </p>
-             <img  alt='speech icon' src={item.image} className='process-section'/>
+                        <img alt={item.alt} src={item.image} className='process-section'/>
                     <p className='body-text-lg'>
                         {item.text}
                         </p>
                         
         </div>
                 ))}
+            
                     </container>
 
             
-
+</article>
 <div className='join-us'>
 <p>See this in action, join us at our next meeting! </p>
+
 <JoinButtonBig />
 </div>
 

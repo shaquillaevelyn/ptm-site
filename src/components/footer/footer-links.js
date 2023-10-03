@@ -61,7 +61,6 @@ export function FooterLinks() {
             header: 'Explorer',
             content: [
                 { title: 'Home', url: ROOT },
-                { title: 'About PTM', url: ABOUT_WHO },
                 { title: 'FAQ', url: FAQQ },
             ],
         },
