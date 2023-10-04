@@ -5,7 +5,6 @@ import Process from './process/process'
 import { quoteArray, Quotation } from './quotes/quotations'
 
 import Testimonials from '../landing/testimony/testimonial'
-import ContactForm from '../landing/contact-form/contact-form'
 import Content from '../../components/utils/layout'
 
 
@@ -40,7 +39,6 @@ function Landing(   ) {
                     cta1={quoteArray[5].cta1}
                     cta2={quoteArray[5].cta2}
                 />
-                <ContactForm/>
             </Content>
         </>
     )
