@@ -11,6 +11,18 @@
     display: flex;
 }
 
+.last-rectangle {
+
+    position: relative;
+    background: var( --tm-blue-grad);
+    width: auto;
+    height: auto;
+    padding: var(--padding-small) ;
+    display: flex;
+    border-radius: 80px;
+    margin: 25px;
+}
+
 
 .blockquote {
 color: #fff;

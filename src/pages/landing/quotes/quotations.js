@@ -28,14 +28,21 @@ export const quoteArray = [
             quote: 'If you can’t communicate and talk to other people and get across your ideas, you’re giving up your potential.',
             author: 'Warren Buffet'
     },
+
+                {
+            id: 6,
+            cta: 'Ready to take the leap?',
+            cta1: 'Join us at out next meeting',
+            cta2: 'and see why we are truly and club like no other!'
+    },
     
 ]
 
-export function Quotation({id, quote, author}) {
+export function Quotation({ id, quote, author, cta, cta1, cta2}) {
 
     return (
-<>
-            <div className="rectangle margin-top-sm flex-row flex-wrap" id={id}>
+        <>
+            { id < 5? (          <div className="rectangle margin-top-sm flex-row flex-wrap" id={id}>
                 <blockquote className="blockquote ">
                     <p className="body-text-xlg">
                         "{quote}"
@@ -45,58 +52,23 @@ export function Quotation({id, quote, author}) {
                         <cite className="body-text-lg" title="Source Title"> -- {author} </cite>
                     </figcaption>
                 </blockquote>
-                    </div>
+            </div>) : (
+                <div className="last-rectangle margin-top-sm flex-row flex-wrap" id={id}>
+                <blockquote className="blockquote ">
+                    <p className="body-text-xlg">
+                        {cta}
+                    </p>
+
+                        {' '}
+                            <p className="body-text-lg" title="Source Title"> {cta1} </p>
+                            <p className="body-text-lg" title="Source Title"> {cta2} </p>
+        </blockquote>
+
+            </div>
+                    )}
+  
             </>
 
     )
 }
 
-
-
-// export function QuoteOne() {
-//     return (
-//         <>
-
-
-//         </>
-//     )
-
-// }
-
-// export function QuoteTwo() {
-//     return (
-//         <>
-
-//             <div className="rectangle">
-//                 <blockquote className="blockquote text-center">
-//                     <p className="mb-0">
-
-//                     </p><figcaption>
-//                         <cite title="Source Title"> </cite>
-//                     </figcaption>
-//                 </blockquote>
-//             </div>
-
-//         </>
-//     )
-// }
-
-// export function QuoteThree() {
-//     return (
-//         <>
-
-//             <div className="rectangle">
-//                 <blockquote className="blockquote text-center">
-//                     <p >
-//                         “ "
-//                     </p>
-//                     <figcaption className="blockquote-footer">
-//                         {' '}
-//                         <cite title="Source Title">Hilary Clinton </cite>
-//                     </figcaption>
-//                 </blockquote>
-//             </div>
-
-//         </>
-//     )
-// }
