@@ -14,9 +14,12 @@
     top: 95px;
     right: 0;
     z-index: 00;
-    background: #772432;
+    background:var( --tm-blue);
     float: right;
     z-index: 100;
+    border-left-style: solid;
+    border-left: 1px;
+
 }
 
 .modal-body {
@@ -25,12 +28,17 @@
     bottom: 0;
     top: 0;
     left: 0;
-    width: 50vw;
+    width: 30vw;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     z-index: 100;
+    animation-name: menu-animation;
+}
+
+@keyframes menu-animation{
+
 }
 
 .modal-menu-content {
@@ -39,13 +47,15 @@
     max-height: 30rem;
     overflow-x: hidden;
     overflow-y: auto;
-    font-size: 2.5rem;
+    font-size: var(--font-size-md);
     text-decoration: none;
+    text-align: right;
+
 }
 
 .modal-menu-content li {
     list-style: none;
     text-decoration: none;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     margin-bottom: 40px;
 }

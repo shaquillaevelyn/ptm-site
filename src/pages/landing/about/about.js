@@ -1,5 +1,5 @@
 import React from 'react'
-import talk from '../../../images/landing-image.png'
+import video from '../../../video/brave.mp4'
 import './about.css'
 import { JoinButtonBig } from '../../../components/buttons/join-button'
 
@@ -7,10 +7,13 @@ import { JoinButtonBig } from '../../../components/buttons/join-button'
 export default function About() {
     return (
         <>
+
             <section className=" margin-section-lg about-body">
-                <div className="text">
+                <article className="text">
                     <h2 className="header-text-lg">
-                        Welcome to Paddington Toastmasters !
+                        Welcome to Paddington Toastmasters -
+                    <br/>
+                    Your first step towards Public Speaking Execllence
                     </h2>
                     <p className='body-text-lg body-text-lg-bold'>
                         Public Speaking is NOT to be Feared
@@ -53,15 +56,21 @@ export default function About() {
                     <br />
                         <br />
                         </p>
-                    <div className='join-us'>
-                    <JoinButtonBig />
-                    </div>
-                </div>
+               
+                </article>
 
                 <div>
-                    <img src={talk} alt="talk "></img>
+                <video id="video-about" autoPlay loop muted >
+                    
+                        <source src={video} type="video/mp4" />
+                    </video>
                 </div>
+
             </section>
+
+                                 <div className='join-us'>
+                    <JoinButtonBig />
+                    </div>
         </>
     )
 }

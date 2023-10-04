@@ -2,7 +2,7 @@ import React from 'react'
 import toastmastersColor from '../../images/toastmastersColor.png'
 import ptmLogo from  '../../images/ptm-logo-white-small-transparent.svg'
 import { JoinButtonSmall, QueryButton } from '../buttons/join-button'
-import { ROOT, ABOUT_WHO, FAQQ, PRIVACY } from '../../components/utils/routes'
+import { ROOT, FAQQ, PRIVACY } from '../../components/utils/routes'
 import { Link } from 'react-router-dom'
 import './footer.css'
 
@@ -47,7 +47,7 @@ function ListRender({ index, listarray }) {
     )
 }
 
-function SectionComponent({ header, content }) {
+function SectionComponent({ content }) {
     return (
         <>
          <ListRender listarray={content} />
@@ -61,7 +61,6 @@ export function FooterLinks() {
             header: 'Explorer',
             content: [
                 { title: 'Home', url: ROOT },
-                { title: 'About PTM', url: ABOUT_WHO },
                 { title: 'FAQ', url: FAQQ },
             ],
         },

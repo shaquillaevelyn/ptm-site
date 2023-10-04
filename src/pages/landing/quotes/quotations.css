@@ -9,6 +9,7 @@
     padding: var(--padding-small) ;
     transform: skewY(-5deg);
     display: flex;
+
 }
 
 .last-rectangle {
