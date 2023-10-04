@@ -8,7 +8,7 @@ export default function Testimonials() {
     return (
         <section className="margin-section-lg">
 
-                <h2 className='header-text-md text-centre'>Testimonials</h2>
+                <h2 className='header-text-md text-centre'>Hear it from our members and guests...</h2>
                 <p className='header-text-sm text-centre'>See some of the words from members and guests about Paddington Toastmasters </p>
 
             <div className="body-text-lg flex-row member-testimony flex-gap">
