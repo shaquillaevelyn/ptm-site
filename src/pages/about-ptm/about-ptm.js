@@ -1,24 +1,30 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom'
-import logo from '../../images/ptm-logo-black-small-transparent.svg'
-import AboutPTMNav from './about-ptm-nav'
+import { facts } from '../../text/facts.json'
 import './about-ptm.css'
 
-const slogan = "Paddington Toastmasters - a club like no other"
+export function FactsPanel() {
+    return (
+        <>
+            {facts.map((item) => (
+                <div>
+                    <image src={item.image} alt={item.alt} />
+                    <p><span>{item.number}</span>{item.text}</p>
+                </div>
+            ))}
+        </>
+    )
+}
 
 export default function AboutPTM() {
     return (
         <>
-            <div className="about-ptm-nav">
             <div>
-                <img src={logo} alt={slogan}/>
-            
-                    <AboutPTMNav />
-                </div>
+                
+            <FactsPanel/>
+    
             </div>
-            <div className="about-ptm-body">
-                <Outlet />
-            </div>
+
         </>
+
     )
 }
