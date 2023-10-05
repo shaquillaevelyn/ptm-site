@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Turn as Hamburger } from 'hamburger-react';
 import * as URL from '../utils/routes';
 import './header.css';
-import MenuModal from './menu/menu';
+import MenuModal from './menu/menu.jsx';
 import Anchor from './anchor/anchor';
 
 export default function Header() {

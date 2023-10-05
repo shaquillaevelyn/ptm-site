@@ -5,7 +5,7 @@ import Process from './process/process';
 import { quoteArray, Quotation } from './quotes/quotations';
 
 import Testimonials from './testimony/testimonial';
-import ContactForm from './contact-form/contact-form';
+import ContactForm from './contact-form/contact-form.jsx';
 import Content from '../../components/utils/layout';
 
 function Landing() {
