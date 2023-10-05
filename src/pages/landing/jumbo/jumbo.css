@@ -33,6 +33,7 @@ video {
     display: flex;
     z-index: 2;
     vertical-align: middle;
+        border-radius: 25px;
 }
 
 .overlay-desc {
@@ -44,6 +45,7 @@ video {
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .jumbo-text {
@@ -54,7 +56,9 @@ video {
     position: relative;
     padding: 1vh;
     z-index: 2; 
+    border-radius: 25px;
 }
+
 
 .jumbo-text h2 {
     text-align: center;
@@ -64,8 +68,11 @@ video {
 .jumbo-text h3 {
 
     text-align: center;
-    margin: 0;
-    
+    margin: 0; 
+}
+button.jumbo-text {
+    opacity: 100%;
+    z-index: 3;
 }
 
 /* .jumbo-text p {
