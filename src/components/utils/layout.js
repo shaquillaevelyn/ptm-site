@@ -1,17 +1,13 @@
-import React from 'react'
-import { css } from '@emotion/css'
+import React from 'react';
 
-const Content = ({ children }) => {
-    return (
-        <div
-            className={css`
-                height: 100%;
-                width: 100vw;
-            `}
-        >
-            {children}
-        </div>
-    )
+function Content({ children }) {
+  return (
+    <div
+      className='content'
+    >
+      {children}
+    </div>
+  );
 }
 
-export default Content
+export default Content;

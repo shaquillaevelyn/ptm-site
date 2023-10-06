@@ -1,26 +1,30 @@
-import React from 'react'
-import './testimonial.css'
-import { testimonial } from '../../../text/testimonial.json'
+import React from 'react';
+import './testimonial.css';
+import { testimonial } from '../../../text/testimonial.json';
 
 export default function Testimonials() {
-    return (
-        <section className="margin-section-lg">
+  return (
+    <section className="margin-section-lg">
 
-                <h2 className='header-text-md text-centre'>Testimonials</h2>
-                <p className='header-text-sm text-centre'>See some of the words from members and guests about Paddington Toastmasters </p>
+      <h2 className="header-text-md text-centre">Hear it from our members and guests...</h2>
+      <p className="header-text-sm text-centre">See some of the words from members and guests about Paddington Toastmasters </p>
 
-            <div className="body-text-lg flex-row member-testimony flex-gap">
+      <div className="body-text-lg flex-row member-testimony flex-gap">
 
-                {testimonial.map((item) => (
-                <div className="testimony">
-                    <img src={item.image} alt={item.alt}></img>
-                    <p  className='body-text-lg'>
-                        {item.text}
-                    </p>{' '}
-                    <cite title="Source Title">--{item.name} </cite>
-                </div>
-                )) }
-            </div>
-        </section>
-    )
+        {testimonial.map((item) => (
+          <div className="testimony">
+            <img src={item.image} alt={item.alt} />
+            <p className="body-text-lg">
+              {item.text}
+            </p>
+            {' '}
+            <cite title="Source Title">
+              --
+              {item.name}
+            </cite>
+          </div>
+        )) }
+      </div>
+    </section>
+  );
 }

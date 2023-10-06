@@ -1,63 +1,59 @@
-import React, { useState, useEffect } from 'react'
-import * as URL from '../utils/routes'
-import { Link } from 'react-router-dom'
-import { Turn as Hamburger } from 'hamburger-react'
-import './header.css'
-import MenuModal from './menu/menu'
-import Anchor from './anchor/anchor'
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { Turn as Hamburger } from 'hamburger-react';
+import * as URL from '../utils/routes';
+import './header.css';
+import MenuModal from './menu/menu.jsx';
+import Anchor from './anchor/anchor';
 
 export default function Header() {
-    const [hidden, setHidden] = useState(false)
-    const onClick = () => setHidden(!hidden)
+  const [hidden, setHidden] = useState(false);
+  const onClick = () => setHidden(!hidden);
 
-
-    const [mobileMenu, setMobileMenu] = useState(false)
-    const mobileView = () => {
-        if (window.innerWidth <= 950) {
-            setMobileMenu(true)
-        } else {
-            setMobileMenu(false)
-        }
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const mobileView = () => {
+    if (window.innerWidth <= 950) {
+      setMobileMenu(true);
+    } else {
+      setMobileMenu(false);
     }
+  };
 
-    // use effect to active the component resize
-    useEffect(() => {
-        mobileView()
-        window.addEventListener('resize', mobileView)
-    }, [])
+  // use effect to active the component resize
+  useEffect(() => {
+    mobileView();
+    window.addEventListener('resize', mobileView);
+  }, []);
 
-    const menuArray = [
-        { title: 'Home', url: URL.ROOT },
-        { title: 'FAQ', url: URL.FAQQ },
-    ]
+  const menuArray = [
+    { title: 'Home', url: URL.ROOT },
+    { title: 'FAQ', url: URL.FAQQ },
+  ];
 
-    return (
-        <>
+  return (
+    <header className="navbar">
+      <Anchor />
 
-            <header className="navbar">
-              <Anchor />
-
-                <div className="navbar-menu">
-                    {mobileMenu ? (
-                        <>
-                            <Hamburger toggled={hidden} toggle={setHidden} label="Show menu"  aria/>
-                            <MenuModal hidden={!hidden} onClick={onClick} />
-                        </>
-                    ) : (
-                        <nav className="menu header-menu">
-                            <ul>
-                            {menuArray.map((item) => (
-                                <li>
-                                    <Link to={item.url}>
-                                        {item.title}
-                                    </Link>
-                                </li>
-                            ))}
-                              </ul>
-                        </nav>
-                    )}
-                </div>
-            </header>
-        </>
-    )
+      <div className="navbar-menu">
+        {mobileMenu ? (
+          <>
+            <Hamburger toggled={hidden} toggle={setHidden} label="Show menu" aria />
+            <MenuModal hidden={!hidden} onClick={onClick} />
+          </>
+        ) : (
+          <nav className="menu header-menu">
+            <ul>
+              {menuArray.map((item) => (
+                <li>
+                  <Link to={item.url}>
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
+      </div>
+    </header>
+  );
 }
