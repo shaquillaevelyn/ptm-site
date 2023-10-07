@@ -3,7 +3,6 @@ import './footer.css';
 
 import {
   ContactFooter,
-  ExternalLinks,
   FooterLinks,
   PTMFooter,
 } from './footer-links';
@@ -16,7 +15,6 @@ export default function Footer() {
       </div>
       <div className="usefulLinks footerSection">
         <FooterLinks />
-        <ExternalLinks />
       </div>
       <div className="usefulLinks footerSection centre">
         <ContactFooter />

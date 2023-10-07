@@ -6,6 +6,35 @@ import { JoinButtonSmall, QueryButton } from '../buttons/join-button';
 import { ROOT, FAQQ, PRIVACY } from '../utils/routes';
 import './footer.css';
 
+
+  const LinksArray = [
+    {
+      header: 'Explorer',
+      content: [
+        { title: 'Home', url: ROOT },
+        { title: 'FAQ', url: FAQQ },
+      ],
+    },
+    {
+      header: 'External',
+      content: [
+        {
+          title: 'Toastmasters International', url:'https://www.toastmasters.org/Find-a-Club/04495118-04495118'
+        },
+        {
+          title: 'LinkedIn', url:  'https://www.linkedin.com/company/paddingtontoastmasters'
+        },
+        {
+          title: 'Pathways', url: 'https://www.toastmasters.org/education/pathways'
+        }
+      ]
+    },
+    {
+      header: 'Legal',
+      content: [{ title: 'Privacy Policy', url: PRIVACY }],
+    },
+  ];
+
 export function PTMFooter() {
   return (
     <div className="centreInDiv footerPTMDetails">
@@ -21,6 +50,27 @@ export function PTMFooter() {
   );
 }
 
+function SectionComponent({ content }) {
+  return (
+    <ListRender listarray={content} />
+  );
+}
+
+  export function FooterLinks() {
+  return (
+    <>
+      {LinksArray.map((item) => (
+        <div>
+          <h3>{item.header}</h3>
+          <SectionComponent content={item.content} />
+
+        </div>
+      ))}
+    </>
+  );
+}
+
+
 function ListRender({ index, listarray }) {
   const scrollToTop = () => {
     window.scrollTo({
@@ -29,10 +79,23 @@ function ListRender({ index, listarray }) {
       behavior: 'smooth',
     });
   };
+
   return (
     <div>
       <ul>
-        {listarray.map((item) => (
+        {listarray.filter(link => link.url.startsWith('https')).map((item) => (
+
+          <li key={index}>
+            <Link
+              rel="noreferrer"
+              target="_blank"
+              to={item.url}>
+              {item.title}
+            </Link>
+          </li>
+
+        ))}
+        {listarray.filter(link => link.url.startsWith('/')).map((item) => (
 
           <li key={index}>
             <Link onClick={scrollToTop} to={item.url}>
@@ -46,75 +109,9 @@ function ListRender({ index, listarray }) {
   );
 }
 
-function SectionComponent({ content }) {
-  return (
-    <ListRender listarray={content} />
-  );
-}
 
-export function FooterLinks() {
-  const FooterArray = [
-    {
-      header: 'Explorer',
-      content: [
-        { title: 'Home', url: ROOT },
-        { title: 'FAQ', url: FAQQ },
-      ],
-    },
-    {
-      header: 'Legal',
-      content: [{ title: 'Privacy Policy', url: PRIVACY }],
-    },
-  ];
 
-  return (
-    <>
-      {FooterArray.map((item) => (
-        <div>
-          <h3>{item.header}</h3>
-          <SectionComponent content={item.content} />
 
-        </div>
-      ))}
-    </>
-  );
-}
-export function ExternalLinks() {
-  return (
-    <div>
-      <h3>Social</h3>
-      <ul>
-        <li>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            href="https://www.toastmasters.org/Find-a-Club/04495118-04495118"
-          >
-            Toastmasters International
-          </a>
-        </li>
-        <li>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            href="https://www.linkedin.com/company/paddingtontoastmasters"
-          >
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            href="https://www.eventbrite.co.uk/e/paddington-toastmaster-club-meeting-tickets-166138072447"
-          >
-            Eventbrite
-          </a>
-        </li>
-      </ul>
-    </div>
-  );
-}
 
 export function ContactFooter() {
   return (
