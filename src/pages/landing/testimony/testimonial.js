@@ -6,12 +6,12 @@ export default function Testimonials() {
   return (
     <section className="margin-section-lg">
 
-      <h2 className="header-text-md text-centre">Hear it from our members and guests...</h2>
-      <p className="header-text-sm text-centre">See some of the words from members and guests about Paddington Toastmasters </p>
+      <h2 className="header-text-md text-centre">Hear it from our members</h2>
+      <p className="header-text-sm text-centre">See some of the words from members about Paddington Toastmasters </p>
 
       <div className="body-text-lg flex-row member-testimony flex-gap">
 
-        {testimonial.map((item) => (
+        {testimonial.filter((item) => item.key > 3).map((item) => (
           <div className="testimony">
             <img src={item.image} alt={item.alt} />
             <p className="body-text-lg">

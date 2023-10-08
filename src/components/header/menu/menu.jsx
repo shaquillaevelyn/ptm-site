@@ -7,6 +7,12 @@ import './menu.css';
 export default function MenuModal({ hidden, onClick }) {
   const menuArray = [
     { title: 'Home', url: URL.ROOT },
+      { title: 'Welcome to PTM', url: URL.ROOT },
+      { title: 'Our Meetings', url: URL.ROOT },
+      { title: 'Testimony', url: URL.ROOT },
+      { title: 'Contact Us', url: URL.ROOT },
+    { title: 'About PTM', url: URL.ROOT },
+    { title: 'Resources', url: URL.ROOT },
     { title: 'FAQ', url: URL.FAQQ },
 
   ];

@@ -30,12 +30,12 @@ function Landing() {
         author={quoteArray[3].author}
       />
       <Testimonials />
-      <Quotation
+      {/* <Quotation
         id={quoteArray[5].id}
         cta={quoteArray[5].cta}
         cta1={quoteArray[5].cta1}
         cta2={quoteArray[5].cta2}
-      />
+      /> */}
       <ContactForm />
     </Content>
   );
