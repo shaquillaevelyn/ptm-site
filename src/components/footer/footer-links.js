@@ -4,6 +4,7 @@ import toastmastersColor from '../../images/toastmastersColor.png';
 import ptmLogo from '../../images/ptm-logo-white-small-transparent.svg';
 import { JoinButtonSmall, QueryButton } from '../buttons/join-button';
 import { ROOT, FAQQ, PRIVACY } from '../utils/routes';
+import { scrollToTop } from '../utils/scroll';
 import './footer.css';
 
 
@@ -72,13 +73,7 @@ function SectionComponent({ content }) {
 
 
 function ListRender({ index, listarray }) {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth',
-    });
-  };
+
 
   return (
     <div>
