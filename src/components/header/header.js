@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, createRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Turn as Hamburger } from 'hamburger-react';
 import * as URL from '../utils/routes';
@@ -19,7 +19,7 @@ import Anchor from './anchor/anchor';
 
   ];
 
-export default function Header(props, { itemName, selected}) {
+export default function Header({ itemName, selected}) {
   // switch to hamburger menu
   const [hidden, setHidden] = useState(false);
   const onClick = () => setHidden(!hidden);
@@ -41,18 +41,9 @@ export default function Header(props, { itemName, selected}) {
     window.addEventListener('resize', mobileView);
   }, []);
 
+  const refs = createRef();
 
-  // page section anchor
-//   const [anchorLink, setAnchorlink] = useState(null);
-
-//   useEffect(() => {
-//     setAnchorlink(document.getElementById(itemName))
-//   }, [itemName])
-
-//   const sectionScroll = (event) => {
-//  event.preventDefault();
-//        anchorLink.scrollIntoView({ behavior: 'smooth', block: 'start' });
-//   }
+  console.log(refs)
 
   return (
     <header className="navbar">
@@ -70,7 +61,7 @@ export default function Header(props, { itemName, selected}) {
             <ul>
               {menuArray.map((item) => (
                 <li>
-                  <Link to={item.url} anchorLink={itemName} className={selected} menuArray >
+                  <Link to={item.url} anchorLink={itemName} className={selected} ref={menuArray.title} menuArray>
                     {item.title}
                   </Link>
                 </li>
