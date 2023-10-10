@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, createRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Turn as Hamburger } from 'hamburger-react';
 import * as URL from '../utils/routes';
@@ -19,7 +19,7 @@ const menuArray = [
 
 ];
 
-export default function Header(props, { itemName, selected}) {
+export default function Header({ itemName, selected}) {
   // switch to hamburger menu
   const [hidden, setHidden] = useState(false);
   const onClick = () => setHidden(!hidden);
@@ -41,6 +41,7 @@ export default function Header(props, { itemName, selected}) {
     window.addEventListener('resize', mobileView);
   }, []);
 
+  const refs = createRef();
 
   // page section anchor
   //   const [anchorLink, setAnchorlink] = useState(null);
@@ -53,32 +54,36 @@ export default function Header(props, { itemName, selected}) {
   //  event.preventDefault();
   //        anchorLink.scrollIntoView({ behavior: 'smooth', block: 'start' });
   //   }
+  console.log(refs);
 
   return (
-    <header className="navbar">
+    <>
+      <header className="navbar">
       
-      <Anchor />
+        <Anchor />
 
-      <div className="navbar-menu">
-        {mobileMenu ? (
-          <>
-            <Hamburger toggled={hidden} toggle={setHidden} label="Show menu" aria />
-            <MenuModal hidden={!hidden} onClick={onClick} menuArray={menuArray} />
-          </>
-        ) : (
-          <nav className="menu header-menu">
-            <ul>
-              {menuArray.map((item) => (
-                <li key={item.key}>
-                  <Link to={item.url} anchorLink={itemName} className={selected} menuArray >
-                    {item.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        )}
-      </div>
-    </header>
+        <div className="navbar-menu">
+          {mobileMenu ? (
+            <>
+              <Hamburger toggled={hidden} toggle={setHidden} label="Show menu" aria />
+              <MenuModal hidden={!hidden} onClick={onClick} menuArray={menuArray} />
+            </>
+          ) : (
+            <nav className="menu header-menu">
+              <ul>
+                {menuArray.map((item) => (
+       
+                  <li key={item.key}>
+                    <Link to={item.url} anchorLink={itemName} className={selected} ref={menuArray.title} menuArray>
+                      {item.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
+        </div>
+      </header>
+    </>
   );
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
-import * as URL from '../../utils/routes';
 import './menu.css';
 
 export default function MenuModal( { menuArray, hidden, onClick }) {
