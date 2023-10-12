@@ -11,7 +11,7 @@ export default function Testimonials() {
 
       <div className="body-text-lg flex-row member-testimony flex-gap">
 
-        {testimonial.filter((item) => item.key > 3).map((item) => (
+        {testimonial.filter((item) =>  (item.key > 3 && item.key < 7)).map((item) => (
           <div className="testimony">
             <img src={item.image} alt={item.alt} />
             <p className="body-text-lg">
@@ -24,7 +24,12 @@ export default function Testimonials() {
             </cite>
           </div>
         )) }
+
       </div>
+      <div>
+          <p>And a note from our 2023-2024 president, Magu Quintana</p>
+          <p>{testimonial[6].text}</p>
+        </div>
     </section>
   );
 }
