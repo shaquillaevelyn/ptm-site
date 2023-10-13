@@ -13,7 +13,7 @@ export default function MenuModal( { menuArray, hidden, onClick }) {
           <div className="modal-menu-content">
             <ol>
               {menuArray.map((item) => (
-                <li>
+                <li key={item.key}>
                   <Link onClick={onClick} to={item.url}>
                     {item.title}
                   </Link>

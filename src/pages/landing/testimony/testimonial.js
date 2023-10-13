@@ -11,8 +11,8 @@ export default function Testimonials() {
 
       <div className="body-text-lg flex-row member-testimony flex-gap">
 
-        {testimonial.filter((item) =>  (item.key > 3 && item.key < 7)).map((item) => (
-          <div className="testimony">
+        {testimonial.filter((item) => item.key > 3).map((item) => (
+          <div className="testimony" key={item.key}>
             <img src={item.image} alt={item.alt} />
             <p className="body-text-lg">
               {item.text}
@@ -27,9 +27,9 @@ export default function Testimonials() {
 
       </div>
       <div>
-          <p>And a note from our 2023-2024 president, Magu Quintana</p>
-          <p>{testimonial[6].text}</p>
-        </div>
+        <p>And a note from our 2023-2024 president, Magu Quintana</p>
+        <p>{testimonial[6].text}</p>
+      </div>
     </section>
   );
 }

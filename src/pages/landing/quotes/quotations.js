@@ -47,9 +47,9 @@ export function Quotation({
         <div className="rectangle margin-top-sm flex-row flex-wrap" id={id}>
           <blockquote className="blockquote ">
             <p className="body-text-xlg">
-              "
+            &quot;
               {quote}
-              "
+              &quot;
             </p>
             <figcaption>
               {' '}

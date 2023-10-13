@@ -14,7 +14,7 @@ export default function Process() {
         <container className="flex-row flex-wrap">
 
           {about.map((item) => (
-            <div className="process-section border">
+            <div className="process-section border" key={item.key}>
               <p className="header-text-sm text-centre">
                 {item.header}
               </p>

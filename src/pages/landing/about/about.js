@@ -39,7 +39,7 @@ export default function About() {
             becoming a member, we offer mentorship and support as you
             make your way through the Toastmasters International
             Educational Program, Pathways.
-                    </p>
+          </p>
           <p className="body-text-lg">
             Learn more about
             <span><a className="inline-link" href="www.bbc.co.uk">Pathways</a></span>
