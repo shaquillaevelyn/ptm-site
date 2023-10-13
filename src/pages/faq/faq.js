@@ -58,7 +58,7 @@ export default function FAQ() {
 
       <div className="question-answer">
         {FAQArray.map((item) => (
-          <ShowReveal
+          <ShowReveal key={item.key}
             question={item.question}
             answer={item.answer}
           />

@@ -8,33 +8,33 @@ import { scrollToTop } from '../utils/scroll';
 import './footer.css';
 
 
-  const LinksArray = [
-    {
-      header: 'Explorer',
-      content: [
-        { title: 'Home', url: ROOT },
-        { title: 'FAQ', url: FAQQ },
-      ],
-    },
-    {
-      header: 'External',
-      content: [
-        {
-          title: 'Toastmasters International', url:'https://www.toastmasters.org/Find-a-Club/04495118-04495118'
-        },
-        {
-          title: 'LinkedIn', url:  'https://www.linkedin.com/company/paddingtontoastmasters'
-        },
-        {
-          title: 'Pathways', url: 'https://www.toastmasters.org/education/pathways'
-        }
-      ]
-    },
-    {
-      header: 'Legal',
-      content: [{ title: 'Privacy Policy', url: PRIVACY }],
-    },
-  ];
+const LinksArray = [
+  {
+    header: 'Explorer',
+    content: [
+      { title: 'Home', url: ROOT },
+      { title: 'FAQ', url: FAQQ },
+    ],
+  },
+  {
+    header: 'External',
+    content: [
+      {
+        title: 'Toastmasters International', url:'https://www.toastmasters.org/Find-a-Club/04495118-04495118'
+      },
+      {
+        title: 'LinkedIn', url:  'https://www.linkedin.com/company/paddingtontoastmasters'
+      },
+      {
+        title: 'Pathways', url: 'https://www.toastmasters.org/education/pathways'
+      }
+    ]
+  },
+  {
+    header: 'Legal',
+    content: [{ title: 'Privacy Policy', url: PRIVACY }],
+  },
+];
 
 export function PTMFooter() {
   return (
@@ -57,11 +57,11 @@ function SectionComponent({ content }) {
   );
 }
 
-  export function FooterLinks() {
+export function FooterLinks() {
   return (
     <>
       {LinksArray.map((item) => (
-        <div>
+        <div key={item.key}>
           <h3>{item.header}</h3>
           <SectionComponent content={item.content} />
 

@@ -12,7 +12,7 @@ export default function Testimonials() {
       <div className="body-text-lg flex-row member-testimony flex-gap">
 
         {testimonial.filter((item) => item.key > 3).map((item) => (
-          <div className="testimony">
+          <div className="testimony" key={item.key}>
             <img src={item.image} alt={item.alt} />
             <p className="body-text-lg">
               {item.text}

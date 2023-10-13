@@ -7,17 +7,17 @@ import MenuModal from './mobile/menu.jsx';
 import Anchor from './anchor/anchor';
 
 // menu links
-  const menuArray = [
-    { title: 'Home', url: URL.ROOT, level: 1 },
-      { title: 'Welcome to PTM', section: 'Welcome to PTM', level: 2},
-      { title: 'Our Meetings', section: 'Our Meetings', level: 2 },
-      { title: 'Testimonials', section: 'Testimonials', level: 2 },
-      { title: 'Contact Us', section: 'Contact Us', level: 2 },
-    // { title: 'About PTM', url: URL.ROOT },
-    // { title: 'Resources', url: URL.ROOT },
-    { title: 'FAQ', url: URL.FAQQ, level: 1 },
+const menuArray = [
+  { title: 'Home', url: URL.ROOT, level: 1 },
+  { title: 'Welcome to PTM', section: 'Welcome to PTM', level: 2},
+  { title: 'Our Meetings', section: 'Our Meetings', level: 2 },
+  { title: 'Testimonials', section: 'Testimonials', level: 2 },
+  { title: 'Contact Us', section: 'Contact Us', level: 2 },
+  // { title: 'About PTM', url: URL.ROOT },
+  // { title: 'Resources', url: URL.ROOT },
+  { title: 'FAQ', url: URL.FAQQ, level: 1 },
 
-  ];
+];
 
 export default function Header(props, { itemName, selected}) {
   // switch to hamburger menu
@@ -43,16 +43,16 @@ export default function Header(props, { itemName, selected}) {
 
 
   // page section anchor
-//   const [anchorLink, setAnchorlink] = useState(null);
+  //   const [anchorLink, setAnchorlink] = useState(null);
 
-//   useEffect(() => {
-//     setAnchorlink(document.getElementById(itemName))
-//   }, [itemName])
+  //   useEffect(() => {
+  //     setAnchorlink(document.getElementById(itemName))
+  //   }, [itemName])
 
-//   const sectionScroll = (event) => {
-//  event.preventDefault();
-//        anchorLink.scrollIntoView({ behavior: 'smooth', block: 'start' });
-//   }
+  //   const sectionScroll = (event) => {
+  //  event.preventDefault();
+  //        anchorLink.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  //   }
 
   return (
     <header className="navbar">
@@ -69,7 +69,7 @@ export default function Header(props, { itemName, selected}) {
           <nav className="menu header-menu">
             <ul>
               {menuArray.map((item) => (
-                <li>
+                <li key={item.key}>
                   <Link to={item.url} anchorLink={itemName} className={selected} menuArray >
                     {item.title}
                   </Link>
