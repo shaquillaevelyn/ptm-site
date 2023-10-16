@@ -1,0 +1,126 @@
+.about-ptm-nav {
+    display: flex;
+    height: auto;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-family: Source Sans Pro;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: justify;
+    position: relative;
+}
+
+.about-ptm-nav h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 50px;
+}
+
+.about-ptm-nav h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+}
+
+.about-ptm-body {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    min-height: 50vh;
+    text-align: justify;
+}
+
+.about-body-font {
+    font-size: 1.1rem;
+    font-family: Source Sans Pro;
+    font-weight: 500;
+    text-align: center;
+}
+
+.about-body-font img {
+    height: 30px;
+    width: 30px;
+}
+.about-body-font ul {
+    list-style-image: url('../../images/check.png');
+}
+.about-body-font ul li {
+    vertical-align: super;
+}
+.photo-banner img {
+    height: 233px;
+    max-width: 350px;
+    display: inline-block;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+}
+
+.about-ptm-nav img {
+    max-width: 100%;
+    width: 40.5em;
+    height: auto;
+
+}
+
+@media only screen and (max-width: 950px) {
+    .about-ptm-nav {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+
+/*keyframe animations*/
+/* .first {
+    -webkit-animation: bannermove 30s linear infinite;
+    -moz-animation: bannermove 30s linear infinite;
+    -ms-animation: bannermove 30s linear infinite;
+    -o-animation: bannermove 30s linear infinite;
+    animation: bannermove 5s linear infinite;
+}
+
+@keyframes bannermove {
+    0% {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    100% {
+        margin-left: -400px;
+    }
+} */
+
+/* @-moz-keyframes bannermove {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -2125px;
+    }
+}
+
+@-webkit-keyframes "bannermove" {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -2125px;
+    }
+}
+
+@-ms-keyframes "bannermove" {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -2125px;
+    }
+}
+
+@-o-keyframes "bannermove" {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -2125px;
+    }
+} */
