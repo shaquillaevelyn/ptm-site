@@ -8,7 +8,10 @@ import Testimonials from './testimony/testimonial';
 import ContactForm from './contact-form/contact-form.jsx';
 import Content from '../../components/utils/layout';
 
-function Landing() {
+function Landing({welcomeRef, contactRef, meetingRef, testimonialRef }) {
+
+
+
   return (
     <Content>
       <Jumbotron />
@@ -17,26 +20,26 @@ function Landing() {
         quote={quoteArray[1].quote}
         author={quoteArray[1].author}
       />
-      <About />
+      <About ref={welcomeRef} />
       <Quotation
         id={quoteArray[2].id}
         quote={quoteArray[2].quote}
         author={quoteArray[2].author}
       />
-      <Process />
+      <Process ref={meetingRef} />
       <Quotation
         id={quoteArray[3].id}
         quote={quoteArray[3].quote}
         author={quoteArray[3].author}
       />
-      <Testimonials />
+      <Testimonials ref={testimonialRef} />
       {/* <Quotation
         id={quoteArray[5].id}
         cta={quoteArray[5].cta}
         cta1={quoteArray[5].cta1}
         cta2={quoteArray[5].cta2}
       /> */}
-      <ContactForm />
+      <ContactForm ref={contactRef}/>
     </Content>
   );
 }

@@ -5,3 +5,4 @@ export const scrollToTop = () => {
     behavior: 'smooth',
   });
 };
+

@@ -1,11 +1,13 @@
-import React from 'react';
+/* eslint-disable react/display-name */
+import React, {forwardRef} from 'react';
 import './process.css';
 import { about } from '../../../text/process.json';
 import { JoinButtonBig } from '../../../components/buttons/join-button';
 
-export default function Process() {
+
+const Process = forwardRef((props, ref) => {
   return (
-    <section className="margin-section-sm">
+    <section className="margin-section-sm" ref={ref}>
       <article>
         <h2 className="header-text-md text-centre">
           How a Meeting Works
@@ -37,4 +39,6 @@ export default function Process() {
 
     </section>
   );
-}
+});
+
+export default Process;

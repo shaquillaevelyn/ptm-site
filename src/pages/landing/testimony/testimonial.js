@@ -1,10 +1,11 @@
-import React from 'react';
+/* eslint-disable react/display-name */
+import React, {forwardRef} from 'react';
 import './testimonial.css';
 import { testimonial } from '../../../text/testimonial.json';
 
-export default function Testimonials() {
+const Testimonials = forwardRef((props, ref) => {
   return (
-    <section className="margin-section-lg">
+    <section className="margin-section-lg" ref={ref}>
 
       <h2 className="header-text-md text-centre">Hear it from our members</h2>
       <p className="header-text-sm text-centre">See some of the words from members about Paddington Toastmasters </p>
@@ -33,4 +34,6 @@ export default function Testimonials() {
       </div>
     </section>
   );
-}
+});
+
+export default Testimonials;
