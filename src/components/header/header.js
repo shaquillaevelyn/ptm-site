@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useRef} from 'react';
+/* eslint-disable react/display-name */
+import React, { useState, useEffect, useRef, forwardRef} from 'react';
 
 import { Turn as Hamburger } from 'hamburger-react';
 import Links from '../utils/routes';
@@ -7,7 +8,8 @@ import MenuModal from './mobile/menu.jsx';
 import Anchor from './anchor/anchor';
 
 
-export default function Header({}) {
+const Header = forwardRef(function Header(props, ref ){
+
 
   // switch to hamburger menu
   const [hidden, setHidden] = useState(false);
@@ -23,21 +25,20 @@ export default function Header({}) {
   };
   // switch to hamburger menu
 
-
   // use effect to active the component resize
   useEffect(() => {
     mobileView();
     window.addEventListener('resize', mobileView);
   }, []);
 
+
+  console.log('ref-loco2', ref);
   // const welcomeRef = useRef(null);
 
   return (
     <>
       <header className="navbar">
-      
         <Anchor />
-
         <div className="navbar-menu">
           {mobileMenu ? (
             <>
@@ -46,8 +47,8 @@ export default function Header({}) {
             </>
           ) : (
             <nav className="menu header-menu">
-              <ul>
-                <Links />
+              <ul >
+                <Links ref={ref} />
               </ul>
             </nav>
           )}
@@ -55,4 +56,6 @@ export default function Header({}) {
       </header>
     </>
   );
-}
+});
+
+export default Header;

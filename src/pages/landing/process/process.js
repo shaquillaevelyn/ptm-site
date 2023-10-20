@@ -5,39 +5,43 @@ import { about } from '../../../text/process.json';
 import { JoinButtonBig } from '../../../components/buttons/join-button';
 
 
-const Process = forwardRef((props, ref) => {
+const Process = forwardRef(function Process (props, ref) {
   return (
-    <section className="margin-section-sm" ref={ref}>
-      <article>
-        <h2 className="header-text-md text-centre">
+    <>
+      <div id="landing-process" ref={ref}>
+        <section className="margin-section-sm" >
+          <article>
+            <h2 className="header-text-md text-centre">
           How a Meeting Works
-        </h2>
+            </h2>
 
-        <container className="flex-row flex-wrap">
+            <section className="flex-row flex-wrap">
 
-          {about.map((item) => (
-            <div className="process-section border" key={item.key}>
-              <p className="header-text-sm text-centre">
-                {item.header}
-              </p>
-              <img alt={item.alt} src={item.image} className="process-section" />
-              <p className="body-text-lg">
-                {item.text}
-              </p>
+              {about.map((item) => (
+                <div className="process-section border" key={item.key}>
+                  <p className="header-text-sm text-centre">
+                    {item.header}
+                  </p>
+                  <img alt={item.alt} src={item.image} className="process-section" />
+                  <p className="body-text-lg">
+                    {item.text}
+                  </p>
 
-            </div>
-          ))}
+                </div>
+              ))}
 
-        </container>
+            </section>
 
-      </article>
-      <div className="join-us">
-        <p>See this in action, join us at our next meeting! </p>
+          </article>
+          <div className="join-us">
+            <p>See this in action, join us at our next meeting! </p>
 
-        <JoinButtonBig />
+            <JoinButtonBig />
+          </div>
+
+        </section>
       </div>
-
-    </section>
+    </>
   );
 });
 

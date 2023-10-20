@@ -1,9 +1,8 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import { Route, Routes, HashRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Header from './components/header/header';
-import Footer from './components/footer/footer';
+
 import Landing from './pages/landing/landing';
 import FAQ from './pages/faq/faq';
 
@@ -22,25 +21,20 @@ import PrivacyPolicy from './pages/privacy/privacy-policy';
 
 function App() {
 
-  const welcomeRef = useRef(null);
-  const meetingRef = useRef(null);
-  const testimonialRef = useRef(null);
-  const contactRef = useRef(null);
-  
   return(
     <React.StrictMode>
       <HashRouter basename={`/${process.env.PUBLIC_URL}`}>
         {/* <PageUp /> */}
-        <Header refs={{welcomeRef, contactRef, meetingRef, testimonialRef }}/>
+
 
         <Routes>
-          <Route exact path={ROOT} element={<Landing refs={{welcomeRef, contactRef, meetingRef, testimonialRef }} />} />
+          <Route exact path={ROOT} element={<Landing />}/>
           <Route path={MEETPTM} element={<FAQ />} />
           <Route path={RESOURCES} element={<FAQ />} />
           <Route path={FAQQ} element={<FAQ />} />
           <Route path={PRIVACY} element={<PrivacyPolicy />} />
         </Routes>
-        <Footer />
+
       </HashRouter>
     </React.StrictMode>
   );

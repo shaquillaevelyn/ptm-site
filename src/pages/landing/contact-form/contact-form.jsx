@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { PRIVACY } from '../../../components/utils/routes';
 import leap from '../../../images/leap1.png';
 
-const ContactForm = forwardRef((props, ref) => {
+const ContactForm = forwardRef(function ContactForm(props, ref){
   const [join, setJoin] = useState(true);
 
   const joinMeeting = 'Hey, I would like to join your next meeting!';
@@ -32,7 +32,7 @@ const ContactForm = forwardRef((props, ref) => {
               </div>
 
               <label className="body-text-lg">Message</label>
-              <textarea id="message" rows="6" cols="50" required value={join ? joinMeeting : enquireMeeting} />
+              <textarea id="message" rows="6" cols="50" required defaultValue={join ? joinMeeting : enquireMeeting} />
 
               <button id="submit" type="submit">Submit</button>
             </form>

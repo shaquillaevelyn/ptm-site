@@ -5,11 +5,13 @@ import './about.css';
 import { JoinButtonBig } from '../../../components/buttons/join-button';
 
 
-const About = forwardRef((props, ref) => {
+
+const About = forwardRef(function About(props, ref){
+  console.log('ref-loco4', ref.current);
   return (
     <>
       <div ref={ref}>
-        <section className="margin-section-lg about-body" >
+        <section id="landing-about" className="margin-section-lg about-body">
           <article className="text">
             <h2 className="header-text-lg">
             Welcome to Paddington Toastmasters -
@@ -48,7 +50,7 @@ const About = forwardRef((props, ref) => {
             </p>
             <br />
             <p className="body-text-lg body-text-lg-bold">Reap the Benefits </p>
-            <p className="body-text-lg">
+            <p id="test-ref" className="body-text-lg" >
             Help us to help you to Build Leadership Skills,Maximise your
             Potential, in the workplace and beyond, and Enhance
             Self-Awareness.
@@ -73,12 +75,14 @@ const About = forwardRef((props, ref) => {
         </section>
       </div>
 
+
       <div className="join-us">
         <JoinButtonBig />
       </div>
     </>
   );
 });
+
 
 
 export default About;

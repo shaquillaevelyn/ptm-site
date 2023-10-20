@@ -3,7 +3,7 @@ import React, {forwardRef} from 'react';
 import './testimonial.css';
 import { testimonial } from '../../../text/testimonial.json';
 
-const Testimonials = forwardRef((props, ref) => {
+const Testimonials = forwardRef(function Testimonials(props, ref){
   return (
     <section className="margin-section-lg" ref={ref}>
 
