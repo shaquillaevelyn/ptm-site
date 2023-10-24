@@ -13,14 +13,26 @@ export const PRIVACY = '/privacy-policy';
 const Links = forwardRef(function Links(props, ref) {
 
 
-  function handleClick (){
-    ref.current.scrollIntoView( {
+  function scrollToRef(div) {
+    const map = getMap();
+    const node = map.get(div);
+    node.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest',
+      inline: 'center'
+    });
+  }
+
+  function contactScroll (){
+    contactRef.current.scrollIntoView( {
       behavior: 'smooth', 
       left: 0,
       top: ref.current.offsetTop,
       inline: 'start'
     });
   };
+
+  // console.log('the 3rd ref', props.refArray.meetingRef);
 
 
   return(
@@ -32,10 +44,10 @@ const Links = forwardRef(function Links(props, ref) {
           Home
         </Link>
       </li>
-      <li key={2}> <Link onClick={handleClick} > Welcome To PTM</Link></li>
-      <li key={3}> <Link onClick={handleClick} >Our Meetings</Link></li>
-      <li key={4}><Link onClick={handleClick} >Testimonials</Link></li>
-      <li key={5}><Link onClick={handleClick} >Contact</Link></li>
+      <li key={2}> <Link ref={ref.welcomeRef}> Welcome To PTM</Link></li>
+      <li key={3}> <Link ref={ref.meetingRef}>Our Meetings</Link></li>
+      <li key={4}><Link ref={ref.testimonialRef}>Testimonials</Link></li>
+      <li key={5}><Link ref={ref.contactRef} >Contact</Link></li>
       <li key={6}><Link to={MEETPTM} >
           Meet PTM
       </Link>       </li>

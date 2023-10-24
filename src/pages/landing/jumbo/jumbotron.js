@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import './jumbo.css';
 import backgroundvid from '../../../video/ptm-video.mp4';
 import { JoinButtonSmall } from '../../../components/buttons/join-button';
 
-export default function Jumbotron() {
+const Jumbotron = forwardRef(function Jumbotron(props, ref) {
   return (
-    <div className="jumbo margin-section-md">
+    <div key={0} ref={ref} className="jumbo margin-section-md">
       <div className="background-video">
         <video autoPlay loop muted id="video">
           <source src={backgroundvid} type="video/mp4" />
@@ -39,3 +39,6 @@ export default function Jumbotron() {
     </div>
   );
 }
+);
+
+export default Jumbotron;

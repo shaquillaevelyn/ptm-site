@@ -10,7 +10,7 @@ const About = forwardRef(function About(props, ref){
   console.log('ref-loco4', ref.current);
   return (
     <>
-      <div ref={ref}>
+      <div key={1} ref={ref} >
         <section id="landing-about" className="margin-section-lg about-body">
           <article className="text">
             <h2 className="header-text-lg">

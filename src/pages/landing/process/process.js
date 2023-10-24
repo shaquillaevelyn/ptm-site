@@ -8,7 +8,7 @@ import { JoinButtonBig } from '../../../components/buttons/join-button';
 const Process = forwardRef(function Process (props, ref) {
   return (
     <>
-      <div id="landing-process" ref={ref}>
+      <div id="landing-process" ref={ref} key={2}>
         <section className="margin-section-sm" >
           <article>
             <h2 className="header-text-md text-centre">

@@ -8,7 +8,7 @@ import MenuModal from './mobile/menu.jsx';
 import Anchor from './anchor/anchor';
 
 
-const Header = forwardRef(function Header(props, ref ){
+const Header = forwardRef(function Header(props, ref){
 
 
   // switch to hamburger menu
@@ -31,8 +31,10 @@ const Header = forwardRef(function Header(props, ref ){
     window.addEventListener('resize', mobileView);
   }, []);
 
+  // console.log('the 2nd ref', props.refArray.welcomeRef);
+  
 
-  console.log('ref-loco2', ref);
+  // console.log('ref-loco2', refArray.ref1);
   // const welcomeRef = useRef(null);
 
   return (
@@ -48,7 +50,7 @@ const Header = forwardRef(function Header(props, ref ){
           ) : (
             <nav className="menu header-menu">
               <ul >
-                <Links ref={ref} />
+                <Links ref={ref} props={props.refArray} refArray/>
               </ul>
             </nav>
           )}
