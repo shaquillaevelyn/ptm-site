@@ -7,7 +7,7 @@ import { JoinButtonBig } from '../../../components/buttons/join-button';
 
 
 const About = forwardRef(function About(props, ref){
-  console.log('ref-loco4', ref.current);
+  console.log('ref-about', ref.current);
   return (
     <>
       <div key={1} ref={ref} >

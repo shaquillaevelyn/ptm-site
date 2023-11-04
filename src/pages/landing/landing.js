@@ -16,38 +16,48 @@ import { scrollToTop } from '../../components/utils/scroll';
 
 function Landing() {
 
+  const navRef = {
+    welcomRef: useRef(null),
+    meetingRef: useRef(null),
+    testimonialRef: useRef(null),
+    contactRef: useRef(null),
+  };
+
+  const navRefArray = [];
+    
+  const welcomRef = useRef(null);
   const locationRef = useRef(null);
   // const meetingRef = useRef(null);
   // const testimonialRef = useRef(null);
   // const contactRef = useRef(null);
 
-  // console.log('the ref', refArray.ref1);
+  console.log('the ref', navRef.welcomRef);
 
   return (
     <>
 
       <Content>
-        <Header ref={locationRef}/>
+        <Header ref={navRef}/>
         <Jumbotron />
         <Quotation
           id={quoteArray[1].id}
           quote={quoteArray[1].quote}
           author={quoteArray[1].author}
         />
-        <About ref={welcomeRef} />
+        <About ref={welcomRef} />
         <Quotation
           id={quoteArray[2].id}
           quote={quoteArray[2].quote}
           author={quoteArray[2].author}
         />
-        <Process ref={meetingRef}/>
+        <Process ref={navRef.meetingRef}/>
         <Quotation
           id={quoteArray[3].id}
           quote={quoteArray[3].quote}
           author={quoteArray[3].author}
         />
-        <Testimonials ref={testimonialRef} />
-        <ContactForm ref={contactRef} />
+        <Testimonials ref={navRef.testimonialRef} />
+        <ContactForm ref={navRef.contactRef} />
       </Content>
       <Footer />
     </>

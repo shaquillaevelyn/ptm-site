@@ -14,7 +14,7 @@ const ContactForm = forwardRef(function ContactForm(props, ref){
 
   return (
     <>
-      <div ref={ref} key={4}>
+      <div ref={ref} key={4} id='landing-contact'>
         <img src={leap} width={'1300px'} alt={'image displaying text to take the leap and join us'}/>
         <section className="margin-section-lg about-body">
           <div className='about-body"'>
