@@ -23,7 +23,7 @@ function Landing() {
     contactRef: useRef(null),
   };
 
-  const navRefArray = [];
+  const navRefArray = useRef([]);
     
   const welcomRef = useRef(null);
   const locationRef = useRef(null);
@@ -37,27 +37,27 @@ function Landing() {
     <>
 
       <Content>
-        <Header ref={navRef}/>
+        <Header ref={navRefArray.current}/>
         <Jumbotron />
         <Quotation
           id={quoteArray[1].id}
           quote={quoteArray[1].quote}
           author={quoteArray[1].author}
         />
-        <About ref={welcomRef} />
+        <About ref={navRefArray.current} />
         <Quotation
           id={quoteArray[2].id}
           quote={quoteArray[2].quote}
           author={quoteArray[2].author}
         />
-        <Process ref={navRef.meetingRef}/>
+        <Process ref={navRefArray.current}/>
         <Quotation
           id={quoteArray[3].id}
           quote={quoteArray[3].quote}
           author={quoteArray[3].author}
         />
-        <Testimonials ref={navRef.testimonialRef} />
-        <ContactForm ref={navRef.contactRef} />
+        <Testimonials ref={navRefArray.current} />
+        <ContactForm ref={navRefArray.current} />
       </Content>
       <Footer />
     </>

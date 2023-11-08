@@ -5,7 +5,7 @@ import { testimonial } from '../../../text/testimonial.json';
 
 const Testimonials = forwardRef(function Testimonials(props, ref){
   return (
-    <section className="margin-section-lg" ref={ref => { refsArray[3] = ref;}} key={3} id='landing-testimonial'>
+    <section className="margin-section-lg" ref={ref} key={3} id='landing-testimonial'>
 
       <h2 className="header-text-md text-centre">Hear it from our members</h2>
       <p className="header-text-sm text-centre">See some of the words from members about Paddington Toastmasters </p>
