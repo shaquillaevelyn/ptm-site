@@ -1,8 +1,5 @@
 /* eslint-disable react/display-name */
 import React, { useState, useEffect} from 'react';
-
-import React, { useState, useEffect, useRef, createRef } from 'react';
-import { Link } from 'react-router-dom';
 import { Turn as Hamburger } from 'hamburger-react';
 import Links from '../utils/routes';
 import './header.css';
@@ -55,4 +52,3 @@ export default function Header(){
   );
 };
 
-// export default Header;
