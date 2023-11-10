@@ -24,12 +24,8 @@ function Landing() {
   };
 
   const navRefArray = useRef([]);
+  const keys = [1, 2, 3, 4, 5, 6];
     
-  const welcomRef = useRef(null);
-  const locationRef = useRef(null);
-  // const meetingRef = useRef(null);
-  // const testimonialRef = useRef(null);
-  // const contactRef = useRef(null);
 
   console.log('the ref', navRef.welcomRef);
 
@@ -37,7 +33,7 @@ function Landing() {
     <>
 
       <Content>
-        <Header ref={navRefArray.current}/>
+        <Header ref={navRefArray.current} />
         <Jumbotron />
         <Quotation
           id={quoteArray[1].id}
