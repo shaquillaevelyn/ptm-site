@@ -1,13 +1,17 @@
-import React from 'react';
+/* eslint-disable react/display-name */
+import React, { forwardRef }from 'react';
 import video from '../../../video/brave.mp4';
 import './about.css';
 import { JoinButtonBig } from '../../../components/buttons/join-button';
 
-export default function About() {
+
+
+function About(){
+
   return (
     <>
 
-      <section className=" margin-section-lg about-body">
+      <section className="margin-section-lg about-body">
         <article className="text">
           <h2 className="header-text-lg">
             Welcome to Paddington Toastmasters -
@@ -46,7 +50,7 @@ export default function About() {
           </p>
           <br />
           <p className="body-text-lg body-text-lg-bold">Reap the Benefits </p>
-          <p className="body-text-lg">
+          <p id="test-ref" className="body-text-lg" >
             Help us to help you to Build Leadership Skills,Maximise your
             Potential, in the workplace and beyond, and Enhance
             Self-Awareness.
@@ -70,9 +74,15 @@ export default function About() {
 
       </section>
 
+
+
       <div className="join-us">
         <JoinButtonBig />
       </div>
     </>
   );
-}
+};
+
+
+
+export default About;

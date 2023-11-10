@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import './jumbo.css';
 import backgroundvid from '../../../video/ptm-video.mp4';
 import { JoinButtonSmall } from '../../../components/buttons/join-button';
 
-export default function Jumbotron() {
+function Jumbotron() {
   return (
     <div className="jumbo margin-section-md">
       <div className="background-video">
@@ -38,4 +38,6 @@ export default function Jumbotron() {
       </div>
     </div>
   );
-}
+};
+
+export default Jumbotron;

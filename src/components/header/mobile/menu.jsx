@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Link } from 'react-router-dom';
-import * as URL from '../../utils/routes';
 import './menu.css';
+import Links from '../../utils/routes';
 
-export default function MenuModal( { menuArray, hidden, onClick }) {
+export default function MenuModal( {hidden }) {
 
 
   return ReactDOM.createPortal(
@@ -13,13 +12,7 @@ export default function MenuModal( { menuArray, hidden, onClick }) {
         <div className="modal-body">
           <div className="modal-menu-content">
             <ol>
-              {menuArray.map((item) => (
-                <li key={item.key}>
-                  <Link onClick={onClick} to={item.url}>
-                    {item.title}
-                  </Link>
-                </li>
-              ))}
+              <Links/>
             </ol>
           </div>
         </div>
