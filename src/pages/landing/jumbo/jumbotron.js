@@ -3,9 +3,9 @@ import './jumbo.css';
 import backgroundvid from '../../../video/ptm-video.mp4';
 import { JoinButtonSmall } from '../../../components/buttons/join-button';
 
-const Jumbotron = forwardRef(function Jumbotron(props, ref) {
+function Jumbotron() {
   return (
-    <div key={0} ref={ref} className="jumbo margin-section-md">
+    <div className="jumbo margin-section-md">
       <div className="background-video">
         <video autoPlay loop muted id="video">
           <source src={backgroundvid} type="video/mp4" />
@@ -38,7 +38,6 @@ const Jumbotron = forwardRef(function Jumbotron(props, ref) {
       </div>
     </div>
   );
-}
-);
+};
 
 export default Jumbotron;

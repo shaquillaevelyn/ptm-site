@@ -3,9 +3,9 @@ import React, {forwardRef} from 'react';
 import './testimonial.css';
 import { testimonial } from '../../../text/testimonial.json';
 
-const Testimonials = forwardRef(function Testimonials(props, ref){
+function Testimonials() {
   return (
-    <section className="margin-section-lg" ref={ref} key={3} id='landing-testimonial'>
+    <section className="margin-section-lg">
 
       <h2 className="header-text-md text-centre">Hear it from our members</h2>
       <p className="header-text-sm text-centre">See some of the words from members about Paddington Toastmasters </p>
@@ -34,6 +34,6 @@ const Testimonials = forwardRef(function Testimonials(props, ref){
       </div>
     </section>
   );
-});
+};
 
 export default Testimonials;

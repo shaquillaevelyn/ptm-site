@@ -2,7 +2,6 @@
 import React, { forwardRef, useEffect, useImperativeHandle } from 'react';
 import { Link } from 'react-router-dom';
 import { scrollToTop } from './scroll';
-import { flushSync } from 'react-dom';
 
 export const ROOT = '/';
 export const MEETPTM = '/meet-ptm';
@@ -11,53 +10,60 @@ export const FAQQ = '/faq';
 export const PRIVACY = '/privacy-policy';
 
 
-const forwardLinks = ({}, ref) => {
+export default function Links() {
 
-  const {welcomeRef, meetingRef, testimonialRef, contactRef} = ref;
+  const LandingNavArray = [
+    { title: 'Welcome to PTM', id:'landing-welcome'},
+    { title: 'Our Meetings', id:'landing-meeting'},
+    { title: 'Testimonials', id:'landing-testimonial'},
+    { title: 'Contact Us', id:'landing-contact'},
+  ];
 
-  // Note that the flushSync call is necessary to force React to update the DOM before the scroll.
 
-  
+  const landingNavs = (content) => {
 
-  console.log('the 3rd ref', ref);
+    const scrollingLocation = content.id;
+
+    const handleClickNav = () => {
+      document.getElementById(scrollingLocation).scrollIntoView({ behavior: 'smooth' });
+    };
+
+    return(
+      <li key={content.key}>
+        <Link onClick={handleClickNav}>{content.title}</Link>
+      </li>
+    );
+  };
 
 
-  return(
+  const PageNavArray = [
+    { title: 'Meet PTM', to: MEETPTM},
+    { title: 'Resources', to: RESOURCES},
+    { title: 'FAQ', to: FAQQ}
+  ];
+
+  const pageNavs = (content) => {
+
+    return(
+      <li>
+        <Link to={content.to}>{content.title}</Link>
+      </li>
+    );
+  };
+
+
+  return( 
     <>
-
-      <li key={1}>
-        <Link to={ROOT} onClick={scrollToTop}>
+      <ul>
+        <li>
+          <Link to={ROOT} onClick={scrollToTop}>
           Home
-        </Link>
-      </li>
-      <li key={2}> <Link ref={welcomeRef} > Welcome To PTM</Link></li>
-      <li key={3}> <Link ref={meetingRef} onClick={() => { flushSync(() => {
+          </Link>
+        </li>
+        {LandingNavArray.map(nav => landingNavs(nav))}
 
-        ref.current.scrollIntoView( {
-          behavior: 'smooth', 
-          left: 0,
-          top: ref.current.offsetTop,
-          inline: 'start'
-        });
-
-      });}}>Our Meetings</Link></li>
-      <li key={4}><Link ref={testimonialRef}>Testimonials</Link></li>
-      <li key={5}><Link ref={contactRef} >Contact</Link></li>
-      <li key={6}><Link to={MEETPTM} >
-          Meet PTM
-      </Link>       </li>
-      <li key={7}><Link to={RESOURCES} >
-          Resources
-      </Link>      </li>
-      <li key={8}> <Link to={FAQQ} >
-          FAQ
-      </Link>
-      </li>
+        {PageNavArray.map(nav => pageNavs(nav))}
+      </ul>
     </>
   );
-};
-
-const Links = React.forwardRef(forwardLinks);
-
-
-export default Links;
+}

@@ -2,9 +2,11 @@ import React from 'react';
 import { Route, Routes, HashRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 import './index.css';
-
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
 import Landing from './pages/landing/landing';
 import FAQ from './pages/faq/faq';
+import Content from './components/utils/layout';
 
 import {
   ROOT,
@@ -25,16 +27,17 @@ function App() {
     <React.StrictMode>
       <HashRouter basename={`/${process.env.PUBLIC_URL}`}>
         {/* <PageUp /> */}
-
-
-        <Routes>
-          <Route exact path={ROOT} element={<Landing />}/>
-          <Route path={MEETPTM} element={<FAQ />} />
-          <Route path={RESOURCES} element={<FAQ />} />
-          <Route path={FAQQ} element={<FAQ />} />
-          <Route path={PRIVACY} element={<PrivacyPolicy />} />
-        </Routes>
-
+        <Content>
+          <Header/>
+          <Routes>
+            <Route exact path={ROOT} element={<Landing />}/>
+            <Route path={MEETPTM} element={<FAQ />} />
+            <Route path={RESOURCES} element={<FAQ />} />
+            <Route path={FAQQ} element={<FAQ />} />
+            <Route path={PRIVACY} element={<PrivacyPolicy />} />
+          </Routes>
+          <Footer />
+        </Content>
       </HashRouter>
     </React.StrictMode>
   );
