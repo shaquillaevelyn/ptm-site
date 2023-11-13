@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 import './jumbo.css';
 import backgroundvid from '../../../video/ptm-video.mp4';
 import { JoinButtonSmall } from '../../../components/buttons/join-button';

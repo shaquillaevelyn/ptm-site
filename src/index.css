@@ -20,7 +20,7 @@ html{
     --font-weight-xlg: 700;
 
     --margin-large: 5% 10% 5% 10%;
-    --margin-small: 5% 0% 5% 0%;
+    --margin-small: 5% 2% 5% 2%;
     --margin-sm: 5vh 0% 5vh 0%;
     --margin-med: 2% 5% 5% 5%;
 
@@ -52,8 +52,8 @@ body {
 }
 
 .content{
-                    height: 100%;
-                width: 100vw;
+    height: 100%;
+    width: 100vw;
 }
 
 
@@ -69,28 +69,33 @@ body {
     font-size: var(--font-size-xxl);
     font-family: Montserrat;
     font-weight: var(--font-weight-lg);
-
 }
 
 .header-text-mdlg{
     font-size: var(--font-size-xl);
     font-family: Montserrat;
     font-weight: var(--font-weight-lg);
-
 }
 
 .header-text-sm{
     font-size: var(--font-size-lg);
     font-family: Montserrat;
     font-weight: var(--font-weight-lg);
-
 }
 
 .accent-text{
-        font-family: 'Mistrully', sans-serif;
-        font-weight: var(--font-weight-md);
-        font-size: var(--font-size-lg);
-        letter-spacing: 2px;
+    font-family: 'Mistrully', sans-serif;
+    font-weight: var(--font-weight-md);
+    font-size: var(--font-size-lg);
+    letter-spacing: 3px;
+}
+
+.chunky-body-text{
+    font-family: 'Mistrully', sans-serif;
+    font-weight: var(--font-weight-md);
+    font-size: 10rem;
+    letter-spacing: 20px;
+    rotate: -5deg;
 
 }
 
@@ -194,6 +199,13 @@ body {
 
 }
 
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
 .flex-wrap{
     flex-wrap: wrap;
 
@@ -211,12 +223,11 @@ body {
 }
 
 .vertical-center{
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-    
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);  
 }
 
 /* border */
@@ -243,7 +254,6 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-
     margin: 4px 2px;
     cursor: pointer;
     font-weight: var(--font-weight-lg);
@@ -254,7 +264,6 @@ body {
     background-color: var(--tm-join-green);
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-lg);
-
     color: rgb(255, 255, 255);
     border-radius: 12px;
     height: 100px;
@@ -263,7 +272,6 @@ body {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-
     margin: 4px 2px;
     cursor: pointer;
   
@@ -273,17 +281,14 @@ body {
     background-color: var(--tm-enq-orange);
     font-size: var(--font-size-md);
     font-weight: var(--font-weight-lg);
-
     color: rgb(255, 255, 255);
     border-radius: 12px;
     height: 55px;
     width: 200px;
-
     border: transparent;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-
     margin: 4px 2px;
     cursor: pointer;
 
@@ -321,13 +326,14 @@ label {
     flex-direction: row;
     font-family: Montserrat;
 }
+
 input {
     border: 2px solid grey ;
     border-radius: 10px;
     height: 40px;
     font-size: 22px;
     font-family: Source Sans Pro;
-        padding: 15px;
+    padding: 15px;
 }
 
 textarea {
@@ -339,7 +345,6 @@ textarea {
     font-size: 22px;
     font-family: Source Sans Pro;
     padding: 15px;
-
 }
 
 button#submit{
@@ -353,8 +358,7 @@ button#submit{
     width: 100px;
     justify-content: flex-end;
     background-color: #298e5a;
-    color: white;
-    
+    color: white; 
 }
 
 .about-body {
@@ -362,9 +366,17 @@ button#submit{
     display: flex;
     flex-direction: row;
     justify-content: center;
-     align-items: center;
-
+    align-items: center;
 }
+.about-body-col {
+    margin: var(--margin-large);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
 button{

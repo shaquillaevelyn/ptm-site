@@ -19,6 +19,12 @@ export default function Links() {
     { title: 'Contact Us', id:'landing-contact'},
   ];
 
+  const PageNavArray = [
+    { title: 'Meet PTM', to: MEETPTM},
+    { title: 'Resources', to: RESOURCES},
+    { title: 'FAQ', to: FAQQ}
+  ];
+
 
   const landingNavs = (content) => {
 
@@ -36,11 +42,6 @@ export default function Links() {
   };
 
 
-  const PageNavArray = [
-    { title: 'Meet PTM', to: MEETPTM},
-    { title: 'Resources', to: RESOURCES},
-    { title: 'FAQ', to: FAQQ}
-  ];
 
   const pageNavs = (content) => {
 

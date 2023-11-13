@@ -1,5 +1,5 @@
 /* eslint-disable react/display-name */
-import React, {forwardRef} from 'react';
+import React from 'react';
 import './testimonial.css';
 import { testimonial } from '../../../text/testimonial.json';
 
@@ -27,11 +27,16 @@ function Testimonials() {
         )) }
 
       </div>
-      <div className=" margin-section-md about-body" >
-        <img src={testimonial[7].image} alt={testimonial[7].alt} />
-        <p className="header-text-sm text-centre">And a note from our 2023-2024 president, Magu Quintana</p>
-        <p className="testimony body-text-lg">{testimonial[7].text}</p>
+      <div className="margin-section-md about-body ">
+        <div className='president'>
+          <img src={testimonial[7].image} alt={testimonial[7].alt} />
+        </div>
+        <div className="about-body-col">
+          <p className="header-text-sm text-centre">And a note from our 2023-2024 president, Magu Quintana</p>
+          <p className="testimony body-text-lg">{testimonial[7].text}</p>
+        </div>
       </div>
+      
     </section>
   );
 };

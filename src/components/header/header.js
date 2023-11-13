@@ -28,7 +28,6 @@ export default function Header(){
     window.addEventListener('resize', mobileView);
   }, []);
 
-  const refs = createRef();
 
 
   return (
