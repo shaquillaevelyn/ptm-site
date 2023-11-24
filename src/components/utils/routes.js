@@ -31,8 +31,11 @@ export default function Links() {
     const scrollingLocation = content.id;
 
     const handleClickNav = () => {
-      document.getElementById(scrollingLocation).scrollIntoView({ behavior: 'smooth' });
+      document.getElementById(scrollingLocation).scrollIntoView({ top: scrollingLocation.offsetParent,
+        behavior: 'smooth' });
     };
+  
+    console.log(scrollingLocation.offsetParent);
 
     return(
       <li key={content.key}>

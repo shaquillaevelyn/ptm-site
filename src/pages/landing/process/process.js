@@ -12,8 +12,11 @@ function Process () {
       <section className="margin-section-sm" >
         <article>
           <h2 className="header-text-md text-centre">
-          How a Meeting Works
+          Our Meetings
           </h2>
+          <p className="header-text-sm text-centre">
+          New to Toastmasters? This is how we do things at a meeting 
+          </p>
 
           <section className="flex-row flex-wrap">
 
