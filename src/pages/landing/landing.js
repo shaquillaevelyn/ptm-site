@@ -21,7 +21,7 @@ function Landing() {
         quote={quoteArray[1].quote}
         author={quoteArray[1].author}
       />
-      <div id='landing-welcome'>
+      <div id='landing-welcome' className='scroll'>
         <About />
       </div>
 
@@ -30,7 +30,7 @@ function Landing() {
         quote={quoteArray[2].quote}
         author={quoteArray[2].author}
       />
-      <div id='landing-meeting'>
+      <div id='landing-meeting' className='scroll'>
         <Process/>
       </div>
        
@@ -39,11 +39,11 @@ function Landing() {
         quote={quoteArray[3].quote}
         author={quoteArray[3].author}
       />
-      <div id='landing-testmonial'>
+      <div id='landing-testmonial' className='scroll'>
         <Testimonials />
       </div>
 
-      <div id='landing-contact'>
+      <div id='landing-contact' className='scroll'>
         <ContactForm />
       </div>
     </>

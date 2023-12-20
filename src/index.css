@@ -48,7 +48,8 @@ html{
 body {
     margin: 0;
     width: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden; 
 }
 
 .content{
@@ -93,9 +94,10 @@ body {
 .chunky-body-text{
     font-family: 'Mistrully', sans-serif;
     font-weight: var(--font-weight-md);
-    font-size: 10rem;
-    letter-spacing: 20px;
+    font-size: 9vw;
+    letter-spacing: 1vw;
     rotate: -5deg;
+    text-align: center;
 
 }
 
@@ -218,6 +220,17 @@ body {
 
 /* Positioning */
 
+.landing-position-parent {
+    display: block;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
 .text-centre{
     text-align: center;
 }
@@ -376,9 +389,6 @@ button#submit{
     align-items: center;
 }
 
-
-
-
 button{
     inset: none;
     border: 2px solid gray;
@@ -390,3 +400,22 @@ button{
  button:focus{
     border: #772432;
  }
+
+ .scroll{
+    scroll-padding: 20px;
+ }
+
+ .iframe{
+    min-height: 50vh;
+    width: 30vw;
+ }
+
+ @media only screen and (max-width: 950px) {
+ .chunky-body-text {
+    font-family: 'Mistrully', sans-serif;
+    font-weight: var(--font-weight-md);
+    font-size: 5rem;
+    letter-spacing: 1vw;
+    rotate: -5deg;
+    text-align: center;
+ }}

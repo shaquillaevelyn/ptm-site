@@ -7,6 +7,12 @@
 
 }
 
+.about-body #about img{
+    max-width: 600px;
+    margin-right: 5px;
+    height: 50vw;
+}
+
 
 .text {
     text-align: left;
@@ -41,5 +47,9 @@
 @media only screen and (max-width: 1400px) {
 .about-body {
     flex-direction: column;
+    }
+
+    #video-about{
+        min-width: auto;
     }
 }

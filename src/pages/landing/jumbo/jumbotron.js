@@ -29,9 +29,6 @@ function Jumbotron() {
             London W2 5DX
             {' '}
             <br />
-            {' '}
-            And on Zoom!
-            {' '}
           </p>
           <JoinButtonSmall />
         </div>

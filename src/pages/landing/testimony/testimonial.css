@@ -7,6 +7,14 @@
     }
 }
 
+@media only screen and (max-width: 950px) {
+
+}
+
+@media (min-width:320px) and (max-width: 950px) {
+
+}
+
 .testimony {
     flex-basis: 100%;
     text-align: justify; 
@@ -18,11 +26,97 @@
     margin-top: 20px;
     /* margin-right: auto; */
     flex-basis: 100%;
-    height: 450px;
+    height: 345px;
     width: auto;
     align-items: center;
 }
 
+.president{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.grid{
+    display: grid;
+    position: relative;
+    z-index: 0;
+}
+
+.grid-01{
+    display: grid;
+    grid-template-columns: repeat(3, 30% [col-start]);
+    position: absolute;
+    z-index: 1;
+    grid-column-start:0;
+}
+
+
+
+
+
 .president img {
+    grid-column-start: 1;
     width: 500px;
+    justify-items: right;
+
+}
+
+.grid-02{
+    display: grid;
+    grid-template-columns: repeat(10, 10% [col-start]);
+    z-index: 2;
+    justify-items: right;
+
+  
+}
+
+.president-text{
+    grid-column-start: 4;
+    grid-column-end: 10;
+
+    background-color: #f2f2f2 ;
+    z-index: 2;
+    rotate: -3deg;
+    padding: 15px; 
+    margin: 10px;
+}
+
+
+@media only screen and (max-width: 950px) {
+
+    .grid-01{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-02{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .president-text {
+        grid-column-start: 1;
+        grid-column-end: 11;
+        background-color: #f2f2f2;
+        z-index: 2;
+        rotate: 0deg;
+        padding: 15px;
+
+    }
+    .president img {
+        justify-items: center;
+
+    }
+    .about-body{
+        margin: 5px;
+    }
+    
+
+}
+
+
+@media (min-width:500px) and (max-width: 950px) {
+
 }
