@@ -67,7 +67,7 @@ function About(){
         </article>
 
         <div>
-          <img id='about'src={about[0].image} alt='talking toastmasters' />;
+          <img id="image" src={about[0].image} alt='talking toastmasters' />;
         </div>
       </section>
 

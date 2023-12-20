@@ -10,10 +10,6 @@ export default function FAQ() {
       answer: 'We meet on the 1st and 3rd Tuesday of the Month. At the Westbourne Park Baptist Church, Porchester Rd, London W2 5DX. Doors open at 18:00 for a 18:15 start.',
     },
     {
-      question: 'What is a hybrid meeting?',
-      answer: 'Our hybrid meeting is a unique set up where you can join us in Person. We recommend that you join in on the fun in person to get the rich experience of a Paddington Toastmasters Meeting- however you can get to be in on the fun while being online. Join a meeting and come see for yourself!',
-    },
-    {
       question: 'What can I expect at a meeting?',
       answer: 'Our meetings comprise of two halves. The first, Prepared Speeches where members present to us a verbal creation of their making for the purposes of improving thier public speaking skill. All prepared speeches in meetings are evaluated by another member. The second half is Table Topics where impromptu speaking skill is put to the test.  Not all meetings look the same but we can assure you that at every meeting, you will have a lot of fun! ',
     },

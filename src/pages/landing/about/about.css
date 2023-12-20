@@ -7,10 +7,10 @@
 
 }
 
-.about-body #about img{
+.about-body img{
     max-width: 600px;
     margin-right: 5px;
-    height: 50vw;
+    /* height: 50vw; */
 }
 
 

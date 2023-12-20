@@ -32,8 +32,8 @@ function Testimonials() {
         </div>
       </section>
 
-      <div className='grid about-body'>
-        <div className='margin-section-md grid-01'>
+      <div className='grid about-body' id='president-image'>
+        <div className='margin-section-md grid-01' >
 
           <img src={testimonial[7].image} alt={testimonial[7].alt} className='' />
         </div>
