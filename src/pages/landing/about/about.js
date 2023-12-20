@@ -1,8 +1,9 @@
 /* eslint-disable react/display-name */
 import React, { forwardRef }from 'react';
-import video from '../../../video/brave.mp4';
 import './about.css';
 import { JoinButtonBig } from '../../../components/buttons/join-button';
+import { about } from '../../../text/about.json';
+
 
 
 
@@ -66,14 +67,9 @@ function About(){
         </article>
 
         <div>
-          <video id="video-about" autoPlay loop muted>
-
-            <source src={video} type="video/mp4" />
-          </video>
+          <img id='about'src={about[0].image} alt='talking toastmasters' />;
         </div>
-
       </section>
-
 
 
       <div className="join-us">

@@ -1,72 +1,70 @@
 /* eslint-disable react/display-name */
 import React, { useState, forwardRef } from 'react';
-import { Link } from 'react-router-dom';
-import { PRIVACY } from '../../../components/utils/routes';
-import leap from '../../../images/leap1.png';
+import { JoinButtonBig } from '../../../components/buttons/join-button';
 
-const ContactForm = forwardRef(function ContactForm(props, ref){
-  const [join, setJoin] = useState(true);
+function ContactForm(){
 
-  const joinMeeting = 'Hey, I would like to join your next meeting!';
-  const enquireMeeting = 'Hey, I would like to know more about Paddington Toastmasters.';
 
-  const setter = () => setJoin(!join);
+  // let meetingDate = new Date();
+
+  // let meetingYear = meetingDate.getYear();
+  // let meetingMonth = meetingDate.getMonth();
+  // let meetingDay = meetingDate.getDay();
+  // let tuesday = [];
+
+  // let meetingTuesday = [];
+
+  // meetingDate= setDate(1);
+
+  // while (meetingDate.getDay() !== 1) {
+  //   meetingDate.setDate(meetingDate.getDate() + 1);
+  // }
+
+  // while (meetingDate.getYear() === meetingYear) {
+  //   var pushDate = new Date(meetingDate.getTime());
+  //   tuesday.push(pushDate.getDate() + '-' + (pushDate.getMonth()+1) + '-' + pushDate.getFullYear());
+  //   meetingDate.setDate(d.getDate() + 7);
+  // }
+
+  // console.log(tuesday);
+
+  // if( )
+  // if (meetingMonth.getDay === 2){
+  //   console.log();
+  // }
+  // let days = meetingDate(year, month, 1);
+
+
+  // console.log(meetingYear);
+  // console.log(days);
 
   return (
     <>
-      <div ref={ref} key={4} id='landing-contact'>
-        <img src={leap} width={'1300px'} alt={'image displaying text to take the leap and join us'}/>
-        <section className="margin-section-lg about-body">
-          <div className='about-body"'>
 
-            <h1 className="header-text-md text-centre">Contact Form</h1>
 
-            <form action="https://usebasin.com/f/309bbe43c897" method="POST">
-              <label className="body-text-lg">Name</label>
-              <input type="text" name="name" id="name" required autoComplete="on" />
-              <label className="body-text-lg">Email address ( so we can contact you back )</label>
-              <input type="email" name="name" id="email" required autoComplete="on" />
-              <div className="">
-                <button onClick={setter} disabled={join}>Join a meeting</button>
-                <button onClick={setter} disabled={!join}>Find out more</button>
-              </div>
+      <p id='landing-contact' className='chunky-body-text margin-section-sm flex-row'> Ready to take the leap?</p>
+      <div className='margin-section-sm about-body'>
+        <section className="margin-section-lg about-body-col">
+       
+          <p className="header-text-mdlg">Join us at our next meeting!</p>
+          <p className="body-text-lg">Westbourne Park Baptist Church, Porchester Rd, London W2 5DX
+          </p>
+          <p className="body-text-lg">
+           18.00 for 18.15 start, 19.30 finish
+          </p> 
+          {' '}
+          <JoinButtonBig />
 
-              <label className="body-text-lg">Message</label>
-              <textarea id="message" rows="6" cols="50" required defaultValue={join ? joinMeeting : enquireMeeting} />
-
-              <button id="submit" type="submit">Submit</button>
-            </form>
-            <p>Sent!</p>
-            <p>Oops- there has been an error! Try again</p>
-
-            <p>
-              {' '}
-          How do we use your data? See our
-              <span>
-                {' '}
-                <Link to={PRIVACY}>  Privacy statmeent</Link>
-              </span>
-            </p>
-            <p />
-
-          </div>
-
-          <div className='about-body"'>
-            <h1 className="header-text-md text-centre">Come and Find Us!</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39711.65625293619!2d-0.20618597508071157!3d51.53195388541217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876100079385691%3A0x8d2727bf0b2d1837!2sWestbourne%20Park%20Baptist%20Church!5e0!3m2!1sen!2suk!4v1696504825501!5m2!1sen!2suk" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="map" />
-            <p>
-          Meetings every 1st and 3rd Tuesday of the Month
-          18.00 for 18.15 start, 19.30 finish
-          Westbourne Park Baptist Church, Porchester Rd, London W2 5DX
-          And on Zoom!
-              <br />
-          Nearest Station : Royal Oak
-            </p>
-          </div>
+        </section>
+        <section className="margin-section-lg about-body-col">  
+          <iframe className="iframe"title='paddington toastmasters location' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9930.821114971737!2d-0.1891393!3d51.5186228!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487611287d473703%3A0x53fa99ac788a9369!2sPaddington%20Toastmasters!5e0!3m2!1sen!2suk!4v1700836116875!5m2!1sen!2suk" style={{border:0}} allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </section>
       </div>
+
+
+     
     </>
   );
-});
+};
 
 export default ContactForm;

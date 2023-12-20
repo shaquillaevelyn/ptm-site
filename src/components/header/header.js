@@ -15,7 +15,7 @@ export default function Header(){
 
   const [mobileMenu, setMobileMenu] = useState(false);
   const mobileView = () => {
-    if (window.innerWidth <= 950) {
+    if (window.innerWidth <= 1550) {
       setMobileMenu(true);
     } else {
       setMobileMenu(false);
@@ -28,7 +28,6 @@ export default function Header(){
     window.addEventListener('resize', mobileView);
   }, []);
 
-  const refs = createRef();
 
 
   return (

@@ -7,11 +7,11 @@ export default function FAQ() {
   const FAQArray = [
     {
       question: 'When and where do you meet?',
-      answer: 'We meet on the 1st and 3rd Tuesday of the Month. At the Westbourne Park Baptist Church, Porchester Rd, London W2 5DX. Doors / zoom open at 18:00 for a 18:15 start.',
+      answer: 'We meet on the 1st and 3rd Tuesday of the Month. At the Westbourne Park Baptist Church, Porchester Rd, London W2 5DX. Doors open at 18:00 for a 18:15 start.',
     },
     {
       question: 'What is a hybrid meeting?',
-      answer: 'Our hybrid meeting is a unique set up where you can join us in Person or Online via Zoom. We recommend that you join in on the fun in person to get the rich experience of a Paddington Toastmasters Meeting- however you can get to be in on the fun while being online. Join a meeting and come see for yourself!',
+      answer: 'Our hybrid meeting is a unique set up where you can join us in Person. We recommend that you join in on the fun in person to get the rich experience of a Paddington Toastmasters Meeting- however you can get to be in on the fun while being online. Join a meeting and come see for yourself!',
     },
     {
       question: 'What can I expect at a meeting?',
