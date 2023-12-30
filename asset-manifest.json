@@ -1,33 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.9eeead67.chunk.css",
-    "main.js": "/static/js/main.1a2d3323.chunk.js",
-    "main.js.map": "/static/js/main.1a2d3323.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.436de4fa.js",
-    "runtime-main.js.map": "/static/js/runtime-main.436de4fa.js.map",
-    "static/js/2.caeff735.chunk.js": "/static/js/2.caeff735.chunk.js",
-    "static/js/2.caeff735.chunk.js.map": "/static/js/2.caeff735.chunk.js.map",
-    "static/js/3.57ba9eb6.chunk.js": "/static/js/3.57ba9eb6.chunk.js",
-    "static/js/3.57ba9eb6.chunk.js.map": "/static/js/3.57ba9eb6.chunk.js.map",
+    "main.css": "/static/css/main.7721e9ce.css",
+    "main.js": "/static/js/main.e3caadf7.js",
+    "static/js/787.6d7850ac.chunk.js": "/static/js/787.6d7850ac.chunk.js",
+    "static/media/ptm-video.mp4": "/static/media/ptm-video.65d8045330af21965571.mp4",
+    "static/media/toastmastersColor.png": "/static/media/toastmastersColor.ec057b9463bd2814ed0a.png",
+    "static/media/ptm-logo-white-small-transparent.svg": "/static/media/ptm-logo-white-small-transparent.802e8ce6bee717d5f8fa8b2d30b49be2.svg",
     "index.html": "/index.html",
-    "static/css/main.9eeead67.chunk.css.map": "/static/css/main.9eeead67.chunk.css.map",
-    "static/js/2.caeff735.chunk.js.LICENSE.txt": "/static/js/2.caeff735.chunk.js.LICENSE.txt",
-    "static/media/1.e3ab9828.png": "/static/media/1.e3ab9828.png",
-    "static/media/2.bfd10493.png": "/static/media/2.bfd10493.png",
-    "static/media/3.6de4243b.png": "/static/media/3.6de4243b.png",
-    "static/media/4.0199fc37.png": "/static/media/4.0199fc37.png",
-    "static/media/fedor.6f68849b.jpg": "/static/media/fedor.6f68849b.jpg",
-    "static/media/landing-image.33518e1b.png": "/static/media/landing-image.33518e1b.png",
-    "static/media/pippa.fe680f44.jpg": "/static/media/pippa.fe680f44.jpg",
-    "static/media/ptm-logo-white-small-transparent.802e8ce6.svg": "/static/media/ptm-logo-white-small-transparent.802e8ce6.svg",
-    "static/media/ptm-video.65d80453.mp4": "/static/media/ptm-video.65d80453.mp4",
-    "static/media/shaq-test.ceef810f.jpg": "/static/media/shaq-test.ceef810f.jpg",
-    "static/media/toastmastersColor.ec057b94.png": "/static/media/toastmastersColor.ec057b94.png"
+    "main.7721e9ce.css.map": "/static/css/main.7721e9ce.css.map",
+    "main.e3caadf7.js.map": "/static/js/main.e3caadf7.js.map",
+    "787.6d7850ac.chunk.js.map": "/static/js/787.6d7850ac.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.436de4fa.js",
-    "static/js/2.caeff735.chunk.js",
-    "static/css/main.9eeead67.chunk.css",
-    "static/js/main.1a2d3323.chunk.js"
+    "static/css/main.7721e9ce.css",
+    "static/js/main.e3caadf7.js"
   ]
 }
