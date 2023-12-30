@@ -1,11 +1,10 @@
-/* eslint-disable react/display-name */
-import React, {forwardRef} from 'react';
+import React from 'react';
 import './process.css';
-import { about } from '../../../text/process.json';
+import processData from '../../../text/process';
 import { JoinButtonBig } from '../../../components/buttons/join-button';
 
 
-function Process () {
+export default function Process () {
   return (
     <>
 
@@ -20,7 +19,7 @@ function Process () {
 
           <section className="flex-row flex-wrap">
 
-            {about.map((item) => (
+            {processData.map((item) => (
               <div className="process-section border" key={item.key}>
                 <p className="header-text-sm text-centre">
                   {item.header}
@@ -47,5 +46,3 @@ function Process () {
     </>
   );
 };
-
-export default Process;

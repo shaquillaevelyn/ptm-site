@@ -1,7 +1,7 @@
 /* eslint-disable react/display-name */
 import React from 'react';
 import './testimonial.css';
-import { testimonial } from '../../../text/testimonial.json';
+import testimonial from '../../../text/testimonial.json';
 
 function Testimonials() {
   return (
