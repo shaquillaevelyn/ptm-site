@@ -1,6 +1,6 @@
 import React from 'react';
 import './process.css';
-import processData from '../../../text/process';
+import process from '../../../text/process';
 import { JoinButtonBig } from '../../../components/buttons/join-button';
 
 
@@ -19,7 +19,7 @@ export default function Process () {
 
           <section className="flex-row flex-wrap">
 
-            {processData.map((item) => (
+            {process.map((item) => (
               <div className="process-section border" key={item.key}>
                 <p className="header-text-sm text-centre">
                   {item.header}

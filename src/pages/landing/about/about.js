@@ -1,7 +1,7 @@
 import React from 'react';
 import './about.css';
 import { JoinButtonBig } from '../../../components/buttons/join-button';
-import aboutData from '../../../text/about.json';
+import about from '../../../text/about';
 
 
 
@@ -66,7 +66,7 @@ export default function About(){
         </article>
 
         <div>
-          <img id="image" src={aboutData[0].image} alt='talking toastmasters' />;
+          <img id="image" src={about[0].image} alt='talking toastmasters' />;
         </div>
       </section>
 
