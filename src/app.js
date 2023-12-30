@@ -7,6 +7,7 @@ import Footer from './components/footer/footer';
 import Landing from './pages/landing/landing';
 import FAQ from './pages/faq/faq';
 import Content from './components/utils/layout';
+import OnLoadModal from './components/on-load-modal/on-load-modal';
 
 import {
   ROOT,
@@ -26,7 +27,7 @@ function App() {
   return(
     <React.StrictMode>
       <HashRouter basename={`/${process.env.PUBLIC_URL}`}>
-        {/* <PageUp /> */}
+        <OnLoadModal />
         <Content>
           <Header/>
           <Routes>

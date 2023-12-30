@@ -17,22 +17,17 @@ export default function OnLoadModal() {
               className="load-modal-button"
               onClick={onClick}
             />
-            <h3>Covid-19 Notice</h3>
+            <h3>Meeting Amendment!</h3>
 
             <p>
-              Our second meeting of 2022, January 18th, will
-              take place online in light of developments
-              regarding the Omnicron variant
-              {' '}
-              <br />
-              <br />
-              Paddington Toastmasters expect that we will
-              resume our fully Hybrid meeting format person
-              meetings for our first meeting on February.
+              Our January 2024 meetings will instead take place on the 2nd and 4th January of the month. 
+              <br/>
+              (January 9th and January 23rd)
               <br />
               <br />
               {' '}
-              Stay Safe,
+              See you soon!
+              <br />
               <br />
               {' '}
               Paddington Toastmasters

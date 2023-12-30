@@ -15,7 +15,7 @@ function Testimonials() {
 
         <div className="body-text-lg flex-row member-testimony flex-gap">
 
-          {testimonial.filter((item) => (item.key > 3 && item.key < 7)).map((item) => (
+          {testimonial.filter((item) => (item.key == 2 || item.key == 5||item.key == 6 )).map((item) => (
             <div className="testimony" key={item.key}>
               <img src={item.image} alt={item.alt} />
               <p className="body-text-lg">

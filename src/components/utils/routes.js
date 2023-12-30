@@ -18,8 +18,6 @@ export default function Links() {
     { title: 'Our Meetings', id:'landing-meeting'},
     { title: 'Testimonials', id:'landing-testimonial'},
     { title: 'Join a Meeting', id:'landing-contact'},
-
-
   ];
 
 
@@ -47,21 +45,6 @@ export default function Links() {
 
 
 
-  const PageNavArray = [
-    { title: 'FAQ', to: FAQQ}
-  ];
-
-  const pageNavs = (content) => {
-
-    return(
-      <li>
-        <Link to={content.to}>{content.title}</Link>
-      </li>
-    );
-  };
-
-
-
   return( 
     <>
       <ul>
@@ -71,7 +54,6 @@ export default function Links() {
           </Link>
         </li>
         {LandingNavArray.map(nav => landingNavs(nav))}
-        {PageNavArray.map(nav => pageNavs(nav))}
       </ul>
     </>
   );
