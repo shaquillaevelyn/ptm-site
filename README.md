@@ -17,5 +17,5 @@ To deploy version to gh pages
 
 ```
 git checkout main
- run deploy
+yarn run deploy
 ```

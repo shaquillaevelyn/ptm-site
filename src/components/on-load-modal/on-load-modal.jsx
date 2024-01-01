@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import ReactDOM from 'react-dom';
 import { GrClose } from 'react-icons/gr';
 import './on-load-modal.css';
@@ -6,6 +6,7 @@ import './on-load-modal.css';
 export default function OnLoadModal() {
   const [show, setShow] = useState(true);
   const onClick = () => setShow(false);
+  const modalRef = useRef(null);
 
   return ReactDOM.createPortal(
     <div className="load-modal-wrapper" hidden={!show}>
