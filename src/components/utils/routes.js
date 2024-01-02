@@ -2,7 +2,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { scrollToTop } from './scroll';
-import { useRef } from 'react';
 
 export const ROOT = '/';
 export const MEETPTM = '/meet-ptm';
@@ -20,9 +19,6 @@ export default function Links() {
     { title: 'Join a Meeting', id:'landing-contact'},
   ];
 
-
-
-
   const landingNavs = (content) => {
 
     const scrollingLocation = content.id;
@@ -32,7 +28,7 @@ export default function Links() {
       window.scrollTo({
         behavior: 'smooth',
         top:       document.getElementById(scrollingLocation).getBoundingClientRect().top -
-        document.body.getBoundingClientRect().top - 150
+        document.body.getBoundingClientRect().top - 190
       });
     };
 

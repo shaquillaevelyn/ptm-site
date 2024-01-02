@@ -8,6 +8,13 @@ export default function OnLoadModal() {
   const onClick = () => setShow(false);
   const modalRef = useRef(null);
 
+  const modalEffect = modalRef.current;
+  const focusableElements = modalElement.querySelectorAll(
+    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+  );
+
+  // https://medium.com/cstech/achieving-focus-trapping-in-a-react-modal-component-3f28f596f35b
+
   return ReactDOM.createPortal(
     <div className="load-modal-wrapper" hidden={!show}>
       <div className="load-modal-background">
