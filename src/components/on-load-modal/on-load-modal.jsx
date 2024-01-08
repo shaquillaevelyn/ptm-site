@@ -22,9 +22,14 @@ export default function OnLoadModal() {
             <p>
               Our January 2024 meetings will instead take place on the 2nd and 4th January of the month. 
               <br/>
-              (January 9th and January 23rd)
+              <br/>
+              January 9th - on zoom
               <br />
+               and 
               <br />
+              January 23rd - in person
+              <br />
+              <br/>
               {' '}
               See you soon!
               <br />
