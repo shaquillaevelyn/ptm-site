@@ -27,7 +27,7 @@ function App() {
   return(
     <React.StrictMode>
       <HashRouter basename={`/${process.env.PUBLIC_URL}`}>
-        <OnLoadModal />
+        {/* <OnLoadModal /> */}
         <Content>
           <Header/>
           <Routes>
