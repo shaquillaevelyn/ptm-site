@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
-import React, { useState, forwardRef } from 'react';
-import { JoinButtonBig } from '../../../components/buttons/join-button';
+import React from 'react';
+import { Button } from '../../../components/buttons/button';
 
 function ContactForm(){
 
@@ -53,7 +53,7 @@ function ContactForm(){
            18.00 for 18.15 start, 19.30 finish
           </p> 
           {' '}
-          <JoinButtonBig />
+          <Button size='small' join={true}/>
 
         </section>
         <section className="margin-section-lg about-body-col">  

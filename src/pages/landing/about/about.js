@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.css';
-import { JoinButtonBig } from '../../../components/buttons/join-button';
+import { Button, JoinButtonBig } from '../../../components/buttons/button';
 import about from '../../../text/about';
 
 
@@ -72,7 +72,7 @@ export default function About(){
 
 
       <div className="join-us">
-        <JoinButtonBig />
+        <Button size={'large'} join={true}/>
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import './process.css';
 import process from '../../../text/process';
-import { JoinButtonBig } from '../../../components/buttons/join-button';
+import { Button } from '../../../components/buttons/button';
 
 
 export default function Process () {
@@ -38,7 +38,7 @@ export default function Process () {
         <div className="join-us">
           <p>See this in action, join us at our next meeting! </p>
 
-          <JoinButtonBig />
+          <Button size='large' join={true}/>
         </div>
 
       </section>

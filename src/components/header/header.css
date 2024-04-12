@@ -25,7 +25,7 @@
     font-weight: 600;
     font-size: 1.25rem;
 }
-.button {
+/* .button {
     border-radius: 25px;
     background: #4bb543;
     padding: 20px;
@@ -33,7 +33,7 @@
     height: 25px;
     margin: 1;
     float: inline-end;
-}
+} */
 
 .button li {
     text-decoration: none;
