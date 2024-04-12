@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import toastmastersColor from '../../images/toastmastersColor.png';
 import ptmLogo from '../../images/ptm-logo-white-small-transparent.svg';
-import { JoinButtonSmall, QueryButton } from '../buttons/join-button';
+import { Button } from '../buttons/button';
 import { ROOT, FAQQ, PRIVACY } from '../utils/routes';
 import { scrollToTop } from '../utils/scroll';
 import './footer.css';
@@ -113,9 +113,9 @@ export function ContactFooter() {
     <>
 
       <h3>Come to our next meeting!</h3>
-      <JoinButtonSmall />
+      <Button size='large' join={true}/>
       <h3>Any questions or queries?</h3>
-      <QueryButton />
+      <Button size='large' join={false}/>
       <p>A member of our committe will get back to you ASAP</p>
     </>
   );

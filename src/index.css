@@ -26,6 +26,7 @@ html{
 
     --padding-med: 4% 4% 4% 4%;
     --padding-small: 3% 3% 3% 3%;
+    --padding-xsmall: 1% 1% 1% 1%;
 
 
     --tm-blue: #004165;
@@ -254,60 +255,57 @@ body {
 
 /* buttons */
 
-.join-button-small{
-    background-color: var(--tm-join-green);
-    font-size: var(--font-size-md);
-    font-weight: var(--font-weight-lg);
-    padding: var(--padding-small);
-    color: rgb(255, 255, 255);
-    border-radius: 12px;
+.btn-sm{
     height: auto;
     width: 200px;
-    border: transparent;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-weight: var(--font-weight-lg);
-}
 
-
-.join-button-big{
-    background-color: var(--tm-join-green);
-    font-size: var(--font-size-xl);
-    font-weight: var(--font-weight-lg);
-    color: rgb(255, 255, 255);
-    border-radius: 12px;
-    height: 100px;
-    width: 300px;
-    border: transparent;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-  
-}
-
-.query-button{
-    background-color: var(--tm-enq-orange);
     font-size: var(--font-size-md);
     font-weight: var(--font-weight-lg);
+
+    padding: var(--padding-small);
+}
+
+.btn-md{
+    height: auto;
+    width: 250px;
+}
+
+.btn-lg{
+    height: auto;
+    width: 300px;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-lg);
+    padding: var(--padding-xsmall);
+}
+
+.btn {
+    font-family: Source Sans Pro; 
     color: rgb(255, 255, 255);
     border-radius: 12px;
-    height: 55px;
-    width: 200px;
     border: transparent;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     margin: 4px 2px;
     cursor: pointer;
+    position: relative;
+}
 
+
+
+.join-btn{
+    background-color: var(--tm-join-green);
+}
+
+.query-btn{
+    background-color: var(--tm-enq-orange);
 }
 
 /* hover styles */
+
+.btn:hover {
+    transform: scale(1.05);
+}
 
 a {
     text-decoration: none;
@@ -315,14 +313,16 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    transform: scale(1.05);
+    text-decoration: none;
     color: #ffffff;
 }
 
 a:checked {
     text-decoration: none;
-    color: #ffffff;
 }
+
+
 
 
 /* Media */

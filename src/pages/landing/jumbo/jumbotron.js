@@ -1,7 +1,7 @@
 import React from 'react';
 import './jumbo.css';
 import backgroundvid from '../../../video/ptm-video.mp4';
-import { JoinButtonSmall } from '../../../components/buttons/join-button';
+import { Button } from '../../../components/buttons/button';
 
 function Jumbotron() {
   return (
@@ -30,7 +30,7 @@ function Jumbotron() {
             {' '}
             <br />
           </p>
-          <JoinButtonSmall />
+          <Button size='small' join={true}/>
         </div>
       </div>
     </div>
