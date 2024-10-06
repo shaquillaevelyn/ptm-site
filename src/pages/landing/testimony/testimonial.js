@@ -15,7 +15,7 @@ function Testimonials() {
 
         <div className="body-text-lg flex-row member-testimony flex-gap">
 
-          {testimonial.filter((item) => (item.key == 2 || item.key == 5||item.key == 6 )).map((item) => (
+          {testimonial.filter((item) => (item.key == 2 || item.key == 5||item.key == 7 )).map((item) => (
             <div className="testimony" key={item.key}>
               <img src={item.image} alt={item.alt} />
               <p className="body-text-lg">
@@ -40,7 +40,7 @@ function Testimonials() {
         <div className='grid-02'>
 
 
-          <p className="header-text-sm president-text">And a note from our 2023-2024 president, Magu Quintana</p>
+          <p className="header-text-sm president-text">And a note from our 2023-2024 president, Dagmawi Mulugeta</p>
           <p className="testimony body-text-lg president-text">{testimonial[7].text}</p>
       
 

@@ -38,16 +38,15 @@ const testimonial = [
   {
     'key': 7,
     'name': 'Magu',
-    'image': '',
-    'text': 'I joined Paddington Toastmasters looking to improve my public speaking skills. Little did I know the benefits would spread much further, including improving my listening and feedback skills, leadership opportunities and mentorships, and meeting a network of interesting people from diverse backgrounds. I enjoy learning from and about my fellow PTM members through their speeches, and celebrating our continuous growth and development. Paddington Toastmasters truly is a club like no other; the support and camaraderie I feel as a member has made all the difference for me, and I recommend joining to anyone seeking further personal growth, increased self-confidence, and learning in a supportive environment.'
+    'image': 'https://i.imgur.com/gPwAPtY.png',
+    'text': 'I joined Paddington Toastmasters looking to improve my public speaking skills. Little did I know the benefits would spread much further, including improving my listening and feedback skills, leadership opportunities and mentorships, and meeting  interesting people from diverse backgrounds. Paddington Toastmasters truly is a club like no other; the support and camaraderie I feel as a member has made all the difference for me.'
   },
   {
     'key': 8,
     'name': 'Magu',
-    'image': 'https://i.imgur.com/gPwAPtY.png',
+    'image': 'https://i.imgur.com/ySUyRKw.jpg',
     'alt': 'Magu our Club President',
-    'text': 'Public speaking is a crucial skill that can often feel intimidating. To stand in front of an audience with all eyes on you as you deliver a speech can be daunting, yet few things can feel more empowering than taking the stage and delivering your message to an audience. This is why having the right support to develop this skill can make all the difference. From my very first meeting I received the support I needed at Paddington Toastmasters. My fellow members made me feel welcome, the VP of Education guided me on Pathways, I received constructive feedback after each of my speeches, and throughout this experience I grew more confident to take on public speaking and leadership roles. At Paddington Toastmasters you’ll find an environment that is friendly, constructive, encouraging and full of camaraderie. Our meetings are enjoyable and motivating, ensuring our members stay engaged. Paddington Toastmasters isn\'t just a club; it\'s a supportive community that empowers members on their public speaking and leadership journeys. You’re welcome to join us!'
-  }     
+    'text': 'Joining Paddington Toastmasters (PTM) is an excellent decision if you want to improve your public speaking skills and gain confidence. With my new role came the responsibility to speak at public conferences. Toastmasters offered me a supportive and structured environment where I could practice speaking regularly in front of a friendly audience. Within a year, I gained the ability and confidence to speak in front of 300 people and deliver a top-rated conference talk. This consistent practice helps reduce anxiety and makes speaking feel more natural over time. The club\'s meetings are designed to provide constructive feedback, allowing you to learn from your mistakes and build on your strengths in a positive, encouraging setting. PTM isn\'t just a chance; it\'s an electrifying adventure you won\'t regret.'}     
 
 ];
 
