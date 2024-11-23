@@ -14,7 +14,3 @@ on:
           yarn run deploy
 
 
-
-
-
-  # merge to main, run 'run deploy' and set 
