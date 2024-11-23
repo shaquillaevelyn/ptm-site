@@ -2,13 +2,12 @@ name: Publish to GH Pages
 on: 
   pull_request:
       branches: [ "main" ]
-
-jobs:
-  publish:
-    if: github.event.pull_request.merged == true
-    runs-on: ubuntu-latest
-       
-    steps:
+      
+  jobs:
+    if_merged:
+      if: github.event.pull_request.merged == true
+      runs-on: ubuntu-latest
+      steps:
       - name: 
         run: |
           echo The PR was merged
