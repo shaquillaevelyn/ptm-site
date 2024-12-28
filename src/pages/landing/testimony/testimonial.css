@@ -57,12 +57,13 @@
 
 .president img {
     grid-column-start: 1;
-    width: 500px;
+    width: 450px;
     justify-items: right;
 
 }
 
 .grid-02{
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(10, 10% [col-start]);
     z-index: 2;
@@ -107,6 +108,7 @@
     }
     .president img {
         justify-items: center;
+        max-width: 350px;
 
     }
     .about-body{
@@ -117,6 +119,16 @@
 }
 
 
-@media (min-width:500px) and (max-width: 950px) {
+@media  (max-width: 500px) {
 
+    #president-image .grid-01{
+        margin: 0;
+    }
+
+    .president img {
+        grid-column-start: 1;
+        max-width: 350px;
+        justify-items: right;
+    
+    }
 }
