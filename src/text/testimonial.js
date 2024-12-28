@@ -43,9 +43,9 @@ const testimonial = [
   },
   {
     'key': 8,
-    'name': 'Magu',
-    'image': 'https://i.imgur.com/ySUyRKw.jpg',
-    'alt': 'Magu our Club President',
+    'name': 'DJ',
+    'image': 'https://i.imgur.com/OIrOsuM.png',
+    'alt': 'Dagmawi, our Club President',
     'text': 'Joining Paddington Toastmasters (PTM) is an excellent decision if you want to improve your public speaking skills and gain confidence. With my new role came the responsibility to speak at public conferences. Toastmasters offered me a supportive and structured environment where I could practice speaking regularly in front of a friendly audience. Within a year, I gained the ability and confidence to speak in front of 300 people and deliver a top-rated conference talk. This consistent practice helps reduce anxiety and makes speaking feel more natural over time. The club\'s meetings are designed to provide constructive feedback, allowing you to learn from your mistakes and build on your strengths in a positive, encouraging setting. PTM isn\'t just a chance; it\'s an electrifying adventure you won\'t regret.'}     
 
 ];

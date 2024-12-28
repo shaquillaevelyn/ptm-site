@@ -271,8 +271,9 @@ body {
 }
 
 .btn-lg{
+    display: flex;
     height: auto;
-    width: 300px;
+    max-width: 300px;
     font-size: var(--font-size-xl);
     font-weight: var(--font-weight-lg);
     padding: var(--padding-xsmall);
@@ -407,14 +408,14 @@ button{
 
  .iframe{
     min-height: 50vh;
-    width: 30vw;
+    min-width: 50vw;
  }
 
  @media only screen and (max-width: 950px) {
  .chunky-body-text {
     font-family: 'Mistrully', sans-serif;
     font-weight: var(--font-weight-md);
-    font-size: 5rem;
+    font-size: 4rem;
     letter-spacing: 1vw;
     rotate: -5deg;
     text-align: center;

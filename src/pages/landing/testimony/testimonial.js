@@ -35,7 +35,7 @@ function Testimonials() {
       <div className='grid about-body' id='president-image'>
         <div className='margin-section-md grid-01' >
 
-          <img src={testimonial[7].image} alt={testimonial[7].alt} className='' />
+          <img src={testimonial[7].image} alt={testimonial[7].alt} />
         </div>
         <div className='grid-02'>
 
