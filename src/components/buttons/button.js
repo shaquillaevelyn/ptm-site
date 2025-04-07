@@ -27,11 +27,11 @@ export function Button({ size, join }) {
   }
 
   return (
-    <button
+    <a
       className={buttonSize + buttonType + 'btn'}
       href={join ? emailJoin : emailQuery}
     >
       <span>{join ? 'Register Interest' : ' Drop us an email'}</span>
-    </button>
+    </a>
   );
 }
