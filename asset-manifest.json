@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.299b612e.css",
-    "main.js": "/static/js/main.04a3e391.js",
+    "main.css": "/static/css/main.544543c1.css",
+    "main.js": "/static/js/main.f6a9146b.js",
     "static/js/453.6cfbdf8e.chunk.js": "/static/js/453.6cfbdf8e.chunk.js",
     "static/media/ptm-video.mp4": "/static/media/ptm-video.65d8045330af21965571.mp4",
     "static/media/toastmastersColor.png": "/static/media/toastmastersColor.ec057b9463bd2814ed0a.png",
     "static/media/ptm-logo-white-small-transparent.svg": "/static/media/ptm-logo-white-small-transparent.802e8ce6bee717d5f8fa8b2d30b49be2.svg",
     "index.html": "/index.html",
-    "main.299b612e.css.map": "/static/css/main.299b612e.css.map",
-    "main.04a3e391.js.map": "/static/js/main.04a3e391.js.map",
+    "main.544543c1.css.map": "/static/css/main.544543c1.css.map",
+    "main.f6a9146b.js.map": "/static/js/main.f6a9146b.js.map",
     "453.6cfbdf8e.chunk.js.map": "/static/js/453.6cfbdf8e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.299b612e.css",
-    "static/js/main.04a3e391.js"
+    "static/css/main.544543c1.css",
+    "static/js/main.f6a9146b.js"
   ]
 }
