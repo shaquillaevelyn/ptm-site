@@ -11,7 +11,7 @@ export default function About() {
           <h2 className="header-text-lg">
             Welcome to Paddington Toastmasters -
             <br />
-            Your first step towards Public Speaking Execllence
+            Your first step towards Public Speaking Excellence
           </h2>
           <p className="body-text-lg body-text-lg-bold">
             Public Speaking is NOT to be Feared
@@ -38,7 +38,7 @@ export default function About() {
             International Educational Program, Pathways.
           </p>
           <p className="body-text-lg">
-            Learn more about
+            Learn more about&#10;
             <span>
               <a className="inline-link" href="www.bbc.co.uk">
                 Pathways
@@ -48,7 +48,7 @@ export default function About() {
           <br />
           <p className="body-text-lg body-text-lg-bold">Reap the Benefits </p>
           <p id="test-ref" className="body-text-lg">
-            Help us to help you to Build Leadership Skills,Maximise your
+            Help us to help you to Build Leadership Skills, Maximise your
             Potential, in the workplace and beyond, and Enhance Self-Awareness.
             <br />
             The benefits are endless.
