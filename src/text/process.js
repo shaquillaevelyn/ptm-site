@@ -1,7 +1,8 @@
+/* eslint-disable quotes */
 const process = [
   {
     header: 'Start with Prepared Speeches',
-    text: 'Members come along with a prepared speech ready to entertain, inform or even wow the audience.  \n  Each speech counting towards their progress in Pathways, Toastmasters unique educational program designed to support Toastmasters on thier individual journeys',
+    text: "Members come along with a prepared speech ready to entertain, inform or even wow the audience.  \n  Each speech counting towards their progress in Pathways, Toastmasters' unique educational program designed to support members on thier individual journeys",
     image: 'https://i.imgur.com/kYQKKEF.png',
     alt: '',
   },
@@ -13,7 +14,7 @@ const process = [
   },
   {
     header: 'Members in Functionary Roles',
-    text: ' We all have a role to play in our meetings - as our guest, your job is to simply enjoy! \n We will introduce to you the Toastmasters who will support in making sure that the club meetings runs smoothly and to time.',
+    text: ' We all have a role to play in our meetings - as our guest, your job is to simply enjoy! \n We will introduce to you the Toastmasters who will support in making sure that the club meetings run smoothly and to time.',
     image: 'https://i.imgur.com/j3ML1i1.png',
     alt: '',
   },

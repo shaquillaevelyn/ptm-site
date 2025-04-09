@@ -54,7 +54,7 @@ export default function About() {
             The benefits are endless.
             <br />
             <br />
-            We are waiting welcome you!
+            We are waiting to welcome you!
             <br />
             <br />
           </p>
